@@ -1,0 +1,47 @@
+* {
+
+}
+
+.nav-header {
+    background-color: grey;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.logo {
+    float: left;
+    padding: 20px;
+    z-index: 10;
+}
+
+ul.nav-list {
+    margin: 0;
+}
+
+.nav-list li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    padding: 40px 20px;
+}
+
+.nav-list li:hover {
+    background-color: ghostwhite;
+}
+
+.go-up {
+    height: 50px;
+    width: 50px;
+    background-color: lightseagreen;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 60px;
+    right: 60px;
+    text-align: center;
+}
