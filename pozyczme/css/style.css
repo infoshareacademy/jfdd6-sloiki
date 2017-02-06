@@ -1,0 +1,55 @@
+body{
+
+    color: #fff;
+    font-size: 10px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+header{
+
+    position: relative;
+
+
+
+}
+
+
+.bgimg {
+
+
+    background-image: url("../img/background.jpg");
+    min-height: 100vh;
+    background-position: center 80%;
+    background-size: cover;
+    position: relative;
+
+}
+
+
+
+
+
+/*input*/
+.button{
+
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 60px;
+    font-size: 20px;
+
+
+
+}
