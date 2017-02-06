@@ -1,0 +1,23 @@
+.funkcje {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #ffffff;
+
+
+}
+img {
+    height: 100px;
+    width: 100px;
+
+}
+
+p {
+
+}
+
+div {
+    padding: 20px;
+}
+
