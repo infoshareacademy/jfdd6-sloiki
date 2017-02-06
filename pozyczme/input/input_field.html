@@ -11,41 +11,36 @@
 
     <title>Zapisz się!</title>
 <body>
-    <header>
-        Zapoznaj się proszę z poniższymi zasadami
-    </header>
+<main>
+    <a href="#open_modal">Open Modal</a>
 
-    <main>
-        <section>
-            <p> tutaj będzie opisana skrócona polityka korzystania z serwisu i aspekt ochrony danych osobowych</p>
-            <p> tutaj będzie opisana skrócona polityka korzystania z serwisu i aspekt ochrony danych osobowych</p>
-            <p> tutaj będzie opisana skrócona polityka korzystania z serwisu i aspekt ochrony danych osobowych</p>
-            <p> tutaj będzie opisana skrócona polityka korzystania z serwisu i aspekt ochrony danych osobowych</p>
-            <p> tutaj będzie opisana skrócona polityka korzystania z serwisu i aspekt ochrony danych osobowych</p>
+    <section id="open_modal" class="modal_container">
 
-            <label>Zgadzam się z warunkami</label>
+        <a href="#close_modal" title="Close" class="close_modal">X</a>
+
+
+        <div class="field">
+            <label>Imię<input type="text" placeholder="Wpisz swoje imię"></label>
+        </div>
+
+        <div class="field">
+            <label>Nazwisko<input type="text" placeholder="Wpisz swoje nazwisko"></label>
+        </div>
+
+        <div class="field">
+            <label>Adres e-mail<input type="email" placeholder="Wpisz swój e-mail"></label>
+        </div>
+
+        <div class="field">
+            <label>Zgadzam się z warunkami korzystania z serwisu</label>
             <input type="checkbox">
-        </section>
+        </div>
 
-        <section>
-            <fieldset>
-                <legend>Dane personalne</legend>
-                    <label>Imię<input type="text" placeholder="Wpisz swoje imię"></label>
-                    <label>Nazwisko<input type="text" placeholder="Wpisz swoje nazwisko"></label>
-                    <label>Adres e-mail<input type="email" placeholder="Wpisz swój e-mail"></label>
-                    <button type="submit">Dołącz!</button>
-            </fieldset>
-        </section>
-
-        <section>
-            <legend>Czy masz dodatkowe pytania?</legend>
-                <textarea></textarea>
-                <button type="submit"><label>Wyślij, i tak nikt nie odpowie :)</label></button>
-
-
-        </section>
-
-    </main>
+        <div class="field">
+            <button type="submit">Dołącz!</button>
+        </div>
+    </section>
+</main>
 
 </body>
 </html>
