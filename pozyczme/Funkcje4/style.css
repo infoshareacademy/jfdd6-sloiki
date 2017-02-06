@@ -21,3 +21,30 @@ div {
     padding: 20px;
 }
 
+#oferta > div article {
+    float: left;
+    width: 33%;
+    padding: 10px;
+}
+
+#oferta > div {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+#oferta h2 {
+    font-size: 40px;
+    font-weight: 100;
+    text-transform: lowercase;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 0 #ccc;
+    font-family: Roboto, sans-serif;
+}
+
+#oferta p {
+    line-height: 24px;
+    font-size: 16px;
+    text-align: justify;
+}
