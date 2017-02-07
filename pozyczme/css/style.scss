@@ -1,14 +1,14 @@
 $nav-shadow: 0 3px 6px rgba(0,0,0,0.12), 0 3px 6px rgba(0,0,0,0.23);
 
 body{
-    color: #fff;
+    color: #000;
     font-size: 10px;
 }
 
 //nav starts
 
 .nav-header {
-    background-color: grey;
+    background-color: ghostwhite;
     position: fixed;
     top: 0;
     width: 100%;
@@ -20,18 +20,20 @@ body{
 }
 
 .nav-content {
+    display: flex;
     max-width: 1200px;
     margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav-logo {
-    float: left;
     padding: 20px;
     z-index: 10;
 }
 
 .nav {
-    float: right;
+
 }
 
 ul.nav-list {
@@ -51,7 +53,8 @@ ul.nav-list {
 }
 
 .nav-list li:hover {
-    background-color: ghostwhite;
+    color: white;
+    background-color: #303030;
 }
 
 //nav ends
