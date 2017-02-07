@@ -1,37 +1,20 @@
-.funkcje {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background: #ffffff;
-
-
-}
-img {
-    height: 100px;
-    width: 100px;
-
-}
-
-p {
-
-}
-
-div {
-    padding: 20px;
-}
-
-#oferta > div article {
-    float: left;
-    width: 33%;
-    padding: 10px;
-}
-
 #oferta > div {
     width: 80%;
     margin: 0 auto;
     padding: 20px 0;
+
 }
+
+#oferta > div article {
+    float: left;
+    width: 20%;
+    padding: 10px;
+}
+#oferta img {
+    height: 100px;
+    weight: 100px;
+}
+
 
 #oferta h2 {
     font-size: 40px;
