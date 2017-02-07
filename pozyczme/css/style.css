@@ -2,6 +2,12 @@ body {
   color: #fff;
   font-size: 10px; }
 
+section {
+    width: 100%;
+    height: 100vh;
+
+}
+
 .nav-header {
   background-color: grey;
   position: fixed;
@@ -42,14 +48,15 @@ ul.nav-list {
   background-color: ghostwhite; }
 
 .bgimg {
-  top: 90px;
-  background-image: url("../img/background.jpg");
-  min-height: 100vh;
-  background-position: center 80%;
-  background-size: cover;
-  position: relative; }
+    min-height: 100vh;
+    background: url("../img/background.jpg") center 80%;
+    background-size: cover;
+    position: relative;
+    top: 90px;}
 
-/*input*/
+
+
+/*input-field*/
 .input-button {
   font-size: 30px;
   text-align: center;
@@ -58,32 +65,42 @@ ul.nav-list {
   margin-right: auto;
   margin-left: auto; }
 
-@-webkit-keyframes hvr-pulse-grow {
-  to {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1); } }
-@keyframes hvr-pulse-grow {
-  to {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1); } }
-.hvr-pulse-grow {
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  margin-top: 800px;
-  font-family: 'Teko', sans-serif; }
 
-.hvr-pulse-grow:hover, .hvr-pulse-grow:focus, .hvr-pulse-grow:active {
-  -webkit-animation-name: hvr-pulse-grow;
-  animation-name: hvr-pulse-grow;
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate; }
+.modal-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: dimgray;
+
+    z-index: -1;
+    opacity: 0;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    font-size: 20px;
+    color: white;
+}
+
+.modal-container:target {
+    opacity: 1;
+    z-index: 99;
+}
+
+.modal-field {
+    width: 50%;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+
+
+
 
 .team {
   background-color: #f3f3f3;
@@ -113,3 +130,9 @@ ul.nav-list {
   padding: 20px; }
 
 /*# sourceMappingURL=style.css.map */
+
+
+
+
+
+
