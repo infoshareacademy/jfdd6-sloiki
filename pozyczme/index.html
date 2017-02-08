@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>pożyczME - Masz to ? Pożycz MI !</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
     <link rel="stylesheet" href="css/style.css" />
-      <link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
   </head>
   <body>
     <header class="bgimg">
         <div class="nav-header">
             <div class="nav-content">
                 <div class="nav-logo">
-                    <img src="{logo}" alt="Logo PokażME">
+                    <img src="./img/pozyczme-logo-vect.svg" alt="Logo PożyczME">
                 </div>
                 <nav class="nav">
                     <ul class="nav-list">
@@ -20,22 +20,44 @@
                      --><li><a href="">sdadas</a></li><!--
                      --><li><a href="">sdadas</a></li><!--
                      --><li><a href="">sdadas</a></li>
-                    </ul>
-                </nav>
-            </div>
+                </ul>
+            </nav>
         </div>
+    </div>
 
-      <section class="input-button">
-          <button class="hvr-pulse-grow">Zapisz się na premierę</button>
-      </section>
+    <section class="input-field">
+        <button class="input-button">
+        <a href="#open-modal">Zapisz się na premierę</a>
+        </button>
+        <section id="open-modal" class="modal-container">
+            <a href="#close-modal" title="Close" class="close-modal">X</a>
+            <div class="modal-field">
+                <label>Imię</label>
+                <input type="text" placeholder="Wpisz swoje imię">
+            </div>
+            <div class="modal-field">
+                <label>Nazwisko</label>
+                <input type="text" placeholder="Wpisz swoje nazwisko">
+            </div>
+            <div class="modal-field">
+                <label>Adres e-mail</label>
+                <input type="email" placeholder="Wpisz swój e-mail">
+            </div>
+            <div class="modal-field">
+                <label>Zgadzam się z warunkami korzystania z serwisu</label>
+            </div>
+            <div class="modal-field">
+                <button type="submit">Dołącz!</button>
+            </div>
+        </section>
+    </section>
+</header>
 
-  </header>
-
-  <main>
+<main>
 
 
 
-      <!--TEAM-->
+    <!--TEAM-->
     <section class="team">
 
 
@@ -88,7 +110,7 @@
 
 
 
-  </main>
+</main>
 
 
 
@@ -105,20 +127,20 @@
 
 
 
-  <!--Footer-->
-    <a href="#">
-        <div class="go-up">
-            Up!
-            <span class="arrow"></span> <!--dodać strzałkę-->
-        </div>
-    </a>
+<!--Footer-->
+<a href="#">
+    <div class="go-up">
+        Up!
+        <span class="arrow"></span> <!--dodać strzałkę-->
+    </div>
+</a>
 
 
-    <footer class="footer">
-        <div class="ft-content">
-            <span class="copyright">&copy; 2017 Coded with love by Słoiki Team</span>
-            <!--do dodania kanały social media z linkami-->
-        </div>
-    </footer>
-  </body>
+<footer class="footer">
+    <div class="ft-content">
+        <span class="copyright">&copy; 2017 Coded with love by Słoiki Team</span>
+        <!--do dodania kanały social media z linkami-->
+    </div>
+</footer>
+</body>
 </html>
