@@ -1,6 +1,23 @@
 body {
   color: #000;
-  font-size: 10px; }
+  font-size: 10px;
+  font-family: Roboto, "Times New Roman", serif; }
+
+h1, h2, h3 {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 700; }
+
+h1 {
+  font-size: 3.0rem; }
+
+h2 {
+  font-size: 2.2rem; }
+
+h3 {
+  font-size: 1.8rem; }
+
+p {
+  font-size: 1.6rem; }
 
 .nav-header {
   background-color: ghostwhite;
@@ -13,10 +30,12 @@ body {
   -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.23);
   z-index: 999; }
 
+.nav-content, .function, .team-flex, .ft-content {
+  margin: 0 auto;
+  max-width: 1140px; }
+
 .nav-content {
   display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap; }
@@ -33,6 +52,7 @@ ul.nav-list {
   display: inline-block; }
 
 .nav-list a {
+  font-size: 1.2rem;
   text-decoration: none;
   color: inherit;
   display: inline-block;
@@ -109,8 +129,6 @@ ul.nav-list {
   height: 100px; }
 
 .ft-content {
-  max-width: 1200px;
-  margin: 0 auto;
   padding: 20px; }
 
 /*# sourceMappingURL=style.css.map */
