@@ -130,9 +130,13 @@ header{
 
 .team-flex{
 
-    display: flex;
+    height: 100vh;
     width: 100%;
-    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+
 
 
 
@@ -141,9 +145,80 @@ header{
 
 
 .team-flex-one{
+    display: flex;
+    flex-basis: calc(50% - 40px);
+    justify-content: center;
+    flex-direction: column;
 
-    flex: 1;
-    color: red;
+}
+
+
+
+.rafal{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+
+
+}
+
+.team-flex-two{
+    display: flex;
+    flex-basis: calc(50% - 40px);
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+
+.marta{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+
+
+}
+
+.team-flex-three{
+    display: flex;
+    flex-basis: calc(50% - 40px);
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+
+.karol{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+
+
+}
+
+.team-flex-four{
+    display: flex;
+    flex-basis: calc(50% - 40px);
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+
+.natalia{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 
 
 
@@ -151,6 +226,29 @@ header{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+.team-flex img{
+
+    height: 127px;
+    border-radius: 100%;
+
+
+
+
+
+}
 
 
 
