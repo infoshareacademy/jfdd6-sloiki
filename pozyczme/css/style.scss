@@ -1,167 +1,169 @@
-$nav-shadow: 0 3px 6px rgba(0,0,0,0.12), 0 3px 6px rgba(0,0,0,0.23);
+$nav-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.23);
 
 body {
-    color: #000;
-    font-size: 10px;
-    font-family: Roboto, "Times New Roman", serif;
+  color: #000;
+  font-size: 10px;
+  font-family: Roboto, "Times New Roman", serif;
 }
 
 h1, h2, h3 {
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
-    font-weight: 700;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 700;
 }
 
 h1 {
-    font-size: 3.0rem;
+  font-size: 3.0rem;
 }
 
 h2 {
-    font-size: 2.2rem;
+  font-size: 2.2rem;
 }
 
 h3 {
-    font-size: 1.8rem;
+  font-size: 1.8rem;
 }
 
 p {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 //nav starts
 
 .nav-header {
-    background-color: ghostwhite;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    box-shadow: $nav-shadow;
-    -webkit-box-shadow: $nav-shadow;
-    -o-box-shadow: $nav-shadow;
-    -moz-box-shadow: $nav-shadow;
-    z-index: 999;
+  background-color: ghostwhite;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: $nav-shadow;
+  -webkit-box-shadow: $nav-shadow;
+  -o-box-shadow: $nav-shadow;
+  -moz-box-shadow: $nav-shadow;
+  z-index: 999;
 }
 
 .nav-content, .function, .team-flex, .ft-content {
-    margin: 0 auto;
-    max-width: 1140px;
+  margin: 0 auto;
+  max-width: 1140px;
 }
 
 .nav-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .nav-logo {
-    padding: 20px;
-    z-index: 10;
+  padding: 20px;
+  z-index: 10;
 }
 
 ul.nav-list {
-    margin: 0;
+  margin: 0;
 }
 
 .nav-list li {
-    list-style-type: none;
-    display: inline-block;
+  list-style-type: none;
+  display: inline-block;
 }
 
 .nav-list a {
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: inherit;
-    display: inline-block;
-    padding: 40px 20px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  padding: 40px 20px;
 }
 
 .nav-list li:hover {
-    color: white;
-    background-color: #303030;
+  color: white;
+  background-color: #303030;
 }
 
 //nav ends
 
 .bgimg {
-    top: 90px;
-    background-image: url("../img/background.jpg");
-    min-height: 100vh;
-    background-position: center 80%;
-    background-size: cover;
-    position: relative;
+  top: 90px;
+  background-image: url("../img/background.jpg");
+  min-height: 100vh;
+  background-position: center 80%;
+  background-size: cover;
+  position: relative;
 }
 
 /*input*/
-.input-button{
-    font-size: 30px;
-    text-align: center;
-    display:block;
-    width: 300px;
-    margin-right: auto;
-    margin-left: auto;
+.input-button {
+  font-size: 30px;
+  text-align: center;
+  display: block;
+  width: 300px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @-webkit-keyframes hvr-pulse-grow {
-    to {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-    }
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
 }
+
 @keyframes hvr-pulse-grow {
-    to {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-    }
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
 }
 
 .hvr-pulse-grow {
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px transparent;
-    margin-top: 800px;
-    font-family: 'Teko', sans-serif;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  margin-top: 800px;
+  font-family: 'Teko', sans-serif;
 }
+
 .hvr-pulse-grow:hover, .hvr-pulse-grow:focus, .hvr-pulse-grow:active {
-    -webkit-animation-name: hvr-pulse-grow;
-    animation-name: hvr-pulse-grow;
-    -webkit-animation-duration: 0.3s;
-    animation-duration: 0.3s;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
+  -webkit-animation-name: hvr-pulse-grow;
+  animation-name: hvr-pulse-grow;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
 }
 
 .team {
-    background-color: #f3f3f3;
-    width: 100%;
-    height: 100vh;
+  background-color: #f3f3f3;
+  width: 100%;
+  height: 100vh;
 }
 
 //przycisk w górę
 .go-up {
-    height: 50px;
-    width: 50px;
-    background-color: ghostwhite;
-    border-radius: 50%;
-    position: fixed;
-    bottom: 60px;
-    right: 60px;
-    text-align: center;
-    z-index: 150;
+  height: 50px;
+  width: 50px;
+  background-color: ghostwhite;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  text-align: center;
+  z-index: 150;
 }
 
 //footer
 
 .footer {
-    background-color: black;
-    color: white;
-    width: 100%;
-    height: 100px;
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 100px;
 }
 
 .ft-content {
-    padding: 20px;
+  padding: 20px;
 }
