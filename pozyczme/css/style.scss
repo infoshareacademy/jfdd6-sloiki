@@ -212,68 +212,75 @@ ul.nav-list {
 }
 
 
-
-
-
+/*Team-----------------------------------------------*/
 
 .team {
-    background-color: #f3f3f3;
-    width: 100%; }
+  background-color: red;
+  width: 100%;
+  height: 100vh;
 
-.team-flex {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row; }
+}
 
-.team-flex-one {
-    display: flex;
-    flex-basis: calc(50% - 40px);
-    justify-content: center;
-    flex-direction: column; }
 
-.rafal {
-    display: flex;
-    justify-content: center;
-    flex-direction: row; }
+.one {
 
-.team-flex-two {
-    display: flex;
-    flex-basis: calc(50% - 40px);
-    justify-content: center;
-    flex-direction: column; }
+  float: left;
+  width: 49%;
 
-.marta {
-    display: flex;
-    justify-content: center;
-    flex-direction: row; }
+}
 
-.team-flex-three {
-    display: flex;
-    flex-basis: calc(50% - 40px);
-    justify-content: center;
-    flex-direction: column; }
+.one img {
+  height: 50px;
+  width: 50px;
+  display: block;
 
-.karol {
-    display: flex;
-    justify-content: center;
-    flex-direction: row; }
+}
 
-.team-flex-four {
-    display: flex;
-    flex-basis: calc(50% - 40px);
-    justify-content: center;
-    flex-direction: column; }
+.two {
+  float: left;
+  width: 49%;
 
-.natalia {
-    display: flex;
-    justify-content: center;
-    flex-direction: row; }
+}
 
-.team-flex img {
-    height: 127px;
-    border-radius: 100%; }
+.two img {
+
+  width: 10%;
+  display: block;
+}
+
+.three {
+  float: left;
+  width: 49%;
+
+}
+
+.three img {
+
+  width: 10%;
+  display: block;
+}
+
+.four {
+  float: left;
+  width: 49%;
+}
+
+.four img {
+
+
+  width: 10%;
+  display: block;
+
+
+
+
+
+
+  .clear {
+    clear: both;
+
+  }
+
 
 .go-up {
   height: 50px;
