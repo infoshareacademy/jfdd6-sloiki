@@ -60,6 +60,10 @@ ul.nav-list {
 .nav-list li {
   list-style-type: none;
   display: inline-block; }
+  .nav-list li :hover {
+    color: white;
+    background-color: #0080e0;
+    transition: background-color 0.5s; }
 
 .nav-list a {
   font-size: 1.2rem;
@@ -67,11 +71,6 @@ ul.nav-list {
   color: inherit;
   display: inline-block;
   padding: 40px 20px; }
-
-.nav-list li:hover {
-  color: white;
-  background-color: #0080e0;
-  transition: background-color 0.5s; }
 
 .bgimg {
   background-image: url("../img/background2.jpg");
