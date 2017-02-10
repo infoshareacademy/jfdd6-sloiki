@@ -241,8 +241,6 @@ ul.nav-list {
     width: 49%;
     float: left;
     text-align: center;
-    border-bottom-style: solid;
-    border-bottom-color: black;
     margin-bottom: 20px;
 
 
@@ -254,6 +252,7 @@ ul.nav-list {
     height: 150px;
     border-radius: 100%;
 
+
   }
 
   .two {
@@ -261,8 +260,6 @@ ul.nav-list {
     width: 49%;
     float: left;
     text-align: center;
-    border-bottom-style: solid;
-    border-bottom-color: black;
     margin-bottom: 20px;
 
   }
@@ -324,21 +321,18 @@ ul.nav-list {
   padding: 10px;
   opacity: 0.6;
   filter: alpha(opacity=50);
+  margin-bottom: 20px;
+  
 
 }
 
-.social img:hover{
-
-  box-shadow: 0 0 20px #ccc;
-
-
-}
 
 
 .www:hover{
 
   opacity: 1.0;
   filter: alpha(opacity=100);
+  box-shadow: 0 0 20px #ccc;
 
 }
 
@@ -346,6 +340,7 @@ ul.nav-list {
 
   opacity: 1.0;
   filter: alpha(opacity=100);
+  box-shadow: 0 0 20px #ccc;
 
 }
 
@@ -353,6 +348,7 @@ ul.nav-list {
 .git:hover {
   opacity: 1.0;
   filter: alpha(opacity=100);
+  box-shadow: 0 0 20px #ccc;
 
 
 
@@ -361,11 +357,11 @@ ul.nav-list {
 .ln:hover{
   opacity: 1.0;
   filter: alpha(opacity=100);
+  box-shadow: 0 0 20px #ccc;
 
 
 
 }
-
 
 
 

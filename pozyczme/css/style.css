@@ -180,8 +180,6 @@ ul.nav-list {
   width: 49%;
   float: left;
   text-align: center;
-  border-bottom-style: solid;
-  border-bottom-color: black;
   margin-bottom: 20px; }
 
 .one img {
@@ -193,8 +191,6 @@ ul.nav-list {
   width: 49%;
   float: left;
   text-align: center;
-  border-bottom-style: solid;
-  border-bottom-color: black;
   margin-bottom: 20px; }
 
 .two img {
@@ -230,26 +226,28 @@ ul.nav-list {
   height: 40px;
   padding: 10px;
   opacity: 0.6;
-  filter: alpha(opacity=50); }
-
-.social img:hover {
-  box-shadow: 0 0 20px #ccc; }
+  filter: alpha(opacity=50);
+  margin-bottom: 20px; }
 
 .www:hover {
   opacity: 1.0;
-  filter: alpha(opacity=100); }
+  filter: alpha(opacity=100);
+  box-shadow: 0 0 20px #ccc; }
 
 .fb:hover {
   opacity: 1.0;
-  filter: alpha(opacity=100); }
+  filter: alpha(opacity=100);
+  box-shadow: 0 0 20px #ccc; }
 
 .git:hover {
   opacity: 1.0;
-  filter: alpha(opacity=100); }
+  filter: alpha(opacity=100);
+  box-shadow: 0 0 20px #ccc; }
 
 .ln:hover {
   opacity: 1.0;
-  filter: alpha(opacity=100); }
+  filter: alpha(opacity=100);
+  box-shadow: 0 0 20px #ccc; }
 
 .go-up {
   height: 50px;
