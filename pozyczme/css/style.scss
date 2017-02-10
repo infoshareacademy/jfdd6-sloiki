@@ -3,17 +3,19 @@ $blue2: #0080c0;
 $blue3: #002060;
 $navy: #002040;
 $navy2: #000020;
-
+$nav-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.23);
 
 body {
-  color: $navy2;
+  color: $blue3;
+  background-color: ghostwhite;
   font-size: 10px;
-  font-family: Roboto, "Times New Roman", serif;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 h1, h2, h3 {
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-weight: 700;
+  color: $blue3;
 }
 
 h1 {
@@ -37,16 +39,29 @@ section {
     height: 100vh;
 }
 
+//kolor linków do ew. dodania
+//a:link {
+//  color: $blue;
+//}
+
+::selection {
+  background-color: $blue2;
+}
+
+
+//nawigacja
+
 .nav-header {
     background-color: ghostwhite;
     position: fixed;
     top: 0;
     width: 100%;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.23);
-    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.23);
-    -o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.23);
-    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.23);
-    z-index: 999; }
+    box-shadow: $nav-shadow;
+    -webkit-box-shadow: $nav-shadow;
+    -o-box-shadow: $nav-shadow;
+    -moz-box-shadow: $nav-shadow;
+    z-index: 999;
+}
 
 .nav-content, .function, .team-flex, .ft-content {
   margin: 0 auto;
@@ -58,18 +73,22 @@ section {
     max-width: 1200px;
     margin: 0 auto;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+}
 
 .nav-logo {
     padding: 20px;
-    z-index: 10; }
+    z-index: 10;
+}
 
 ul.nav-list {
-    margin: 0; }
+    margin: 0;
+}
 
 .nav-list li {
     list-style-type: none;
-    display: inline-block; }
+    display: inline-block;
+}
 
 .nav-list a {
   font-size: 1.2rem;
@@ -80,16 +99,20 @@ ul.nav-list {
 }
 
 .nav-list li:hover {
-    color: white;
-    background-color: #303030; }
+  color: white;
+  background-color: $blue;
+  transition: background-color 0.5s;
+}
+
+//zajawka
 
 .bgimg {
-    background-image: url("../img/background.jpg");
+    background-image: url("../img/background2.jpg");
     min-height: 100vh;
     background-position: center 80%;
     background-size: cover;
-    position: relative; }
-
+    position: relative;
+}
 
 
 /*input-field*/
@@ -98,15 +121,12 @@ ul.nav-list {
     height: 100vh;
 }
 
-
 .input-button {
     font-size: 30px;
     text-align: center;
     padding: 10px;
     display: block;
-
     width: 20%;
-
     position: fixed;
     top: 20%;
 }
@@ -116,18 +136,14 @@ ul.nav-list {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     background-color: ghostwhite;
-
     z-index: -1;
     opacity: 0;
-
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-
     font-size: 20px;
     color: white;
 }
@@ -143,16 +159,16 @@ ul.nav-list {
     justify-content: space-between;
 }
 
+//koniec zajawki
 
-
-
+//funkcje (produkt)
 
 .function > div {
     width: 100%;
     margin: 0 auto;
     padding: 20px 0;
-
 }
+
 .function-flex {
     display: flex;
     flex-direction: row;
@@ -161,28 +177,27 @@ ul.nav-list {
 
 .function-flex1 {
     flex: 1;
-
     width: 100%;
     margin: 0 auto;
     padding: 20px 0;
 }
+
 .function-flex2 {
     flex: 1;
-
     width: 100%;
     margin: 0 auto;
     padding: 20px 0;
 }
+
 .function-flex3 {
     flex: 1;
-
     width: 100%;
     margin: 0 auto;
     padding: 20px 0;
 }
+
 .function-flex4 {
     flex: 1;
-
     width: 100%;
     margin: 0 auto;
     padding: 20px 0;
@@ -202,7 +217,6 @@ ul.nav-list {
     text-align: center;
     margin-bottom: 20px;
     text-shadow: 1px 1px 0 #ccc;
-
 }
 
 .function p {
@@ -210,13 +224,9 @@ ul.nav-list {
     font-size: 16px;
     text-align: justify;
     padding: 20px 20px;
-
 }
 
-
-
-
-
+//team
 
 .team {
     background-color: #f3f3f3;
@@ -277,6 +287,9 @@ ul.nav-list {
     height: 127px;
     border-radius: 100%; }
 
+
+//strzałka do góry
+
 .go-up {
   height: 50px;
   width: 50px;
@@ -304,7 +317,7 @@ ul.nav-list {
 }
 
 .footer {
-  background-color: black;
+  background-color: $navy2;
   color: white;
   width: 100%;
   height: 100px;
