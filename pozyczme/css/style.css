@@ -73,9 +73,8 @@ ul.nav-list {
   padding: 40px 20px; }
 
 .bgimg {
-  background-image: url("../img/background2.jpg");
   min-height: 100vh;
-  background-position: center 80%;
+  background: url("../img/background2.jpg") no-repeat center 80%;
   background-size: cover;
   position: relative; }
 
