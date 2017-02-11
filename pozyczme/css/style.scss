@@ -137,6 +137,10 @@ ul.nav-list {
   color: ghostwhite;
 }
 
+.modal-button a {
+  text-decoration: none;
+}
+
 .modal-box {
   display: flex;
   flex-direction: column;
@@ -159,8 +163,41 @@ ul.nav-list {
 }
 
 .modal-field {
-  font-size: 2rem;
+  background-color: #000020;;
+  color: ghostwhite;
+  font-size: 1.6rem;
+  width: 35%;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
+
+.modal-box-close {
+  color: ghostwhite;
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+
+.modal-field label {
+  padding: 1.5rem 0.5rem;
+}
+
+.modal-field input {
+  padding: 0.5rem;
+  width: 65%;
+}
+
+.modal-field button {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  color: #000020;
+  background-color: ghostwhite;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
 /**MODAL-BOX**/
 
 //koniec zajawki
