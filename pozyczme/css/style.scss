@@ -147,13 +147,16 @@ ul.nav-list {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url("../img/background2.jpg") no-repeat center 80%;
-  background-size: cover;
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
+  background-repeat: no-repeat;
+  background-position: center 80%;
+  background-image: url("../img/background2.jpg");
+  background-size: cover;
+  transition: opacity 500ms;
   opacity: 0;
   visibility: hidden;
 }
@@ -167,38 +170,61 @@ ul.nav-list {
   background-color: ghostwhite;
   color: #000020;
   font-size: 1.6rem;
-  width: 35%;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  min-width: 20%;
+  min-height: 47%;
   border: none;
   border-radius: 5px;
   display: flex;
-  flex-direction: column;
   margin: 0;
-  padding: 0;
+  padding: 0.5rem 1.5rem;
+  transition: opacity 500ms;
 }
 
 .modal-box-close {
   color: #000020;
+  text-align: right;
   text-decoration: none;
   font-size: 2.5rem;
+  padding: 0;
+  margin: 0;
 }
 
 .modal-field label {
-  padding: 1.5rem 0.5rem;
+  font-size: 1.2rem;
+  padding: 1.0rem 0.5rem;
 }
 
-.modal-field input {
-  padding: 0.5rem;
-  width: 65%;
+input {
+  padding: 1.0rem 0.5rem;
+  width: 97%;
+  border-radius: inherit;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 80%;
+}
+
+input:active {
+  border: solid 2px $blue;
+}
+
+.modal-field .window:hover {
 }
 
 .modal-field button {
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
-  color: #000020;
   background-color: ghostwhite;
-  padding: 1rem;
+  padding: 1.5rem;
+  border: solid 3px $blue;
   border-radius: 5px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
+.modal-field button:hover {
+  background-color: $blue;
+}
+
+#terms {
+  font-size: 1.1rem;
+}
 /**MODAL-BOX**/
 
 //koniec zajawki
