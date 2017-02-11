@@ -106,7 +106,7 @@ ul.nav-list {
 //zajawka
 
 .bgimg {
-  background: url("../img/background.png");
+  background: url("../img/background2.jpg") no-repeat center 80%;
   background-size: cover;
   position: relative;
 }
@@ -133,6 +133,7 @@ ul.nav-list {
   left: 10rem;
 }
 
+
 .modal-button h3 {
   color: ghostwhite;
 }
@@ -154,17 +155,17 @@ ul.nav-list {
   bottom: 0;
   right: 0;
   opacity: 0;
-  z-index: -1;
+  visibility: hidden;
 }
 
 .modal-box:target {
   opacity: 1;
-  z-index: 99;
+  visibility: visible;
 }
 
 .modal-field {
-  background-color: #000020;;
-  color: ghostwhite;
+  background-color: ghostwhite;
+  color: #000020;
   font-size: 1.6rem;
   width: 35%;
   border: none;
@@ -176,7 +177,7 @@ ul.nav-list {
 }
 
 .modal-box-close {
-  color: ghostwhite;
+  color: #000020;
   text-decoration: none;
   font-size: 2.5rem;
 }
