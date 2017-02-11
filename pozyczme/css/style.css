@@ -79,43 +79,58 @@ ul.nav-list {
   position: relative; }
 
 /*input-field*/
-.input-field {
-  width: 100%;
-  height: 100vh; }
-
-.input-button {
-  font-size: 30px;
-  text-align: center;
-  padding: 10px;
-  display: block;
-  width: 20%;
-  position: fixed;
-  top: 20%; }
-
+/*MODAL-BOX*/
 .modal-container {
+    width: 100%;
+    height: 100vh;
+}
+
+.modal-text {
+    position: absolute;
+    top: 20rem;
+    left: 10rem;
+}
+
+.modal-text h1 {
+    color: ghostwhite;
+}
+
+.modal-button {
+    position: absolute;
+    top: 52rem;
+    left: 10rem;
+}
+
+.modal-button h3 {
+    color: ghostwhite;
+}
+
+.modal-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: ghostwhite;
-  z-index: -1;
-  opacity: 0;
+    background: url("../img/background2.jpg") no-repeat center 80%;
+    background-size: cover;
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  font-size: 20px;
-  color: white; }
+    opacity: 0;
+    z-index: -1;
+}
 
-.modal-container:target {
+.modal-box:target {
   opacity: 1;
-  z-index: 99; }
+    z-index: 99;
+}
 
 .modal-field {
-  width: 50%;
-  padding: 10px;
-  justify-content: space-between; }
+    font-size: 2rem;
+}
+
+/**MODAL-BOX**/
 
 .function > div {
   width: 100%;
