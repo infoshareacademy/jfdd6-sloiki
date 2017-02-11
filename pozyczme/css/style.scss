@@ -1,4 +1,3 @@
-
 body {
   color: #000;
   font-size: 10px;
@@ -97,6 +96,7 @@ ul.nav-list {
   width: 100%;
   height: 100vh;
 }
+
 
 .input-button {
   font-size: 30px;
@@ -211,6 +211,9 @@ ul.nav-list {
 
 }
 
+
+/*Team-----------------------------------------------*/
+
 .team {
 
 
@@ -236,7 +239,7 @@ ul.nav-list {
 }
 
 
-  .one {
+.one {
 
     width: 49%;
     float: left;
@@ -246,7 +249,7 @@ ul.nav-list {
 
   }
 
-  .one img {
+.one img {
 
     width: 150px;
     height: 150px;
@@ -255,7 +258,7 @@ ul.nav-list {
 
   }
 
-  .two {
+.two {
 
     width: 49%;
     float: left;
@@ -264,7 +267,7 @@ ul.nav-list {
 
   }
 
-  .two img {
+.two img {
 
     width: 150px;
     height: 150px;
@@ -272,7 +275,7 @@ ul.nav-list {
 
   }
 
-  .three {
+.three {
 
     width: 49%;
     float: left;
@@ -283,7 +286,7 @@ ul.nav-list {
 
   }
 
-  .three img {
+.three img {
 
     width: 150px;
     height: 150px;
@@ -291,7 +294,7 @@ ul.nav-list {
 
   }
 
-  .four {
+.four {
     width: 49%;
     float: left;
 
@@ -300,7 +303,7 @@ ul.nav-list {
 
   }
 
-  .four img {
+.four img {
 
     width: 150px;
     height: 150px;
@@ -309,7 +312,7 @@ ul.nav-list {
 
   }
 
-  .clear {
+.clear {
     clear: both;
 
   }
@@ -322,7 +325,7 @@ ul.nav-list {
   opacity: 0.6;
   filter: alpha(opacity=50);
   margin-bottom: 20px;
-  
+
 
 }
 
