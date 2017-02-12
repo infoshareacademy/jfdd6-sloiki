@@ -270,64 +270,111 @@ input:active {
   text-align: justify;
   padding: 20px 20px; }
 
+/*Team-----------------------------------------------*/
 .team {
-  background-color: #f3f3f3;
-  width: 100%; }
+  background-color: ghostwhite;
+  height: 100vh; }
 
-.team-flex {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row; }
+.team h1 {
+  text-align: center; }
 
-.team-flex-one {
-  display: flex;
-  flex-basis: calc(50% - 40px);
-  justify-content: center;
-  flex-direction: column; }
+.team h3 {
+  text-align: center;
+  font-size: 15px; }
+
+.one {
+  float: left;
+  text-align: center;
+  margin-top: 60px;
+  margin-left: 430px;
+  margin-right: 150px; }
+
+.one img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%; }
 
 .rafal {
-  display: flex;
-  justify-content: center;
-  flex-direction: row; }
+  float: left; }
 
-.team-flex-two {
-  display: flex;
-  flex-basis: calc(50% - 40px);
-  justify-content: center;
-  flex-direction: column; }
+.two {
+  float: left;
+  text-align: center;
+  margin-top: 60px;
+  margin-left: 150px;
+  margin-right: 150px; }
+
+.two img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%; }
 
 .marta {
-  display: flex;
-  justify-content: center;
-  flex-direction: row; }
+  float: left; }
 
-.team-flex-three {
-  display: flex;
-  flex-basis: calc(50% - 40px);
-  justify-content: center;
-  flex-direction: column; }
+.three {
+  float: left;
+  text-align: center;
+  margin-top: 100px;
+  margin-left: 430px;
+  margin-right: 150px; }
+
+.three img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%; }
 
 .karol {
-  display: flex;
-  justify-content: center;
-  flex-direction: row; }
+  float: left; }
 
-.team-flex-four {
-  display: flex;
-  flex-basis: calc(50% - 40px);
-  justify-content: center;
-  flex-direction: column; }
+.four {
+  float: left;
+  text-align: center;
+  margin-top: 100px;
+  margin-left: 150px;
+  margin-right: 150px; }
+
+.four img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%; }
 
 .natalia {
-  display: flex;
-  justify-content: center;
-  flex-direction: row; }
+  float: left; }
 
-.team-flex img {
-  height: 127px;
-  border-radius: 100%; }
+.clear {
+  clear: both; }
+
+.social {
+  float: left; }
+
+.social img {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  opacity: 0.6;
+  filter: alpha(opacity=50);
+  margin-bottom: 20px; }
+
+.www:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+  box-shadow: 0 0 20px #ccc; }
+
+.fb:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+  box-shadow: 0 0 20px #ccc; }
+
+.git:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+  box-shadow: 0 0 20px #ccc; }
+
+.ln:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+  box-shadow: 0 0 20px #ccc; }
 
 .go-up {
   text-align: center;
