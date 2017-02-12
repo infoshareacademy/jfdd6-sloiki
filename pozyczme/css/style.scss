@@ -42,7 +42,8 @@ section {
 
 //kolor linków do ew. dodania
 //a:link {
-//  color: $blue;
+//  color: $blue
+//;
 //}
 
 ::selection {
@@ -375,6 +376,8 @@ input[type=checkbox] {
 .team {
   background-color: $white;
   height: 100vh;
+  width: 100%;
+
 }
 
 .team h1 {
@@ -386,93 +389,94 @@ input[type=checkbox] {
   font-size: 15px;
 }
 
+.gora{
+  display: flex;
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 60px;
+
+
+}
+
 .one {
-  float: left;
-  text-align: center;
-  margin-top: 60px;
-  margin-left: 430px;
-  margin-right: 150px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+
 }
 
-.one img {
+.rafal img {
+  padding: 10px;
   width: 150px;
   height: 150px;
   border-radius: 100%;
 }
 
-.rafal {
-  float: left;
-}
+.two{
+  flex: 1;
+  display: flex;
+  align-items: center;
 
-.two {
-  float: left;
-  text-align: center;
-  margin-top: 60px;
-  margin-left: 150px;
-  margin-right: 150px;
 }
-
-.two img {
+.marta img {
+  padding: 10px;
   width: 150px;
   height: 150px;
   border-radius: 100%;
 }
 
-.marta {
-  float: left;
+
+.dol{
+  display: flex;
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40px;
+
+
 }
 
-.three {
-  float: left;
-  text-align: center;
-  margin-top: 100px;
-  margin-left: 430px;
-  margin-right: 150px;
+.three{
+  flex: 1;
+  display: flex;
+  align-items: center;
+
 }
 
-.three img {
+.karol img {
+  padding: 10px;
   width: 150px;
   height: 150px;
   border-radius: 100%;
 }
 
-.karol {
-  float: left;
+.four{
+  flex: 1;
+  display: flex;
+  align-items: center;
 }
-
-.four {
-  float: left;
-  text-align: center;
-  margin-top: 100px;
-  margin-left: 150px;
-  margin-right: 150px;
-}
-
-.four img {
+.natalia img {
+  padding: 10px;
   width: 150px;
   height: 150px;
   border-radius: 100%;
 }
 
-.natalia {
-  float: left;
+.social{
+  margin-left: 20px;
+  padding: 10px;
 }
 
-.clear {
-  clear: both;
-}
-
-.social {
-  float: left;
-}
-
-.social img {
-  width: 40px;
-  height: 40px;
+.social img{
+  width: 50px;
+  height: 50px;
   padding: 10px;
   opacity: 0.6;
   filter: alpha(opacity=50);
   margin-bottom: 20px;
+  border-radius: 100%;
+
 }
 
 .www:hover {
