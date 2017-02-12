@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   color: #002060;
   background-color: #f8f8ff;
@@ -82,27 +83,38 @@ ul.nav-list {
 
 /*MODAL-BOX*/
 .modal-container {
+    position: relative;
   width: 100%;
-  height: 100vh; }
+    height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 .modal-text {
   position: absolute;
-  top: 20rem;
-  left: 10rem; }
+    top: 40vh;
+    transform: translateY(-50%);
+    max-width: 33%;
+    padding: 20px;
+}
 
-.modal-text h1 {
-  color: #f8f8ff; }
+.modal-text h3 {
+    color: #f8f8ff;
+}
 
 .modal-button {
-  position: absolute;
-  top: 52rem;
-  left: 10rem; }
+    position: relative;
+    top: 60vh;
+    padding: 20px;
+}
 
 .modal-button h3 {
-  color: #f8f8ff; }
+    color: #f8f8ff;
+}
 
 .modal-button a {
-  text-decoration: none; }
+    text-decoration: none;
+}
 
 .modal-box {
   display: flex;
@@ -121,22 +133,40 @@ ul.nav-list {
   visibility: hidden; }
 
 .modal-box:target {
-  opacity: 1;
-  visibility: visible; }
+    opacity: 1;
+    visibility: visible;
+}
 
 .modal-field {
   background-color: #f8f8ff;
   color: #000020;
   font-size: 1.6rem;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
-  min-width: 20%;
-  min-height: 44%;
+    min-width: 25%;
+    min-height: 55%;
   border: none;
   border-radius: 5px;
   display: flex;
   margin: 0;
   padding: 0.5rem 1.5rem;
   transition: opacity 500ms; }
+
+.modal-field label {
+    font-size: 1.2rem;
+    padding: 1.0rem 0.5rem;
+}
+
+.modal-field button {
+    background-color: #f8f8ff;
+    padding: 1.0rem 1.5rem;
+    border: solid 3px #0080e0;
+    border-radius: 5px;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.modal-field button:hover {
+    background-color: #0080e0;
+}
 
 .modal-box-close {
   color: #000020;
@@ -147,11 +177,8 @@ ul.nav-list {
   margin: 0; }
 
 .modal-box-close:hover {
-  color: #0080e0; }
-
-.modal-field label {
-  font-size: 1.2rem;
-  padding: 1.0rem 0.5rem; }
+    color: #0080e0;
+}
 
 input {
   padding: 1.0rem 0.5rem;
@@ -161,21 +188,14 @@ input {
   font-size: 80%; }
 
 input:active {
-  border: solid 2px #0080e0; }
+    border: solid 2px #0080e0;
+}
 
 #button {
   display: flex;
-  justify-content: center; }
-
-.modal-field button {
-  background-color: #f8f8ff;
-  padding: 1.0rem 1.5rem;
-  border: solid 3px #0080e0;
-  border-radius: 5px;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif; }
-
-.modal-field button:hover {
-  background-color: #0080e0; }
+    justify-content: center;
+    padding: 0.8rem;
+}
 
 .agreement {
   display: flex;
@@ -184,12 +204,54 @@ input:active {
   padding: 0.5rem 0; }
 
 .agreement p {
-  margin: 0;
-  font-size: 1.1rem;
-  padding: 1.0rem 0 1.0rem 0.5rem; }
+    margin: 0;
+    font-size: 1.1rem;
+    padding: 1.0rem 0;
+}
 
-#terms {
+.tooltip-toggle {
+    cursor: pointer;
+    position: relative;
   text-decoration: underline; }
+
+.tooltip-toggle::before {
+    position: absolute;
+    top: -5.68rem;
+    left: -6rem;
+    background-color: #002060;
+    line-height: 1.1rem;
+    border-radius: 5px;
+    color: #f8f8ff;
+    content: "Twoje dane są u nas bezpieczne. Wyślemy Ci wiadomość z informacją o starcie pożyczME.";
+    padding: 1rem;
+    text-transform: none;
+    transition: all 0.5s;
+    width: 16rem;
+}
+
+.tooltip-toggle::after {
+    position: absolute;
+    top: -0.5rem;
+    left: 1.9rem;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #002060;
+    content: " ";
+    margin-left: -5px;
+    width: 0;
+}
+
+.tooltip-toggle::before, .tooltip-toggle::after {
+    font-size: 1rem;
+    opacity: 0;
+    pointer-events: none;
+    text-align: center;
+}
+
+.tooltip-toggle:focus::before, .tooltip-toggle:focus::after, .tooltip-toggle:hover::before, .tooltip-toggle:hover::after {
+    opacity: 1;
+    transition: all 0.75s;
+}
 
 input[type=checkbox] {
   padding: 1.5rem 0.5rem;
