@@ -174,7 +174,7 @@ ul.nav-list {
   font-size: 1.6rem;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   min-width: 20%;
-  min-height: 47%;
+  min-height: 44%;
   border: none;
   border-radius: 5px;
   display: flex;
@@ -209,12 +209,9 @@ input:active {
   border: solid 2px $blue;
 }
 
-.modal-field .window:hover {
-}
-
 .modal-field button {
   background-color: ghostwhite;
-  padding: 1.5rem;
+  padding: 1.0rem 1.5rem;
   border: solid 3px $blue;
   border-radius: 5px;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
@@ -224,9 +221,36 @@ input:active {
   background-color: $blue;
 }
 
-#terms {
-  font-size: 1.1rem;
+#button {
+  display: flex;
+  justify-content: center;
 }
+
+.agreement {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.agreement p {
+  margin: 0;
+  font-size: 1.1rem;
+  padding-top: 1.0rem;
+  padding-right: 0;
+  padding-left: 0.5rem;
+  padding-bottom: 1.0rem;
+}
+
+#terms {
+  text-decoration: underline;
+}
+
+#checkbox {
+  padding: 1.5rem 0.5rem;
+  width: 25%;
+}
+
 /**MODAL-BOX**/
 
 //koniec zajawki
