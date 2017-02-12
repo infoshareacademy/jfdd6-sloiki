@@ -117,24 +117,29 @@ ul.nav-list {
 
 /*MODAL-BOX*/
 .modal-container {
+  position: relative;
   width: 100%;
   height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .modal-text {
   position: absolute;
-  top: 20rem;
-  left: 10rem;
+  top: 40vh;
+  transform: translateY(-50%);
+  max-width: 33%;
+  padding: 20px;
 }
 
-.modal-text h1 {
+.modal-text h3 {
   color: $white;
 }
 
 .modal-button {
-  position: absolute;
-  top: 52rem;
-  left: 10rem;
+  position: relative;
+  top: 60vh;
+  padding: 20px;
 }
 
 .modal-button h3 {
