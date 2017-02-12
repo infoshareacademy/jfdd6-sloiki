@@ -1,3 +1,4 @@
+$white: #F8F8FF;
 $blue: #0080e0;
 $blue2: #0080c0;
 $blue3: #002060;
@@ -7,7 +8,7 @@ $nav-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.23);
 
 body {
   color: $blue3;
-  background-color: ghostwhite;
+  background-color: $white;
   font-size: 10px;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
@@ -51,7 +52,7 @@ section {
 //nawigacja
 
 .nav-header {
-  background-color: ghostwhite;
+  background-color: $white;
   position: fixed;
   top: 0;
   width: 100%;
@@ -127,7 +128,7 @@ ul.nav-list {
 }
 
 .modal-text h1 {
-  color: ghostwhite;
+  color: $white;
 }
 
 .modal-button {
@@ -137,7 +138,7 @@ ul.nav-list {
 }
 
 .modal-button h3 {
-  color: ghostwhite;
+  color: $white;
 }
 
 .modal-button a {
@@ -154,9 +155,7 @@ ul.nav-list {
   left: 0;
   bottom: 0;
   right: 0;
-  background-repeat: no-repeat;
-  background-position: center 80%;
-  background-image: url("../img/background2.jpg");
+  background: url("../img/background2.jpg") no-repeat center 80%;
   background-size: cover;
   transition: opacity 500ms;
   opacity: 0;
@@ -169,8 +168,8 @@ ul.nav-list {
 }
 
 .modal-field {
-  background-color: ghostwhite;
-  color: #000020;
+  background-color: $white;
+  color: $navy2;
   font-size: 1.6rem;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   min-width: 20%;
@@ -184,12 +183,16 @@ ul.nav-list {
 }
 
 .modal-box-close {
-  color: #000020;
+  color: $navy2;
   text-align: right;
   text-decoration: none;
   font-size: 2.5rem;
   padding: 0;
   margin: 0;
+}
+
+.modal-box-close:hover {
+  color: $blue;
 }
 
 .modal-field label {
@@ -209,8 +212,13 @@ input:active {
   border: solid 2px $blue;
 }
 
+#button {
+  display: flex;
+  justify-content: center;
+}
+
 .modal-field button {
-  background-color: ghostwhite;
+  background-color: $white;
   padding: 1.0rem 1.5rem;
   border: solid 3px $blue;
   border-radius: 5px;
@@ -219,11 +227,6 @@ input:active {
 
 .modal-field button:hover {
   background-color: $blue;
-}
-
-#button {
-  display: flex;
-  justify-content: center;
 }
 
 .agreement {
@@ -236,17 +239,14 @@ input:active {
 .agreement p {
   margin: 0;
   font-size: 1.1rem;
-  padding-top: 1.0rem;
-  padding-right: 0;
-  padding-left: 0.5rem;
-  padding-bottom: 1.0rem;
+  padding: 1.0rem 0 1.0rem 0.5rem;
 }
 
 #terms {
   text-decoration: underline;
 }
 
-#checkbox {
+input[type=checkbox] {
   padding: 1.5rem 0.5rem;
   width: 25%;
 }
@@ -404,7 +404,7 @@ input:active {
 }
 
 .go-up svg {
-  fill: ghostwhite;
+  fill: $white;
 }
 
 .go-up svg:hover {
