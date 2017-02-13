@@ -310,6 +310,12 @@ input[type=checkbox] {
 
 //funkcje (produkt)
 
+.function {
+padding-top: 10%;
+padding-bottom: 10%;
+h1 { text-align: center
+}}
+
 .function > div {
   width: 100%;
   margin: 0 auto;
@@ -328,6 +334,7 @@ input[type=checkbox] {
   width: 100%;
   margin: 0 auto;
   padding: 20px 0;
+
 }
 
 .function-flex2 {
@@ -360,7 +367,7 @@ input[type=checkbox] {
 .function h2 {
   font-size: 40px;
   font-weight: 100;
-  text-transform: lowercase;
+  text-transform: uppercase;
   text-align: center;
   margin-bottom: 20px;
   text-shadow: 1px 1px 0 #ccc;
