@@ -83,38 +83,29 @@ ul.nav-list {
 
 /*MODAL-BOX*/
 .modal-container {
-    position: relative;
+  position: relative;
   width: 100%;
-    height: 100vh;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto; }
 
 .modal-text {
   position: absolute;
-    top: 40vh;
-    transform: translateY(-50%);
-    max-width: 33%;
-    padding: 20px;
-}
-
-.modal-text h3 {
-    color: #f8f8ff;
-}
+  top: 40vh;
+  transform: translateY(-50%);
+  max-width: 33%;
+  padding: 20px; }
+  .modal-text h3 {
+    color: #f8f8ff; }
 
 .modal-button {
-    position: relative;
-    top: 60vh;
-    padding: 20px;
-}
-
-.modal-button h3 {
-    color: #f8f8ff;
-}
-
-.modal-button a {
-    text-decoration: none;
-}
+  position: relative;
+  top: 60vh;
+  padding: 20px; }
+  .modal-button h3 {
+    color: #f8f8ff; }
+  .modal-button a {
+    text-decoration: none; }
 
 .modal-box {
   display: flex;
@@ -131,42 +122,36 @@ ul.nav-list {
   transition: opacity 500ms;
   opacity: 0;
   visibility: hidden; }
-
-.modal-box:target {
+  .modal-box:target {
     opacity: 1;
-    visibility: visible;
-}
+    visibility: visible; }
 
 .modal-field {
   background-color: #f8f8ff;
   color: #000020;
   font-size: 1.6rem;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
-    min-width: 25%;
-    min-height: 55%;
+  min-width: 25%;
+  min-height: 55%;
   border: none;
   border-radius: 5px;
   display: flex;
   margin: 0;
   padding: 0.5rem 1.5rem;
   transition: opacity 500ms; }
-
-.modal-field label {
+  .modal-field label {
     font-size: 1.2rem;
-    padding: 1.0rem 0.5rem;
-}
+    padding: 1.0rem 0.5rem; }
 
 .modal-field button {
-    background-color: #f8f8ff;
-    padding: 1.0rem 1.5rem;
-    border: solid 3px #0080e0;
-    border-radius: 5px;
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
-}
+  background-color: #f8f8ff;
+  padding: 1.0rem 1.5rem;
+  border: solid 3px #0080e0;
+  border-radius: 5px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif; }
 
 .modal-field button:hover {
-    background-color: #0080e0;
-}
+  background-color: #0080e0; }
 
 .modal-box-close {
   color: #000020;
@@ -175,10 +160,8 @@ ul.nav-list {
   font-size: 2.5rem;
   padding: 0;
   margin: 0; }
-
-.modal-box-close:hover {
-    color: #0080e0;
-}
+  .modal-box-close:hover {
+    color: #0080e0; }
 
 input {
   padding: 1.0rem 0.5rem;
@@ -186,35 +169,29 @@ input {
   border-radius: inherit;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 80%; }
-
-input:active {
-    border: solid 2px #0080e0;
-}
+  input:active {
+    border: solid 2px #0080e0; }
 
 #button {
   display: flex;
-    justify-content: center;
-    padding: 0.8rem;
-}
+  justify-content: center;
+  padding: 0.8rem; }
 
 .agreement {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 0.5rem 0; }
-
-.agreement p {
+  .agreement p {
     margin: 0;
     font-size: 1.1rem;
-    padding: 1.0rem 0;
-}
+    padding: 1.0rem 0; }
 
 .tooltip-toggle {
-    cursor: pointer;
-    position: relative;
+  cursor: pointer;
+  position: relative;
   text-decoration: underline; }
-
-.tooltip-toggle::before {
+  .tooltip-toggle::before {
     position: absolute;
     top: -5.68rem;
     left: -6rem;
@@ -226,10 +203,8 @@ input:active {
     padding: 1rem;
     text-transform: none;
     transition: all 0.5s;
-    width: 16rem;
-}
-
-.tooltip-toggle::after {
+    width: 16rem; }
+  .tooltip-toggle::after {
     position: absolute;
     top: -0.5rem;
     left: 1.9rem;
@@ -238,20 +213,15 @@ input:active {
     border-top: 5px solid #002060;
     content: " ";
     margin-left: -5px;
-    width: 0;
-}
-
-.tooltip-toggle::before, .tooltip-toggle::after {
+    width: 0; }
+  .tooltip-toggle::before, .tooltip-toggle::after {
     font-size: 1rem;
     opacity: 0;
     pointer-events: none;
-    text-align: center;
-}
-
-.tooltip-toggle:focus::before, .tooltip-toggle:focus::after, .tooltip-toggle:hover::before, .tooltip-toggle:hover::after {
+    text-align: center; }
+  .tooltip-toggle:focus::before, .tooltip-toggle:focus::after, .tooltip-toggle:hover::before, .tooltip-toggle:hover::after {
     opacity: 1;
-    transition: all 0.75s;
-}
+    transition: all 0.75s; }
 
 input[type=checkbox] {
   padding: 1.5rem 0.5rem;
@@ -387,8 +357,9 @@ input[type=checkbox] {
   padding: 10px; }
 
 .social img {
-  width: 50px;
-  height: 50px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
   padding: 10px;
   opacity: 0.6;
   filter: alpha(opacity=50);
