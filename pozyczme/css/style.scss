@@ -183,7 +183,7 @@ ul.nav-list {
   border: none;
   border-radius: 5px;
   display: flex;
-  margin: 0;
+  margin: 90px 0 0 0;
   padding: 0.5rem 1.5rem;
   transition: opacity 500ms;
 
@@ -321,6 +321,7 @@ input[type=checkbox] {
   justify-content: space-around;
 }
 
+
 .function-flex1 {
   flex: 1;
   width: 100%;
@@ -378,12 +379,6 @@ input[type=checkbox] {
   width: 100%;
   padding-bottom: 100px;
 }
-.container-team{
-
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .team:before {
   display: block;
@@ -391,6 +386,13 @@ input[type=checkbox] {
   margin-top: -75px;
   height: 75px;
   visibility: hidden;
+}
+
+.container-team {
+
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .team h1 {
@@ -402,13 +404,12 @@ input[type=checkbox] {
   font-size: 15px;
 }
 
-.gora{
+.gora {
   display: flex;
   width: 60%;
   margin-right: auto;
   margin-left: auto;
   margin-top: 30px;
-
 
 }
 
@@ -433,12 +434,13 @@ input[type=checkbox] {
   border-radius: 100%;
 }
 
-.two{
+.two {
   flex: 1;
   display: flex;
   align-items: center;
 
 }
+
 .marta img {
   padding: 10px;
   width: 150px;
@@ -446,18 +448,16 @@ input[type=checkbox] {
   border-radius: 100%;
 }
 
-
-.dol{
+.dol {
   display: flex;
   width: 60%;
   margin-right: auto;
   margin-left: auto;
   margin-top: 40px;
 
-
 }
 
-.three{
+.three {
   flex: 1;
   display: flex;
   align-items: center;
@@ -471,11 +471,12 @@ input[type=checkbox] {
   border-radius: 100%;
 }
 
-.four{
+.four {
   flex: 1;
   display: flex;
   align-items: center;
 }
+
 .natalia img {
   padding: 10px;
   width: 150px;
@@ -483,12 +484,12 @@ input[type=checkbox] {
   border-radius: 100%;
 }
 
-.social{
+.social {
   margin-left: 20px;
   padding: 10px;
 }
 
-.social img{
+.social img {
   display: inline-block;
   width: 40px;
   height: 40px;
