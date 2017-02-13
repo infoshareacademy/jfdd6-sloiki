@@ -1,85 +1,289 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
+<head>
     <meta charset="utf-8">
-    <title>pożyczME - Masz to ? Pożycz MI !</title>
-    <link rel="stylesheet" href="css/style.css" />
-      <link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
-  </head>
-  <body>
-    <header class="bgimg">
-        <div class="nav-header">
-            <div class="nav-content">
-                <div class="nav-logo">
-                    <img src="{logo}" alt="Logo PokażME">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>pożyczME - Masz to? Pożycz MI!</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,400i,700&amp;subset=latin-ext"
+          rel="stylesheet">
+</head>
+<body>
+<header class="bgimg">
+    <div class="nav-header">
+        <div class="nav-content">
+            <div class="nav-logo">
+                <img src="./img/pozyczme-logo-vect.svg" alt="Logo PożyczME">
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#function">Produkt</a></li><!--
+                 -->
+                    <li><a href="#team">Zespół</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!--MODAL-BOX-->
+    <div class="modal-container">
+        <div class="modal-text">
+            <h3>Masz grę planszową,</h3>
+            <h3>która się kurzy?</h3>
+            <h3>Pożycz mi!</h3>
+        </div>
+        <div class="modal-button">
+            <a href="#modal-box-open">
+                <h3>Zapisz się na premierę</h3>
+            </a>
+        </div>
+        <div id="modal-box-open" class="modal-box">
+            <fieldset class="modal-field">
+                <a href="#modal-box-close" class="modal-box-close">&times;</a>
+                <label>Imię</label>
+                <input type="text" placeholder="Wpisz swoje imię">
+                <label>Nazwisko</label>
+                <input type="text" placeholder="Wpisz swoje nazwisko">
+                <label>Adres e-mail</label>
+                <input type="email" placeholder="Wpisz swój e-mail">
+                <div class="agreement">
+                    <p>Akceptuję <span class="tooltip-toggle" id="terms" tabindex="0">
+                        warunki</span> korzystania z serwisu</p>
+                    <input id=checkbox type="checkbox">
                 </div>
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li><a href="">sdadas</a></li><!--
-                     --><li><a href="">sdadas</a></li><!--
-                     --><li><a href="">sdadas</a></li><!--
-                     --><li><a href="">sdadas</a></li><!--
-                     --><li><a href="">sdadas</a></li>
-                    </ul>
-                </nav>
+                <div id="button">
+                    <button type="submit">Dołącz!</button>
+                </div>
+            </fieldset>
+        </div>
+    </div><!--MODAL-BOX-->
+</header>
+
+<main>
+
+
+    <!--TEAM-->
+    <section class="team" id="team">
+        <h1>Nasz zespół</h1>
+        <div class="gora">
+            <div class="one">
+                <div class="rafal">
+                    <img src="img/Rafał.jpg" alt="Zdjęcie Rafała">
+                    <h3>Rafał Szatrański</h3>
+                </div>
+                <div class="social">
+                    <a href=""><img src="img/www.png" class="www"></a>
+                    <a href=""><img src="img/facebook.png" class="fb"></a>
+                    <a href=""><img src="img/github.png" class="git"></a>
+                    <a href=""><img src="img/linkedin.png" class="ln"></a>
+                </div>
+            </div>
+            <div class="two">
+                <div class="social">
+                    <a href=""><img src="img/www.png" class="www"></a>
+                    <a href=""><img src="img/facebook.png" class="fb"></a>
+                    <a href=""><img src="img/github.png" class="git"></a>
+                    <a href=""><img src="img/linkedin.png" class="ln"></a>
+                </div>
+                <div class="marta">
+                    <img src="img/Marta.jpg" alt="Zdjęcie Marty">
+                    <h3>Marta Rządkowska</h3>
+                </div>
+
+            </div>
+        </div>
+        <div class="dol">
+            <div class="three">
+                <div class="karol">
+                    <img src="img/Karol.jpg" alt="Zdjęcie Karola">
+                    <h3>Karol Jakubcewicz</h3>
+                </div>
+                <div class="social">
+                    <a href=""><img src="img/www.png" class="www"></a>
+                    <a href=""><img src="img/facebook.png" class="fb"></a>
+                    <a href=""><img src="img/github.png" class="git"></a>
+                    <a href=""><img src="img/linkedin.png" class="ln"></a>
+                </div>
+            </div>
+            <div class="two">
+                <div class="social">
+                    <a href=""><img src="img/www.png" class="www"></a>
+                    <a href=""><img src="img/facebook.png" class="fb"></a>
+                    <a href=""><img src="img/github.png" class="git"></a>
+                    <a href=""><img src="img/linkedin.png" class="ln"></a>
+                </div>
+                <div class="marta">
+                    <img src="img/Natalia.jpg" alt="Zdjęcie Natalia">
+                    <h3>Natalia Kulas</h3>
+                </div>
+
             </div>
         </div>
 
-      <section class="input-button">
-          <button class="hvr-pulse-grow">Zapisz się na premierę</button>
-      </section>
 
-  </header>
-
-  <main>
+</section>
 
 
 
-      <!--TEAM-->
-    <section class="team">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--<div class="one">
+            <div class="rafal">
+                <img src="img/Rafał.jpg" alt="Zdjęcie Rafała">
+                <h3>Rafał Szatrański</h3>
+            </div>
+            <div class="social">
+                <a href=""><img src="img/www.png" class="www"></a>
+                <a href=""><img src="img/facebook.png" class="fb"></a>
+                <a href=""><img src="img/github.png" class="git"></a>
+                <a href=""><img src="img/linkedin.png" class="ln"></a>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="two">
+            <div class="marta">
+                <img src="img/Marta.jpg" alt="Zdjęcie Marty">
+                <h3>Marta Rządkowska</h3>
+            </div>
+            <div class="social">
+                <a href=""><img src="img/www.png" class="www"></a>
+                <a href=""><img src="img/facebook.png" class="fb"></a>
+                <a href=""><img src="img/github.png" class="git"></a>
+                <a href=""><img src="img/linkedin.png" class="ln"></a>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="three">
+            <div class="karol">
+                <img src="img/Karol.jpg" alt="Zdjęcie Karola">
+                <h3>Karol Jakubcewicz</h3>
+            </div>
+            <div class="social">
+                <a href=""><img src="img/www.png" class="www"></a>
+                <a href=""><img src="img/facebook.png" class="fb"></a>
+                <a href=""><img src="img/github.png" class="git"></a>
+                <a href=""><img src="img/linkedin.png" class="ln"></a>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="four">
+            <div class="natalia">
+                <img src="img/Natalia.jpg" alt="Zdjęcie Natalii">
+                <h3>Natalia Kulas</h3>
+            </div>
+            <div class="social">
+                <a href=""><img src="img/www.png" class="www"></a>
+                <a href=""><img src="img/facebook.png" class="fb"></a>
+                <a href=""><img src="img/github.png" class="git"></a>
+                <a href=""><img src="img/linkedin.png" class="ln"></a>
+            </div>
+            <div class="clear"></div>
+        </div>-->
 
 
     </section>
 
 
+    <section class="function" id="function">
+        <div class="function-flex">
+            <article class="function-flex1">
+                <figure>
+                    <img src="img/puzzle.svg" alt=""/>
+                </figure>
+                <h2>Katalog gier</h2>
+                <p>«So one must be resigned to being a clock that measures the passage of time, now out of order, now
+                    repaired, and whose mechanism generates despair and love as soon as its maker sets it going?»</p>
+                <ul>
+                    <li>lista</li>
+                    <li>lista</li>
+                </ul>
+            </article>
+            <article class="function-flex2">
+                <figure>
+                    <img src="img/chess.svg" alt=""/>
+                </figure>
+                <h2>Dodaj gre</h2>
+                <p>«So one must be resigned to being a clock that measures the passage of time, now out of order, now
+                    repaired, and whose mechanism generates despair and love as soon as its maker sets it going?»</p>
+            </article>
+            <article class="function-flex3">
+                <figure>
+                    <img src="img/playing-cards.svg" alt=""/>
+                </figure>
+                <h2>Dolacz do nas</h2>
+                <p>«So one must be resigned to being a clock that measures the passage of time, now out of order, now
+                    repaired, and whose mechanism generates despair and love as soon as its maker sets it going?»</p>
+            </article>
+            <article class="function-flex4">
+                <figure>
+                    <img src="img/board-gaming.svg" alt=""/>
+                </figure>
+                <h2>Wydarzenia</h2>
+                <p>«So one must be resigned to being a clock that measures the passage of time, now out of order, now
+                    repaired, and whose mechanism generates despair and love as soon as its maker sets it going?»</p>
+            </article>
 
-
-
-
-
-
-
-  </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!--Footer-->
-    <a href="#">
-        <div class="go-up">
-            Up!
-            <span class="arrow"></span> <!--dodać strzałkę-->
         </div>
-    </a>
+    </section>
 
 
-    <footer class="footer">
-        <div class="ft-content">
-            <span class="copyright">&copy; 2017 Coded with love by Słoiki Team</span>
-            <!--do dodania kanały social media z linkami-->
-        </div>
-    </footer>
-  </body>
+</main>
+/
+
+<!--FOOTER-->
+<footer class="footer">
+    <div class="go-up">
+        <figure class="arrow">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z"/>
+                </svg>
+            </a>
+        </figure>
+    </div>
+    <div class="ft-content">
+        <p>Copyright&copy;2017 Coded with love by Słoiki Team</p>
+        <img src="img/logo-sloiki-white.png" width="30px" height="30px">
+    </div>
+</footer><!--FOOTER-->
+</body>
 </html>
