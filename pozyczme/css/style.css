@@ -23,8 +23,7 @@ p {
   font-size: 1.6rem; }
 
 section {
-  width: 100%;
-  height: 100vh; }
+  width: 100%; }
 
 ::selection {
   background-color: #0080c0; }
@@ -229,6 +228,12 @@ input[type=checkbox] {
   width: 25%; }
 
 /**MODAL-BOX**/
+.function {
+  padding-top: 10%;
+  padding-bottom: 10%; }
+  .function h1 {
+    text-align: center; }
+
 .function > div {
   width: 100%;
   margin: 0 auto;
@@ -271,7 +276,7 @@ input[type=checkbox] {
 .function h2 {
   font-size: 40px;
   font-weight: 100;
-  text-transform: lowercase;
+  text-transform: uppercase;
   text-align: center;
   margin-bottom: 20px;
   text-shadow: 1px 1px 0 #ccc; }
@@ -285,8 +290,20 @@ input[type=checkbox] {
 /*Team-----------------------------------------------*/
 .team {
   background-color: #f8f8ff;
-  height: 100vh;
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 100px; }
+
+.container-team {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.team:before {
+  display: block;
+  content: " ";
+  margin-top: -75px;
+  height: 75px;
+  visibility: hidden; }
 
 .team h1 {
   text-align: center; }
@@ -300,7 +317,12 @@ input[type=checkbox] {
   width: 60%;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 60px; }
+  margin-top: 30px; }
+
+.one {
+  flex: 1;
+  display: flex;
+  align-items: center; }
 
 .one {
   flex: 1;
@@ -358,8 +380,9 @@ input[type=checkbox] {
   padding: 10px; }
 
 .social img {
-  width: 50px;
-  height: 50px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
   padding: 10px;
   opacity: 0.6;
   filter: alpha(opacity=50);
