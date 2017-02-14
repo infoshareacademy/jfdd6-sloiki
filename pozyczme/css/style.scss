@@ -304,17 +304,14 @@ input[type=checkbox] {
   width: 25%;
 }
 
-/**MODAL-BOX**/
-
-//koniec zajawki
-
-//funkcje (produkt)
-
 .function {
-padding-top: 10%;
-padding-bottom: 10%;
-h1 { text-align: center
-}}
+  padding-top: 10%;
+  padding-bottom: 10%;
+
+  h1 {
+    text-align: center
+  }
+}
 
 .function > div {
   width: 100%;
@@ -328,13 +325,11 @@ h1 { text-align: center
   justify-content: space-around;
 }
 
-
 .function-flex1 {
   flex: 1;
   width: 100%;
   margin: 0 auto;
   padding: 20px 0;
-
 }
 
 .function-flex2 {
@@ -380,8 +375,6 @@ h1 { text-align: center
   padding: 20px 20px;
 }
 
-/*Team-----------------------------------------------*/
-
 .team {
   background-color: $white;
   width: 100%;
@@ -397,7 +390,6 @@ h1 { text-align: center
 }
 
 .container-team {
-
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -418,21 +410,18 @@ h1 { text-align: center
   margin-right: auto;
   margin-left: auto;
   margin-top: 30px;
-
 }
 
 .one {
   flex: 1;
   display: flex;
   align-items: center;
-
 }
 
 .one {
   flex: 1;
   display: flex;
   align-items: center;
-
 }
 
 .rafal img {
@@ -446,7 +435,6 @@ h1 { text-align: center
   flex: 1;
   display: flex;
   align-items: center;
-
 }
 
 .marta img {
@@ -462,14 +450,12 @@ h1 { text-align: center
   margin-right: auto;
   margin-left: auto;
   margin-top: 40px;
-
 }
 
 .three {
   flex: 1;
   display: flex;
   align-items: center;
-
 }
 
 .karol img {
@@ -506,7 +492,6 @@ h1 { text-align: center
   filter: alpha(opacity=50);
   margin-bottom: 20px;
   border-radius: 100%;
-
 }
 
 .www:hover {
@@ -533,14 +518,12 @@ h1 { text-align: center
   box-shadow: 0 0 20px #ccc;
 }
 
-/*FOOTER*/
 .footer {
   background-color: $blue3;
   color: $white;
   width: 100%;
 }
 
-//strzałka do góry
 .go-up {
   text-align: center;
   position: absolute;
@@ -570,18 +553,9 @@ h1 { text-align: center
   align-items: center;
 }
 
-//copyright
 .ft-content p {
   font-size: 1.2rem;
   padding: 0 0.5rem 0 0;
 }
 
-/*FOOTER*/
-
 /*# sourceMappingURL=style.css.map */
-
-
-
-
-
-
