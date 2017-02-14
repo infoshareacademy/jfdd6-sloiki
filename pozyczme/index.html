@@ -1,103 +1,165 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>pożyczME - Masz to? Pożycz MI!</title>
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,400i,700&amp;subset=latin-ext"
-          rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>pożyczME - Masz to? Pożycz MI!</title>
+  <link rel="stylesheet"
+        href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
+
+  <link rel="stylesheet"
+        href="css/style.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,400i,700&amp;subset=latin-ext"
+        rel="stylesheet">
 </head>
 <body>
-<header class="bgimg">
-    <div class="nav-header">
-        <div class="nav-content">
-            <a href="#" class="nav-logo">
-                <img src="./img/pozyczme-logo-vect.svg" alt="Logo PożyczME">
-            </a>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li><a href="#function">Produkt</a></li><!--
-                 -->
-                    <li><a href="#team">Zespół</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-    <!--MODAL-BOX-->
-    <div class="modal-container">
-        <div class="modal-text">
-            <h3>Masz grę planszową,</h3>
-            <h3>która się kurzy?</h3>
-            <h3>Pożycz mi!</h3>
-        </div>
-        <div class="modal-button">
-            <a href="#modal-box-open">
-                <h3>Zapisz się na premierę</h3>
-            </a>
-        </div>
-        <div id="modal-box-open" class="modal-box">
-            <fieldset class="modal-field">
-                <a href="#modal-box-close" class="modal-box-close">&times;</a>
-                <label>Imię</label>
-                <input type="text" placeholder="Wpisz swoje imię">
-                <label>Nazwisko</label>
-                <input type="text" placeholder="Wpisz swoje nazwisko">
-                <label>Adres e-mail</label>
-                <input type="email" placeholder="Wpisz swój e-mail">
-                <div class="agreement">
-                    <p>Akceptuję <span class="tooltip-toggle" id="terms" tabindex="0">
-                        warunki</span> korzystania z serwisu</p>
-                    <input id=checkbox type="checkbox">
-                </div>
-                <div id="button">
-                    <button type="submit">Dołącz!</button>
-                </div>
-            </fieldset>
-        </div>
-    </div><!--MODAL-BOX-->
-</header>
-<main>
-    <!--TEAM-->
+<header class="background-image">
+  <div class="nav-header">
+    <div class="nav-content">
+      <a href="#"
+         class="nav-logo">
+        <img src="./img/pozyczme-logo-vect.svg"
+             alt="Logo PożyczME">
+      </a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#function">Produkt</a></li>
 
-    <section class="team" id="team">
-        <div class="container-team">
-            <h1>Nasz zespół</h1>
-            <div class="gora">
-                <div class="one">
-                    <div class="rafal">
-                        <img src="img/Rafal.jpg" alt="Zdjęcie Rafała">
-                        <h3>Rafał Szatrański</h3>
-                    </div>
-                    <div class="social">
-                        <a href="http://www.strzyzewska.com.pl/strona_w_budowie.png" target="_blank"><img
-                                src="img/www.png" class="www"></a>
-                        <a href="https://www.facebook.com/farla01" target="_blank"><img src="img/facebook.png"
-                                                                                        class="fb"></a>
-                        <a href="https://github.com/prenrzyk" target="_blank"><img src="img/github.png" class="git"></a>
-                        <a href="https://www.linkedin.com/in/rafa%C5%82-szatra%C5%84ski-287074134/" target="_blank"><img
-                                src="img/linkedin.png" class="ln"></a>
-                    </div>
-                </div>
-                <div class="two">
-                    <div class="social">
-                        <a href="http://www.strzyzewska.com.pl/strona_w_budowie.png" target="_blank"><img
-                                src="img/www.png" class="www"></a>
-                        <a href="https://www.facebook.com/zenaxic" target="_blank"><img src="img/facebook.png"
-                                                                                        class="fb"></a>
-                        <a href="https://github.com/martarz" target="_blank"><img src="img/github.png" class="git"></a>
-                        <a href="https://www.linkedin.com/in/marta-rzadkowska-2876ba8b/" target="_blank"><img
-                                src="img/linkedin.png" class="ln"></a>
-                    </div>
-                    <div class="marta">
-                        <img src="img/Marta.jpg" alt="Zdjęcie Marty">
-                        <h3>Marta Rządkowska</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="dol">
+          <li><a href="#team">Zespół</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="modal-container">
+    <div class="modal-text">
+      <h3>Masz grę planszową,</h3>
+
+      <h3>która się kurzy?</h3>
+
+      <h3>Pożycz mi!</h3>
+    </div>
+
+    <div class="modal-button">
+      <a href="#modal-box-open">
+        <h3>Zapisz się na premierę</h3>
+      </a>
+    </div>
+
+    <div id="modal-box-open"
+         class="modal-box">
+      <fieldset class="modal-field">
+        <a href="#modal-box-close"
+           class="modal-box-close">&times;</a>
+
+        <label>Imię</label>
+
+        <input type="text"
+               placeholder="Wpisz swoje imię">
+        <label>Nazwisko</label>
+
+        <input type="text"
+               placeholder="Wpisz swoje nazwisko">
+        <label>Adres e-mail</label>
+
+        <input type="email"
+               placeholder="Wpisz swój e-mail">
+        <div class="agreement">
+          <p>Akceptuję <span class="tooltip-toggle"
+                             id="terms"
+                             tabindex="0">
+                        warunki</span> korzystania z serwisu</p>
+          <input id=checkbox
+                 type="checkbox">
+        </div>
+
+        <div id="button">
+          <button type="submit">Dołącz!</button>
+        </div>
+      </fieldset>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="team"
+           id="team">
+    <div class="container-team">
+      <h1>Nasz zespół</h1>
+
+      <div class="gora">
+        <div class="one">
+          <div class="rafal">
+            <img src="img/Rafal.jpg"
+                 alt="Zdjęcie Rafała">
+            <h3>Rafał Szatrański</h3>
+          </div>
+
+          <div class="social">
+            <a href="http://www.strzyzewska.com.pl/strona_w_budowie.png"
+               target="_blank">
+              <img src="img/www.png"
+                   class="www">
+            </a>
+
+            <a href="https://www.facebook.com/farla01"
+               target="_blank">
+              <img src="img/facebook.png"
+                   class="fb">
+            </a>
+
+            <a href="https://github.com/prenrzyk"
+               target="_blank">
+              <img src="img/github.png"
+                   class="git">
+            </a>
+
+            <a href="https://www.linkedin.com/in/rafa%C5%82-szatra%C5%84ski-287074134/"
+               target="_blank">
+              <img src="img/linkedin.png"
+                   class="ln">
+            </a>
+          </div>
+        </div>
+
+        <div class="two">
+          <div class="social">
+            <a href="http://www.strzyzewska.com.pl/strona_w_budowie.png"
+               target="_blank">
+              <img src="img/www.png"
+                   class="www">
+            </a>
+
+            <a href="https://www.facebook.com/zenaxic"
+               target="_blank">
+              <img src="img/facebook.png"
+                   class="fb">
+            </a>
+
+            <a href="https://github.com/martarz"
+               target="_blank">
+              <img src="img/github.png"
+                   class="git">
+            </a>
+
+            <a href="https://www.linkedin.com/in/marta-rzadkowska-2876ba8b/"
+               target="_blank">
+              <img src="img/linkedin.png"
+                   class="ln">
+            </a>
+          </div>
+
+          <div class="marta">
+            <img src="img/Marta.jpg"
+                 alt="Zdjęcie Marty">
+            <h3>Marta Rządkowska</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="dol">
                 <div class="three">
                     <div class="karol">
                         <img src="img/Karol.jpg" alt="Zdjęcie Karola">
