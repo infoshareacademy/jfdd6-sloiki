@@ -13,7 +13,9 @@ body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-weight: 700;
   color: $blue3;
@@ -40,16 +42,9 @@ section {
 
 }
 
-//kolor linków do ew. dodania
-//a:link {
-//  color: $blue;
-//}
-
 ::selection {
   background-color: $blue2;
 }
-
-//nawigacja
 
 .nav-header {
   background-color: $white;
@@ -63,7 +58,10 @@ section {
   z-index: 100;
 }
 
-.nav-content, .function, .team-flex, .ft-content {
+.nav-content,
+.function,
+.team-flex,
+.ft-content {
   margin: 0 auto;
   max-width: 1140px;
 }
@@ -107,15 +105,12 @@ ul.nav-list {
   padding: 40px 20px;
 }
 
-//zajawka
-
 .background-image {
   background: url("../img/background2.jpg") no-repeat center 80%;
   background-size: cover;
   position: relative;
 }
 
-/*MODAL-BOX*/
 .modal-container {
   position: relative;
   width: 100%;
@@ -192,7 +187,6 @@ ul.nav-list {
     padding: 1.0rem 0.5rem;
   }
 }
-
 
 .modal-field button {
   background-color: $white;
@@ -303,12 +297,6 @@ input[type=checkbox] {
   padding: 1.5rem 0.5rem;
   width: 25%;
 }
-
-/**MODAL-BOX**/
-
-//koniec zajawki
-
-//funkcje (produkt)
 
 .function {
 padding-top: 10%;
