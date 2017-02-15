@@ -37,13 +37,27 @@ p {
   font-size: 1.6rem;
 }
 
-section {
-  width: 100%;
-
-}
-
 ::selection {
   background-color: $blue2;
+}
+
+.background {
+  background-color: ghostwhite;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  z-index: 3;
+}
+
+.content {
+
+}
+.container {
+  min-width: 320px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
 
 .nav-header {
@@ -53,23 +67,11 @@ section {
   width: 100%;
   box-shadow: $nav-shadow;
   -webkit-box-shadow: $nav-shadow;
-  -o-box-shadow: $nav-shadow;
-  -moz-box-shadow: $nav-shadow;
   z-index: 100;
-}
-
-.nav-content,
-.function,
-.team-flex,
-.ft-content {
-  margin: 0 auto;
-  max-width: 1140px;
 }
 
 .nav-content {
   display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
   justify-content: space-between;
   align-items: center;
 }
@@ -106,14 +108,16 @@ ul.nav-list {
 }
 
 .background-image {
-  background: url("../img/background2.jpg") no-repeat center 80%;
+  background: url("../img/background2.jpg") no-repeat center 70%;
   background-size: cover;
-  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  position: fixed;
 }
 
 .modal-container {
-  position: relative;
-  width: 100%;
   height: 100vh;
   max-width: 1200px;
   margin: 0 auto;
@@ -127,7 +131,7 @@ ul.nav-list {
   max-width: 33%;
   padding: 20px;
 
-  & h3 {
+  h1 {
     color: $white;
   }
 }
@@ -151,21 +155,6 @@ ul.nav-list {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: url("../img/background2.jpg") no-repeat center 80%;
-  background-size: cover;
-  transition: opacity 500ms;
-  opacity: 0;
-  visibility: hidden;
-
-  &:target {
-    opacity: 1;
-    visibility: visible;
-  }
 }
 
 .modal-field {
@@ -516,6 +505,9 @@ input[type=checkbox] {
   background-color: $blue3;
   color: $white;
   width: 100%;
+  //position: absolute;
+  //bottom: 0;
+  z-index: 3;
 }
 
 .go-up {
