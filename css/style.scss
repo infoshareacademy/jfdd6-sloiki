@@ -98,6 +98,43 @@ p {
   }
 }
 
+.background--image {
+  background: url("../img/background2.jpg") no-repeat center 70%;
+  background-size: cover;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  position: fixed;
+}
+
+.background--content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+
+  h1, h3 {
+    color: $white;
+  }
+}
+
+.background--text {
+  max-width: 30%;
+  }
+
+.background--button {
+  border: solid 2px $white;
+  border-radius: 27px;
+  padding: 2px 10px;
+
+  a {
+    text-decoration: none;
+  }
+}
+
 
 
 .background--main {
@@ -108,188 +145,8 @@ p {
   z-index: 3;
 }
 
-.content--main {
-}
 
-.background-image {
-  background: url("../img/background2.jpg") no-repeat center 70%;
-  background-size: cover;
-  z-index: 1;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  position: fixed;
-}
 
-.modal-container {
-  height: 100vh;
-  max-width: 1200px;
-  margin: 0 auto;
-  z-index: 50;
-}
-
-.modal-text {
-  position: absolute;
-  top: 40vh;
-  transform: translateY(-50%);
-  max-width: 33%;
-  padding: 20px;
-
-  h1 {
-    color: $white;
-  }
-}
-
-.modal-button {
-  position: relative;
-  top: 60vh;
-  padding: 20px;
-
-  & h3 {
-    color: $white;
-  }
-
-  & a {
-    text-decoration: none;
-  }
-}
-
-.modal-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-field {
-  background-color: $white;
-  color: $navy2;
-  font-size: 1.6rem;
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
-  min-width: 25%;
-  min-height: 55%;
-  border: none;
-  border-radius: 5px;
-  display: flex;
-  margin: 90px 0 0 0;
-  padding: 0.5rem 1.5rem;
-  transition: opacity 500ms;
-
-  & label {
-    font-size: 1.2rem;
-    padding: 1.0rem 0.5rem;
-  }
-}
-
-.modal-field button {
-  background-color: $white;
-  padding: 1.0rem 1.5rem;
-  border: solid 3px $blue;
-  border-radius: 5px;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-}
-
-.modal-field button:hover {
-  background-color: $blue;
-}
-
-.modal-box-close {
-  color: $navy2;
-  text-align: right;
-  text-decoration: none;
-  font-size: 2.5rem;
-  padding: 0;
-  margin: 0;
-
-  &:hover {
-    color: $blue;
-  }
-}
-
-input {
-  padding: 1.0rem 0.5rem;
-  width: 97%;
-  border-radius: inherit;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  font-size: 80%;
-
-  &:active {
-    border: solid 2px $blue;
-  }
-}
-
-#button {
-  display: flex;
-  justify-content: center;
-  padding: 0.8rem;
-}
-
-.agreement {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0.5rem 0;
-
-  & p {
-    margin: 0;
-    font-size: 1.1rem;
-    padding: 1.0rem 0;
-  }
-}
-
-.tooltip-toggle {
-  cursor: pointer;
-  position: relative;
-  text-decoration: underline;
-
-  &::before {
-    position: absolute;
-    top: -5.68rem;
-    left: -6rem;
-    background-color: $blue3;
-    line-height: 1.1rem;
-    border-radius: 5px;
-    color: $white;
-    content: "Twoje dane są u nas bezpieczne. Wyślemy Ci wiadomość z informacją o starcie pożyczME.";
-    padding: 1rem;
-    text-transform: none;
-    transition: all 0.5s;
-    width: 16rem;
-  }
-
-  &::after {
-    position: absolute;
-    top: -0.5rem;
-    left: 1.9rem;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid $blue3;
-    content: " ";
-    margin-left: -5px;
-    width: 0;
-  }
-
-  &::before,
-  &::after {
-    font-size: 1rem;
-    opacity: 0;
-    pointer-events: none;
-    text-align: center;
-  }
-
-  &:focus::before,
-  &:focus::after,
-  &:hover::before,
-  &:hover::after {
-    opacity: 1;
-    transition: all 0.75s;
-  }
-}
-
-input[type=checkbox] {
-  padding: 1.5rem 0.5rem;
-  width: 25%;
-}
 
 .function {
   padding-top: 10%;
@@ -504,6 +361,152 @@ input[type=checkbox] {
   filter: alpha(opacity=100);
   box-shadow: 0 0 20px #ccc;
 }
+
+
+
+//form section start
+.modal-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-field {
+  background-color: $white;
+  color: $navy2;
+  font-size: 1.6rem;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  min-width: 25%;
+  min-height: 55%;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  margin: 90px 0 0 0;
+  padding: 0.5rem 1.5rem;
+  transition: opacity 500ms;
+
+  & label {
+    font-size: 1.2rem;
+    padding: 1.0rem 0.5rem;
+  }
+}
+
+.modal-field button {
+  background-color: $white;
+  padding: 1.0rem 1.5rem;
+  border: solid 3px $blue;
+  border-radius: 5px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.modal-field button:hover {
+  background-color: $blue;
+}
+
+.modal-box-close {
+  color: $navy2;
+  text-align: right;
+  text-decoration: none;
+  font-size: 2.5rem;
+  padding: 0;
+  margin: 0;
+
+  &:hover {
+    color: $blue;
+  }
+}
+
+input {
+  padding: 1.0rem 0.5rem;
+  width: 97%;
+  border-radius: inherit;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 80%;
+
+  &:active {
+    border: solid 2px $blue;
+  }
+}
+
+#button {
+  display: flex;
+  justify-content: center;
+  padding: 0.8rem;
+}
+
+.agreement {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem 0;
+
+  & p {
+    margin: 0;
+    font-size: 1.1rem;
+    padding: 1.0rem 0;
+  }
+}
+
+.tooltip-toggle {
+  cursor: pointer;
+  position: relative;
+  text-decoration: underline;
+
+  &::before {
+    position: absolute;
+    top: -5.68rem;
+    left: -6rem;
+    background-color: $blue3;
+    line-height: 1.1rem;
+    border-radius: 5px;
+    color: $white;
+    content: "Twoje dane są u nas bezpieczne. Wyślemy Ci wiadomość z informacją o starcie pożyczME.";
+    padding: 1rem;
+    text-transform: none;
+    transition: all 0.5s;
+    width: 16rem;
+  }
+
+  &::after {
+    position: absolute;
+    top: -0.5rem;
+    left: 1.9rem;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid $blue3;
+    content: " ";
+    margin-left: -5px;
+    width: 0;
+  }
+
+  &::before,
+  &::after {
+    font-size: 1rem;
+    opacity: 0;
+    pointer-events: none;
+    text-align: center;
+  }
+
+  &:focus::before,
+  &:focus::after,
+  &:hover::before,
+  &:hover::after {
+    opacity: 1;
+    transition: all 0.75s;
+  }
+}
+
+input[type=checkbox] {
+  padding: 1.5rem 0.5rem;
+  width: 25%;
+}
+//form section end
+
+
+
+
+
 
 .background--footer {
   background-color: $blue3;
