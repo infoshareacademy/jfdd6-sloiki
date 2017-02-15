@@ -41,17 +41,6 @@ p {
   background-color: $blue2;
 }
 
-.background--main {
-  background-color: ghostwhite;
-  width: 100%;
-  position: absolute;
-  top: 100%;
-  z-index: 3;
-}
-
-.content--main {
-
-}
 .container {
   min-width: 320px;
   max-width: 1200px;
@@ -74,39 +63,53 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
 
-.logo--header {
-  padding: 20px;
-  z-index: 10;
-}
+  a {
+    padding: 20px;
+    z-index: 10;
+  }
 
-ul.nav--list {
-  margin: 0;
-}
-
-.nav--list li {
-  list-style-type: none;
-  display: inline-block;
-
-  &:hover {
-    color: white;
-    background-color: $blue;
-    transition: background-color 0.5s;
-    transition-timing-function: ease-in-out;
-    -webkit-transition: background-color 0.5s;
-    -webkit-transition-timing-function: ease-in-out;
+  ul {
+    margin: 0;
   }
 }
 
-.nav--list a {
-  font-size: 1.2rem;
-  text-decoration: none;
-  color: inherit;
-  display: inline-block;
-  padding: 40px 20px;
+.nav--header {
+  li {
+    list-style-type: none;
+    display: inline-block;
+
+    &:hover {
+      color: white;
+      background-color: $blue;
+      transition: background-color 0.5s;
+      transition-timing-function: ease-in-out;
+      -webkit-transition: background-color 0.5s;
+      -webkit-transition-timing-function: ease-in-out;
+    }
+  }
+
+  a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    padding: 40px 20px;
+  }
 }
 
+
+
+.background--main {
+  background-color: ghostwhite;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  z-index: 3;
+}
+
+.content--main {
+}
 
 .background-image {
   background: url("../img/background2.jpg") no-repeat center 70%;
