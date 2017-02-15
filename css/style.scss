@@ -2,7 +2,6 @@ $white: #f8f8ff;
 $blue: #0080e0;
 $blue2: #0080c0;
 $blue3: #002060;
-$navy: #002040;
 $navy2: #000020;
 $nav-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.23);
 
@@ -22,19 +21,19 @@ h3 {
 }
 
 h1 {
-  font-size: 3.0rem;
+  font-size: 2.8rem;
 }
 
 h2 {
-  font-size: 2.2rem;
+  font-size: 2.0rem;
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 section {
@@ -298,81 +297,72 @@ input[type=checkbox] {
   width: 25%;
 }
 
-.function {
-  padding-top: 10%;
-  padding-bottom: 10%;
 
-  h1 {
-    text-align: center
-  }
+.product {
+
+  padding-top: 7%;
+
+}
+.product:before {
+  display: block;
+  content: " ";
+  margin-top: -75px;
+  height: 75px;
+  visibility: hidden;
 }
 
-.function > div {
-  width: 100%;
-  margin: 0 auto;
-  padding: 20px 0;
+.product h1 {
+  text-align: center;
+  padding-bottom: 20px;
+
 }
 
-.function-flex {
+.container-product {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.function-flex1 {
-  flex: 1;
   width: 100%;
-  margin: 0 auto;
-  padding: 20px 0;
 }
 
-.function-flex2 {
+.box {
   flex: 1;
-  width: 100%;
-  margin: 0 auto;
-  padding: 20px 0;
+  text-align: center;
+  border: 4px solid #000000;
+  border-radius: 27px 27px 27px 27px;
+  background-color: #0080e0;
+  padding-top: 10px;
+  margin: 10px;
+
 }
 
-.function-flex3 {
-  flex: 1;
-  width: 100%;
-  margin: 0 auto;
-  padding: 20px 0;
-}
-
-.function-flex4 {
-  flex: 1;
-  width: 100%;
-  margin: 0 auto;
-  padding: 20px 0;
-}
-
-.function img {
+.box img{
   height: 100px;
   width: 100px;
-  margin-left: 60px;
 }
 
-.function h2 {
-  font-size: 40px;
-  font-weight: 100;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 20px;
-  text-shadow: 1px 1px 0 #ccc;
-}
 
-.function p {
-  line-height: 24px;
-  font-size: 16px;
-  text-align: justify;
-  padding: 20px 20px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .team {
   background-color: $white;
   width: 100%;
-  padding-bottom: 100px;
+  padding-bottom: 5%;
 }
 
 .team:before {
@@ -382,12 +372,12 @@ input[type=checkbox] {
   height: 75px;
   visibility: hidden;
 }
-
 .container-team {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
+
 
 .team h1 {
   text-align: center;
@@ -398,7 +388,7 @@ input[type=checkbox] {
   font-size: 15px;
 }
 
-.gora {
+.up-box {
   display: flex;
   width: 60%;
   margin-right: auto;
@@ -406,17 +396,12 @@ input[type=checkbox] {
   margin-top: 30px;
 }
 
-.one {
+.one-box {
   flex: 1;
   display: flex;
   align-items: center;
 }
 
-.one {
-  flex: 1;
-  display: flex;
-  align-items: center;
-}
 
 .rafal img {
   padding: 10px;
@@ -425,7 +410,7 @@ input[type=checkbox] {
   border-radius: 100%;
 }
 
-.two {
+.two-box {
   flex: 1;
   display: flex;
   align-items: center;
@@ -438,7 +423,7 @@ input[type=checkbox] {
   border-radius: 100%;
 }
 
-.dol {
+.down-box {
   display: flex;
   width: 60%;
   margin-right: auto;
@@ -446,7 +431,7 @@ input[type=checkbox] {
   margin-top: 40px;
 }
 
-.three {
+.three-box {
   flex: 1;
   display: flex;
   align-items: center;
@@ -459,7 +444,7 @@ input[type=checkbox] {
   border-radius: 100%;
 }
 
-.four {
+.four-box {
   flex: 1;
   display: flex;
   align-items: center;
@@ -512,6 +497,8 @@ input[type=checkbox] {
   box-shadow: 0 0 20px #ccc;
 }
 
+
+
 .footer {
   background-color: $blue3;
   color: $white;
@@ -553,3 +540,53 @@ input[type=checkbox] {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
