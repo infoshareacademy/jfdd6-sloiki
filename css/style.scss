@@ -38,7 +38,7 @@ p {
 
 section {
   width: 100%;
-
+  min-height: 100vh;
 }
 
 ::selection {
@@ -147,32 +147,22 @@ section {
   z-index: 3;
 }
 
-.content--main {
-  section {
-    height: 100vh;
-  }
-}
-
-
-
-
 .product {
   padding-top: 7%;
   min-height: 100vh;
 
-}
-.product:before {
-  display: block;
-  content: " ";
-  margin-top: -75px;
-  height: 75px;
-  visibility: hidden;
-}
+  &:before {
+    display: block;
+    content: " ";
+    margin-top: -75px;
+    height: 75px;
+    visibility: hidden;
+  }
 
-.product h1 {
-  text-align: center;
-  padding-bottom: 20px;
-
+  h1 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
 }
 
 .container-product {
@@ -234,11 +224,12 @@ section {
   display: flex;
   justify-content: center;
   width: 50%;
-}
-.all-box img {
-  width: 150px;
-  height: 150px;
-  border-radius: 100%;
+
+  img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+  }
 }
 
 .social {
@@ -257,31 +248,14 @@ section {
   }
 }
 
-.www:hover {
-  opacity: 1.0;
-  filter: alpha(opacity=100);
-  box-shadow: 0 0 20px #ccc;
-}
-
-.fb:hover {
-  opacity: 1.0;
-  filter: alpha(opacity=100);
-  box-shadow: 0 0 20px #ccc;
-}
-
-.git:hover {
-  opacity: 1.0;
-  filter: alpha(opacity=100);
-  box-shadow: 0 0 20px #ccc;
-}
-
+.www:hover,
+.fb:hover,
+.git:hover,
 .ln:hover {
   opacity: 1.0;
   filter: alpha(opacity=100);
   box-shadow: 0 0 20px #ccc;
 }
-
-
 
 //form section start
 .modal-box {
