@@ -49,7 +49,7 @@ p {
   z-index: 2;
 }
 
-.background--header {
+.header--menu {
   background-color: $white;
   position: fixed;
   top: 0;
@@ -59,7 +59,7 @@ p {
   z-index: 100;
 }
 
-.background--image {
+.header--background {
   background: url("../img/background2.jpg") no-repeat center 70%;
   background-size: cover;
   z-index: 1;
@@ -69,7 +69,7 @@ p {
   position: fixed;
 }
 
-.content--header {
+.menu--content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -135,7 +135,7 @@ p {
   }
 }
 
-.wrapper--main {
+.main--wrapper {
   background-color: ghostwhite;
   width: 100%;
   position: absolute;
