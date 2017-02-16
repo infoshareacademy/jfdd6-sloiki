@@ -19,265 +19,302 @@
 </head>
 
 <body>
-<header class="background-image">
-  <div class="nav-header">
-    <div class="nav-content">
-      <a href="#"
-         class="nav-logo">
+
+<header class="header">
+  <div class="header--menu">
+    <div class="menu--content container">
+      <a href="#">
         <img src="img/pozyczme-logo-vect.svg"
              alt="Logo PożyczME">
       </a>
 
-      <nav class="nav">
-        <ul class="nav-list">
+      <nav>
+        <ul class="menu--nav">
           <li>
             <a href="#product">Produkt</a>
           </li><!--
 
-       -->
-          <li>
+       --><li>
             <a href="#team">Zespół</a>
+          </li><!--
+
+       --><li>
+            <a href="#form">Bądź na bieżąco</a>
           </li>
         </ul>
       </nav>
     </div>
   </div>
 
-  <div class="modal-container">
-    <div class="modal-text">
-      <h3>Masz grę planszową,</h3>
+  <div class=header--background>
+    <div class="background--content container">
+      <div class="background--text">
+        <h1>Masz grę planszową, która się kurzy? Pożycz mi!</h1>
+      </div>
 
-      <h3>która się kurzy?</h3>
-
-      <h3>Pożycz mi!</h3>
-    </div>
-
-    <div class="modal-button">
-      <a href="#modal-box-open">
-        <h3>Zapisz się na premierę</h3>
-      </a>
-    </div>
-
-    <div id="modal-box-open"
-         class="modal-box">
-      <fieldset class="modal-field">
-        <a href="#modal-box-close"
-           class="modal-box-close">
-          &times;
+      <div class="background--button">
+        <a href="#form">
+          <h3>Zapisz się na premierę</h3>
         </a>
-
-        <label>Imię</label>
-
-        <input type="text"
-               placeholder="Wpisz swoje imię">
-
-        <label>Nazwisko</label>
-
-        <input type="text"
-               placeholder="Wpisz swoje nazwisko">
-
-        <label>Adres e-mail</label>
-
-        <input type="email"
-               placeholder="Wpisz swój e-mail">
-
-        <div class="agreement">
-          <p>
-            Akceptuję
-            <span class="tooltip-toggle"
-                  id="terms"
-                  tabindex="0">
-              warunki
-            </span>
-            korzystania z serwisu
-          </p><!--element inline, rozbiłem na linię dla większej czytelności-->
-
-        </div>
-
-        <div id="button">
-          <button type="submit">Dołącz!</button>
-        </div>
-      </fieldset>
+      </div>
     </div>
   </div>
 </header>
 
+<main class="main">
+    <div class=main--wrapper>
+        <div class="main--content container">
+          <section class="product"
+                   id="product">
+            <h1>Produkt</h1>
 
-<main>
+            <div class="container-product">
+              <div class="box">
+                <img src="img/puzzle-blue.svg"
+                     alt="Puzzle">
+
+                <h2>Katalog gier</h2>
+
+                <p>Szukasz nowej gry? Klikając tutaj znajdziesz listę wszystkich naszych gier.</p>
+              </div>
+
+              <div class="box">
+                <img src="img/chess-blue.svg"
+                     alt="Chess">
+
+                <h2>Dodaj grę</h2>
+                  <p>Czy Twoja planszówka leży na półce i się kurzy? Pożycz ją komuś! Tutaj dodasz swoją gre.</p>
+              </div>
+
+              <div class="box">
+                <img src="img/playing-cards-blue.svg"
+                     alt="Cards">
+
+                  <h2>Dołącz do nas</h2>
+
+                  <p>Chcesz byc częścią naszej świetnej społeczności? Rejestrując się możesz podawać swoje opinie o grach,
+                    graczach oraz całej organizacji.</p>
+              </div>
+
+              <div class="box">
+                <img src="img/board-gaming-blue.svg"
+                     alt="Board-game">
+
+                  <h2>Wydarzenia</h2>
+
+                  <p>Bądź na czasie i spotkaj się z nami w najlepszych knajpach w Twojej okolicy. Tu znajdziesz wszystkie
+                    spotkania na najbliższy miesiąc.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="team"
+                   id="team">
+            <h1>Nasz zespół</h1>
+            <section class="container-team">
+              <div class="all-box">
+                <div class="person">
+                  <img src="img/Rafal.jpg"
+                       alt="Zdjęcie Rafała">
+
+                  <h3>Rafał Szatrański</h3>
+
+                    <div class="social">
+                    <a href="http://www.strzyzewska.com.pl/strona_w_budowie.png"
+                       target="_blank">
+                      <img src="img/www.png"
+                           class="www">
+                    </a>
+
+                    <a href="https://www.facebook.com/farla01"
+                       target="_blank">
+                      <img src="img/facebook.png"
+                           class="fb">
+                    </a>
+
+                    <a href="https://github.com/prenrzyk"
+                       target="_blank">
+                      <img src="img/github.png"
+                           class="git">
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/rafa%C5%82-szatra%C5%84ski-287074134/"
+                       target="_blank">
+                      <img src="img/linkedin.png"
+                           class="ln">
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="all-box">
+                <div class="person">
+                  <img src="img/Marta.jpg"
+                       alt="Zdjęcie Marty">
+
+                  <h3>Marta Rządkowska</h3>
+                  <div class="social">
+                    <a href="http://www.strzyzewska.com.pl/strona_w_budowie.png"
+                       target="_blank">
+                      <img src="img/www.png"
+                           class="www">
+                    </a>
+
+                    <a href="https://www.facebook.com/zenaxic"
+                       target="_blank">
+                      <img src="img/facebook.png"
+                           class="fb">
+                    </a>
+
+                    <a href="https://github.com/martarz"
+                       target="_blank">
+                      <img src="img/github.png"
+                           class="git">
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/marta-rzadkowska-2876ba8b/"
+                       target="_blank">
+                      <img src="img/linkedin.png"
+                           class="ln">
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="all-box">
+                <div class="person">
+                  <img src="img/Karol.jpg"
+                       alt="Zdjęcie Karola">
+
+                  <h3>Karol Jakubcewicz</h3>
+
+                  <div class="social">
+                    <a href="http://www.strzyzewska.com.pl/strona_w_budowie.png"
+                       target="_blank">
+                        <img src="img/www.png"
+                             class="www">
+                    </a>
+
+                    <a href="https://www.facebook.com/karol.jakubcewicz?fref=ts"
+                       target="_blank">
+                        <img src="img/facebook.png"
+                             class="fb">
+                    </a>
+
+                    <a href="https://github.com/kjakubcewicz"
+                       target="_blank">
+                        <img src="img/github.png"
+                             class="git">
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/karoljakubcewicz/" target="_blank">
+                        <img src="img/linkedin.png"class="ln">
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="all-box">
+                <div class="person">
+                  <img src="img/Natalia.jpg" alt="Zdjęcie Natali">
+
+                  <h3>Natalia Kulas</h3>
+
+                  <div class="social">
+                    <a href="http://www.strzyzewska.com.pl/strona_w_budowie.png"
+                       target="_blank">
+                        <img src="img/www.png"
+                             class="www">
+                    </a>
+
+                    <a href="https://www.facebook.com/natalia.kulas"
+                       target="_blank">
+                        <img src="img/facebook.png"
+                             class="fb">
+                    </a>
+
+                    <a href="https://github.com/nataliakulas"
+                       target="_blank">
+                        <img src="img/github.png"
+                             class="git">
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/natalia-kulas-988b97138/"
+                       target="_blank">
+                        <img src="img/linkedin.png"
+                             class="ln">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
 
 
-  <section class="product" id="product">
-    <h1>Produkt</h1>
+      <section id="form">
+        <div class="modal-box">
+          <fieldset>
+            <label>Imię</label>
 
-    <div class="container-product">
-      <div class="box">
-        <img src="img/puzzle-blue.svg" alt="Puzzle">
-        <h2>Katalog gier</h2>
-        <p>Szukasz nowej gry? Klikajac tutaj znajdziesz liste wszystkich naszych gier.</p>
-      </div>
+            <input type="text"
+                   placeholder="Wpisz swoje imię">
 
-      <div class="box">
-        <img src="img/chess-blue.svg" alt="Chess">
-        <h2>Dodaj gre</h2>
-        <p>Lezy Twoja planszowka na polce i sie kurzy? Pozycz ja komus! Tutaj dodasz swoja gre zeby ktos mogl ja
-          pozyczyc.</p>
-      </div>
+            <label>Nazwisko</label>
 
-      <div class="box">
-        <img src="img/playing-cards-blue.svg" alt="Cards">
-        <h2>Dolacz do nas</h2>
-        <p>Chcesz byc czescia naszej swietnej spotlecznosci? Rejestrujac sie mozesz podawac swoje opinie o grach,
-          graczach oraz calej organizacji.</p>
-      </div>
+            <input type="text"
+                   placeholder="Wpisz swoje nazwisko">
 
-      <div class="box">
-        <img src="img/board-gaming-blue.svg" alt="Board-game">
-        <h2>Wydarzenia</h2>
-        <p>Badz na czasie i spotykaj sie z nami w najlepszych knajpach w Twojej okolicy. Tu znajdziesz wszystkie
-          spotkania na najblizszy miesiac.</p>
-      </div>
+            <label>Adres e-mail</label>
 
+            <input type="email"
+                   placeholder="Wpisz swój e-mail">
+
+            <div class="agreement">
+              <p>
+                Akceptuję
+                <span class="tooltip-toggle"
+                      id="terms"
+                      tabindex="0">
+                warunki
+              </span>
+                korzystania z serwisu
+              </p><!--element inline, rozbiłem na linię dla większej czytelności-->
+
+              <input id=checkbox
+                     type="checkbox">
+            </div>
+
+            <div id="button">
+              <button type="submit">Dołącz!</button>
+            </div>
+          </fieldset>
+        </div>
+      </section>
     </div>
 
-  </section>
+    <footer class="footer">
+      <div class="footer--background">
+        <div class="footer--content container">
+          <a href="#"
+             class="footer--nav">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="24"
+                 height="24"
+                 viewBox="0 0 24 24">
+              <path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z"/>
+            </svg>
+          </a>
 
-  <section class="team"
-           id="team">
-    <h1>Nasz zespół</h1>
-    <div class="container-team">
+          <p>Copyright&copy;2017 Coded with love by Słoiki Team</p>
 
-
-      <div class="all-box">
-        <div class="person">
-          <img src="img/Rafal.jpg"
-               alt="Zdjęcie Rafała">
-
-          <h3>Rafał Szatrański</h3>
-          <div class="social">
-            <a href="http://www.strzyzewska.com.pl/strona_w_budowie.png"
-               target="_blank">
-              <img src="img/www.png"
-                   class="www">
-            </a>
-
-            <a href="https://www.facebook.com/farla01"
-               target="_blank">
-              <img src="img/facebook.png"
-                   class="fb">
-            </a>
-
-            <a href="https://github.com/prenrzyk"
-               target="_blank">
-              <img src="img/github.png"
-                   class="git">
-            </a>
-
-            <a href="https://www.linkedin.com/in/rafa%C5%82-szatra%C5%84ski-287074134/"
-               target="_blank">
-              <img src="img/linkedin.png"
-                   class="ln">
-            </a>
-          </div>
-        </div>
-
-
-      </div>
-
-      <div class="all-box">
-
-
-        <div class="person">
-          <img src="img/Marta.jpg"
-               alt="Zdjęcie Marty">
-
-          <h3>Marta Rządkowska</h3>
-          <div class="social">
-            <a href="http://www.strzyzewska.com.pl/strona_w_budowie.png"
-               target="_blank">
-              <img src="img/www.png"
-                   class="www">
-            </a>
-
-            <a href="https://www.facebook.com/zenaxic"
-               target="_blank">
-              <img src="img/facebook.png"
-                   class="fb">
-            </a>
-
-            <a href="https://github.com/martarz"
-               target="_blank">
-              <img src="img/github.png"
-                   class="git">
-            </a>
-
-            <a href="https://www.linkedin.com/in/marta-rzadkowska-2876ba8b/"
-               target="_blank">
-              <img src="img/linkedin.png"
-                   class="ln">
-            </a>
-          </div>
+          <img src="img/logo-sloiki-white.png"
+               width="30px"
+               height="30px">
         </div>
       </div>
-
-
-      <div class="all-box">
-        <div class="person">
-          <img src="img/Karol.jpg" alt="Zdjęcie Karola">
-          <h3>Karol Jakubcewicz</h3>
-          <div class="social">
-            <a href="http://www.strzyzewska.com.pl/strona_w_budowie.png" target="_blank"><img
-              src="img/www.png" class="www"></a>
-            <a href="https://www.facebook.com/karol.jakubcewicz?fref=ts" target="_blank"><img
-              src="img/facebook.png" class="fb"></a>
-            <a href="https://github.com/kjakubcewicz" target="_blank"><img src="img/github.png" class="git"></a>
-            <a href="https://www.linkedin.com/in/karoljakubcewicz/" target="_blank"><img
-              src="img/linkedin.png" class="ln"></a>
-          </div>
-        </div>
-
-      </div>
-      <div class="all-box">
-        <div class="person">
-          <img src="img/Natalia.jpg" alt="Zdjęcie Natali">
-          <h3>Natalia Kulas</h3>
-          <div class="social">
-            <a href="http://www.strzyzewska.com.pl/strona_w_budowie.png" target="_blank"><img
-              src="img/www.png" class="www"></a>
-            <a href="https://www.facebook.com/natalia.kulas" target="_blank"><img src="img/facebook.png"
-                                                                                  class="fb"></a>
-            <a href="https://github.com/nataliakulas" target="_blank"><img src="img/github.png" class="git"></a>
-            <a href="https://www.linkedin.com/in/natalia-kulas-988b97138/" target="_blank"><img
-              src="img/linkedin.png" class="ln"></a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
+    </footer>
+  </div>
 </main>
 
-<footer class="footer">
-  <div class="go-up">
-    <figure class="arrow">
-      <a href="#">
-        <svg xmlns="http://www.w3.org/2000/svg"
-             width="24"
-             height="24"
-             viewBox="0 0 24 24">
-          <path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z"/>
-        </svg>
-      </a>
-    </figure>
-  </div>
-
-  <div class="ft-content">
-    <p>Copyright&copy;2017 Coded with love by Słoiki Team</p>
-
-    <img src="img/logo-sloiki-white.png"
-         width="30px"
-         height="30px">
-  </div>
-</footer>
 </body>
 </html>
