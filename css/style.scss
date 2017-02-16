@@ -84,7 +84,7 @@ p {
   }
 }
 
-.nav--header {
+.menu--nav {
   li {
     list-style-type: none;
     display: inline-block;
@@ -505,19 +505,14 @@ input[type=checkbox] {
 }
 //form section end
 
-
-
-
-
-
-.background--footer {
+.footer--background {
   background-color: $blue3;
   color: $white;
   width: 100%;
   z-index: 3;
 }
 
-.content--footer {
+.footer--content {
   margin: 0 auto;
   padding: 40px;
   display: flex;
