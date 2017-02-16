@@ -49,16 +49,6 @@ p {
   z-index: 2;
 }
 
-.background--image {
-  background: url("../img/background2.jpg") no-repeat center 70%;
-  background-size: cover;
-  z-index: 1;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  position: fixed;
-}
-
 .background--header {
   background-color: $white;
   position: fixed;
@@ -67,6 +57,16 @@ p {
   box-shadow: $nav-shadow;
   -webkit-box-shadow: $nav-shadow;
   z-index: 100;
+}
+
+.background--image {
+  background: url("../img/background2.jpg") no-repeat center 70%;
+  background-size: cover;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  position: fixed;
 }
 
 .content--header {
@@ -135,7 +135,7 @@ p {
   }
 }
 
-.content--wrapper {
+.wrapper--main {
   background-color: ghostwhite;
   width: 100%;
   position: absolute;
