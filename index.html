@@ -234,41 +234,46 @@
 
         <section id="form">
           <div class="modal-box">
-            <fieldset>
-              <label>Imię</label>
+            <form action="">
+              <fieldset>
+                <label for="first-name">Imię</label>
 
-              <input type="text"
-                     placeholder="Wpisz swoje imię">
+                <input type="text"
+                       id="first-name"
+                       placeholder="Wpisz swoje imię">
 
-              <label>Nazwisko</label>
+                <label for="last-name">Nazwisko</label>
 
-              <input type="text"
-                     placeholder="Wpisz swoje nazwisko">
+                <input type="text"
+                       id="last-name"
+                       placeholder="Wpisz swoje nazwisko">
 
-              <label>Adres e-mail</label>
+                <label for="email">Adres e-mail</label>
 
-              <input type="email"
-                     placeholder="Wpisz swój e-mail">
+                <input type="email"
+                       id="email"
+                       placeholder="Wpisz swój e-mail">
 
-              <div class="agreement">
-                <p>
-                  Akceptuję
-                  <span class="tooltip-toggle"
-                        id="terms"
-                        tabindex="0">
-                warunki
-              </span>
-                  korzystania z serwisu
-                </p><!--element inline, rozbiłem na linię dla większej czytelności-->
+                <div class="agreement">
+                  <p>
+                    Akceptuję
+                    <span class="tooltip-toggle"
+                          id="terms"
+                          tabindex="0">
+                  warunki
+                </span>
+                    korzystania z serwisu
+                  </p><!--element inline, rozbiłem na linię dla większej czytelności-->
 
-                <input id=checkbox
-                       type="checkbox">
-              </div>
+                  <input id=checkbox
+                         type="checkbox">
+                </div>
 
-              <div id="button">
-                <button type="submit">Dołącz!</button>
-              </div>
-            </fieldset>
+                <div id="button">
+                  <button type="submit">Dołącz!</button>
+                </div>
+              </fieldset>
+            </form>
           </div>
         </section>
       </div>
