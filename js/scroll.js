@@ -30,7 +30,7 @@ $('.nav-form').on('click', function (event) {
   }, 1000);
 });
 
-$('.header--menu').on('click', function (event) {
+$('.scroll').on('click', function (event) {
   event.preventDefault();
 
   $('html, body').animate({
