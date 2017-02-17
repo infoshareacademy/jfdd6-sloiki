@@ -112,6 +112,16 @@ section {
   }
 }
 
+@media screen and (max-width: 750px){
+  .menu--nav {
+    display: none;
+  }
+
+  .menu--hamburger {
+    display: inline-block;
+  }
+}
+
 .background--content {
   height: 100vh;
   display: flex;
