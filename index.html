@@ -274,22 +274,25 @@
                        placeholder="Wpisz swój e-mail">
 
                 <div class="form--agreement">
-                  <p>
-                    Akceptuję
-                    <span class="form--tooltip_toggle"
-                          id="terms"
-                          tabindex="0">
-                      warunki
-                    </span>
-                    korzystania z serwisu.
-                  </p><!--element inline, rozbiłem na linię dla większej czytelności-->
+                  <label for="checkbox">
+                    <p>
+                      Akceptuję
+                      <span class="form--tooltip_toggle"
+                            id="terms"
+                            tabindex="0">
+                        warunki
+                      </span>
+                      korzystania z serwisu.
+                    </p><!--element inline, rozbiłem na linię dla większej czytelności-->
+                  </label>
 
                   <input id=checkbox
                          type="checkbox">
                 </div>
 
                 <div id="form--button">
-                  <button type="submit">Dołącz!</button>
+                  <input type="button"
+                         value="Dołącz!">
                 </div>
               </fieldset>
             </form>
