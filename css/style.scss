@@ -1,8 +1,7 @@
 $white: #f8f8ff;
 $blue: #0080e0;
 $blue2: #002060;
-$navy: #002040;
-$navy2: #000020;
+$navy: #000020;
 $nav-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.23);
 
 body {
@@ -264,79 +263,58 @@ section {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+    h1,
+    h3 {
+      text-align: center;
+    }
+    h1 {
+      text-transform: uppercase;
+    }
+    fieldset {
+      border: none;
+      max-width: 320px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
 }
 
-.modal-field {
-  background-color: $white;
-  color: $navy2;
-  font-size: 1.6rem;
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
-  min-width: 25%;
-  min-height: 55%;
-  border: none;
+.form--field {
+  font-size: 1.2rem;
   display: flex;
-  margin: 90px 0 0 0;
-  padding: 0.5rem 1.5rem;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 10px 0;
+}
 
-  & label {
+
+
+.form--button {
+  text-align: center;
+
+  .button {
+    background-color: $white;
+    color: $navy;
     font-size: 1.2rem;
-    padding: 1.0rem 0.5rem;
+    padding: 1.0rem 1.5rem;
+    border: solid 3px $blue;
+    border-radius: 5px;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+
+    &:hover {
+      background-color: $blue;
+    }
   }
 }
 
-.modal-field button {
-  background-color: $white;
-  padding: 1.0rem 1.5rem;
-  border: solid 3px $blue;
-  border-radius: 5px;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-}
-
-.modal-field button:hover {
-  background-color: $blue;
-}
-
-.modal-box-close {
-  color: $navy2;
-  text-align: right;
-  text-decoration: none;
-  font-size: 2.5rem;
-  padding: 0;
-  margin: 0;
-
-  &:hover {
-    color: $blue;
-  }
-}
-
-input {
-  padding: 1.0rem 0.5rem;
-  width: 97%;
-  border-radius: inherit;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-
-  &:active {
-    border: solid 2px $blue;
-  }
-}
-
-#form--button {
-  display: flex;
-  justify-content: center;
-  padding: 0.8rem;
-}
 
 .form--agreement {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0.5rem 0;
-
-  & p {
-    margin: 0;
-    font-size: 1.1rem;
-    padding: 1.0rem 0;
-  }
+  font-size: 1.2rem;
 }
 
 .form--tooltip_toggle {
@@ -388,10 +366,10 @@ input {
   }
 }
 
-input[type=checkbox] {
-  padding: 1.5rem 0.5rem;
-  width: 25%;
-}
+//input[type=checkbox] {
+//  padding: 1.5rem 0.5rem;
+//  width: 25%;
+//}
 //form section end
 
 .footer--background {
