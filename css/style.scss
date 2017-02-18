@@ -395,12 +395,15 @@ section {
   margin: 0 auto;
   padding: 0 5px;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
 
   svg {
     fill: $white;
+    width: 100%;
+    padding: 5px;
 
     &:hover {
       fill: $blue;
@@ -411,9 +414,9 @@ section {
     }
   }
 
-  a {
+  a.footer--nav {
     text-align: center;
-    padding: 10px;
+
     z-index: 5;
   }
 
@@ -424,22 +427,47 @@ section {
 }
 
 @media screen and (max-width: 320px) {
+  .footer--content,
+  .container {
+    min-width: initial;
+    overflow: hidden;
+  }
+
   .footer--content {
+    justify-content: center;
+
+    svg {
+      width: 50%;
+    }
+  }
+
+  .footer--text {
     p {
       font-size: 0.8rem;
+      padding: 0;
     }
+
     img {
       display: none;
     }
   }
 }
 
-@media screen and (min-width: 321px) and (max-width: 780px) {
-  .footer--content {
+@media screen and (min-width: 321px) and (max-width: 750px) {
+  .footer--text {
     p {
       font-size: 1rem;
     }
+
+    img {
+      width: 50%;
+      height: 50%;
+    }
   }
+}
+
+@media screen and (min-width: 751px) and (max-width: 970px) {
+
 }
 
 /*# sourceMappingURL=style.css.map */
