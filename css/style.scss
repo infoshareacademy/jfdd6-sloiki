@@ -144,6 +144,7 @@ section {
   position: absolute;
   top: 100%;
   z-index: 3;
+  overflow: hidden;
 }
 
 .product {
@@ -280,13 +281,24 @@ section {
 }
 
 .form--field {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  padding: 10px 0;
+
+  label {
+    padding: 5px 2px;
+  }
+  input {
+    padding: 5px 2px;
+    background: none;
+    box-sizing: border-box;
+    border-width: 0;
+    border-color: transparent;
+    font-family: inherit;
+  }
 }
 
 
@@ -297,7 +309,7 @@ section {
   .button {
     background-color: $white;
     color: $navy;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     padding: 1.0rem 1.5rem;
     border: solid 3px $blue;
     border-radius: 5px;
@@ -314,7 +326,7 @@ section {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .form--tooltip_toggle {
