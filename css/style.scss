@@ -265,19 +265,16 @@ section {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+
   h1,
   h3 {
     text-align: center;
   }
-  h1 {
 
-  }
-  fieldset {
-    border: none;
-    max-width: 320px;
-    padding: 20px;
+  form {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
@@ -299,24 +296,6 @@ section {
     border-width: 0;
     border-color: transparent;
     font-family: inherit;
-  }
-}
-
-.form--button {
-  text-align: center;
-
-  .button {
-    background-color: $white;
-    color: $navy;
-    font-size: 1.4rem;
-    padding: 1.0rem 1.5rem;
-    border: solid 3px $blue;
-    border-radius: 5px;
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
-
-    &:hover {
-      background-color: $blue;
-    }
   }
 }
 
@@ -376,10 +355,24 @@ section {
   }
 }
 
-//input[type=checkbox] {
-//  padding: 1.5rem 0.5rem;
-//  width: 25%;
-//}
+.form--button {
+  text-align: center;
+
+  .button {
+    background-color: $white;
+    color: $navy;
+    font-size: 1.4rem;
+    padding: 1.0rem 1.5rem;
+    border: solid 3px $blue;
+    border-radius: 5px;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+
+    &:hover {
+      background-color: $blue;
+    }
+  }
+}
+
 //form section end
 
 .footer--background {
@@ -392,7 +385,6 @@ section {
 }
 
 .footer--content {
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
