@@ -304,21 +304,20 @@ section {
       background: $blue;
       margin-top: 30px;
     }
+    &:focus ~ label {
+      transform: translate(0, -35px);
+    }
   }
+
 
   label.field--label {
     color: $blue2;
     box-sizing: border-box;
     padding: 10px 15px;
     position: absolute;
-    margin-top: -40px;
     z-index: 2;
     pointer-events: none;
     transition: $form-transition;
-  }
-
-  &:focus ~ label {
-    transform: translate(0, -35px);
   }
 }
 
