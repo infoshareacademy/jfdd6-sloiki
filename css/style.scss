@@ -1,8 +1,10 @@
-$white: #f8f8ff;
-$blue: #0080e0;
-$blue2: #002060;
-$navy: #000020;
+$white: #f8f8ff; //background color, opposite font color
+$blue: #0080e0; //hoover color
+$blue2: #002060; //default font color, footer background color, tooltip background color
+$navy: #000020; //never used !! it should be deleted and name blue2 -> navy
 $nav-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.23);
+$form-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+$font-size: 1.4rem;
 
 body {
   color: $blue2;
@@ -15,12 +17,12 @@ h1,
 h2,
 h3 {
   font-family: Montserrat, Arial, Helvetica, sans-serif;
-  font-weight: 700;
+  font-weight: 700; //font is too heavy
   color: $blue2;
 }
 
 h1 {
-  text-transform: uppercase;
+  text-transform: uppercase; //added to make headers more visible
   font-size: 2.8rem;
 }
 
@@ -33,7 +35,7 @@ h3 {
 }
 
 p {
-  font-size: 1.4rem;
+  font-size: 1.4rem; //default font size
 }
 
 section {
@@ -259,54 +261,77 @@ section {
 }
 
 //form section start
+
 .form--content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  box-sizing: border-box;
 
   h1,
   h3 {
     text-align: center;
   }
-
   form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 50%;
+    font-size: $font-size;
   }
 }
 
 .form--field {
-  font-size: 1.4rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
+  padding: 1.0rem;
 
-  label {
-    padding: 5px 2px;
-  }
-  input {
-    padding: 5px 2px;
-    background: none;
+  input#email.field--input {
+    border: 1px solid $blue;
+    width: 100%;
     box-sizing: border-box;
-    border-width: 0;
-    border-color: transparent;
-    font-family: inherit;
+    padding: 10px 15px;
+    border-radius: 10px; //unify border radius on whole page - to do at the end
+    color: $white;
+    background-color: $white;
+    position: relative;
+    z-index: 1;
+    transition: $form-transition;
+    &:focus {
+      outline: none;
+      background: $blue;
+      margin-top: 30px;
+    }
+  }
+
+  label.field--label {
+    color: $blue2;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    position: absolute;
+    margin-top: -40px;
+    z-index: 2;
+    pointer-events: none;
+    transition: $form-transition;
+  }
+
+  &:focus ~ label {
+    transform: translate(0, -35px);
   }
 }
+
 
 .form--agreement {
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-size: 1.4rem;
+  padding: 1.0rem
 }
 
-.form--tooltip_toggle {
+.agreement--tooltip-toggle {
   cursor: pointer;
   position: relative;
   text-decoration: underline;
@@ -357,13 +382,14 @@ section {
 
 .form--button {
   text-align: center;
+  padding: 1.0rem;
 
   .button {
     background-color: $white;
-    color: $navy;
+    color: $blue2;
     font-size: 1.4rem;
     padding: 1.0rem 1.5rem;
-    border: solid 3px $blue;
+    border: solid 3px/ $blue;
     border-radius: 5px;
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
 
