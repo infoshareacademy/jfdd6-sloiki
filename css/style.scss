@@ -9,7 +9,8 @@ $font-size: 1.4rem;
 /* Change Autocomplete styles in Chrome*/
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
-  border: 1px solid $blue;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
   -webkit-text-fill-color: $white;
   -webkit-box-shadow: 0 0 0 1000px $blue inset;
   transition: background-color 5000s ease-in-out 0s;
