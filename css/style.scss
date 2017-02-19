@@ -6,6 +6,16 @@ $nav-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.23);
 $form-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
 $font-size: 1.4rem;
 
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  border: 1px solid $blue;
+  -webkit-text-fill-color: $white;
+  -webkit-box-shadow: 0 0 0 1000px $blue inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+
 @keyframes dothabottomcheck
 {
   0% { height: 0; }
