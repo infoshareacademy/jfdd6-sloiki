@@ -1,6 +1,6 @@
-$white: #f8f8ff; //background color, opposite font color
-$blue: #0080e0; //hoover color
-$blue2: #002060; //default font color, footer background color, tooltip background color
+$white: #f8f8ff; //background color, complementary font color
+$blue: #0080e0; //hoover color, selection color
+$blue2: #002060; //default font color, complementary background color (footer background color, tooltip background color)
 $navy: #000020; //never used !! it should be deleted and name blue2 -> navy
 $nav-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.23);
 $form-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
@@ -311,14 +311,24 @@ section {
     position: relative;
     z-index: 1;
     transition: $form-transition;
+
     &:focus {
       outline: none;
       border-color: $blue;
       background: $blue;
       margin-top: 30px;
     }
+
+    &:valid {
+      margin-top: 30px;
+    }
+
     &:focus ~ label {
       transform: translate(0, -35px);
+    }
+
+    &:valid ~ label {
+      transform: translate(5px, -35px) scale(0.9);
     }
   }
 
@@ -458,7 +468,7 @@ section {
   text-align: center;
   padding: 1.0rem;
 
-  .button {
+  button.button {
     background-color: $blue2;
     color: $white;
     font-size: 1.4rem;
@@ -467,7 +477,8 @@ section {
     border-radius: 5px;
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
 
-    &:hover {
+    &:hover,
+    &:focus {
       border-color: $blue;
       background-color: $blue;
     }
