@@ -6,6 +6,18 @@ $nav-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.23);
 $form-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
 $font-size: 1.4rem;
 
+@keyframes dothabottomcheck
+{
+  0% { height: 0; }
+  100% { height: 14px; }
+}
+
+@keyframes dothatopcheck
+{  0% { height: 0; }
+  50% { height: 0; }
+  100% { height: 25px; }
+}
+
 body {
   color: $blue2;
   background-color: $white;
@@ -377,30 +389,41 @@ section {
   input#checkbox:checked + .checkbox--input::before,
   .checkbox--input.checked::before {
     height: 25px;
-    //animation: dothatopcheck 0.4s ease 0s forwards;
-    //-webkit-animation: dothatopcheck 0.4s ease 0s forwards;
+    animation: dothatopcheck 0.4s ease 0s forwards;
   }
 
   input#checkbox:checked + .checkbox--input::after,
   .checkbox--input.checked::after {
     height: 14px;
-    //animation: dothabottomcheck 0.2s ease 0s forwards;
-    //-webkit-animation: dothabottomcheck 0.2s ease 0s forwards;
+    animation: dothabottomcheck 0.2s ease 0s forwards;
   }
-}
 
+  p.checkbox--label {
+    padding: 0 65px 0 0;
+  }
+
+}
 
 .agreement--tooltip-toggle {
   cursor: pointer;
   position: relative;
   text-decoration: underline;
 
+  &::before,
+  &::after {
+    font-size: 1.0rem;
+    line-height: 1.4rem;
+    opacity: 0;
+    pointer-events: none;
+    text-align: left;
+    z-index: 3;
+  }
+
   &::before {
     position: absolute;
-    top: -5.68rem;
-    left: -6rem;
+    top: -7.5rem;
+    left: -7.0rem;
     background-color: $blue2;
-    line-height: 1.1rem;
     border-radius: 5px;
     color: $white;
     content: "Twoje dane są u nas bezpieczne. Wyślemy Ci tylko jedną wiadomość z informacją o starcie pożyczME.";
@@ -412,7 +435,7 @@ section {
 
   &::after {
     position: absolute;
-    top: -0.5rem;
+    top: 0;
     left: 1.9rem;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
@@ -420,14 +443,6 @@ section {
     content: " ";
     margin-left: -5px;
     width: 0;
-  }
-
-  &::before,
-  &::after {
-    font-size: 1rem;
-    opacity: 0;
-    pointer-events: none;
-    text-align: center;
   }
 
   &:focus::before,
@@ -444,15 +459,16 @@ section {
   padding: 1.0rem;
 
   .button {
-    background-color: $white;
-    color: $blue2;
+    background-color: $blue2;
+    color: $white;
     font-size: 1.4rem;
     padding: 1.0rem 1.5rem;
-    border: solid 3px/ $blue;
+    border: solid 1px $blue2;
     border-radius: 5px;
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
 
     &:hover {
+      border-color: $blue;
       background-color: $blue;
     }
   }
