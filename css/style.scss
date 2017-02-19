@@ -286,10 +286,10 @@ section {
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  padding: 1.0rem;
+  padding: 0.2rem;
 
   input#email.field--input {
-    border: 1px solid $blue;
+    border: 1px solid $blue2;
     width: 100%;
     box-sizing: border-box;
     padding: 10px 15px;
@@ -301,6 +301,7 @@ section {
     transition: $form-transition;
     &:focus {
       outline: none;
+      border-color: $blue;
       background: $blue;
       margin-top: 30px;
     }
@@ -308,7 +309,6 @@ section {
       transform: translate(0, -35px);
     }
   }
-
 
   label.field--label {
     color: $blue2;
@@ -321,14 +321,76 @@ section {
   }
 }
 
-
 .form--agreement {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 1.4rem;
-  padding: 1.0rem
+  padding: 0.2rem;
+
+  input#checkbox {
+    display: none;
+  }
+
+  label.checkbox--input {
+    height: 1.4rem;
+    width: 1.4rem;
+    background-color: $white;
+    border: 1px solid $blue2;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box;
+    transition: border-color ease 0.2s;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      box-sizing: border-box;
+      position: absolute;
+      height: 0;
+      width: 5px;
+      background-color: #34b93d;
+      display: inline-block;
+      content: ' ';
+      transition: opacity ease 0.5s;
+      -webkit-transition: opacity ease 0.5s;
+    }
+
+    &::before {
+      top: 0;
+      left: 0;
+      box-shadow: 0 0 0 2px $white;
+      transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg);
+    }
+
+    &::after {
+      top: 0;
+      left: 0;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
+  }
+
+  input#checkbox:checked + .checkbox--input,
+  .checkbox--input.checked {
+    border-color: $blue;
+  }
+
+  input#checkbox:checked + .checkbox--input::after,
+  .checkbox--input.checked::after {
+    height: 10px;
+    animation: dothabottomcheck 0.2s ease 0s forwards;
+    -webkit-animation: dothabottomcheck 0.2s ease 0s forwards;
+  }
+
+  input#checkbox:checked + .checkbox--input::before,
+  .checkbox--input.checked::before {
+    height: 20px;
+    animation: dothatopcheck 0.4s ease 0s forwards;
+    -webkit-animation: dothatopcheck 0.4s ease 0s forwards;
+  }
 }
+
 
 .agreement--tooltip-toggle {
   cursor: pointer;
