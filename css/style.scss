@@ -439,4 +439,64 @@ input[type=checkbox] {
   }
 }
 
+
+/*Team section - po zapoznaniu z kodem usunąć komentarz*/
+@media only screen and (max-width:568px)  {
+
+  .team {
+    width: 100%;
+
+  }
+
+  .container-team {
+    max-width: 568px;
+
+    display: block;
+
+
+  }
+
+  .team h1 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .team h3 {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .all-box {
+    justify-content: center;
+    display: block;
+
+    img {
+      width: 125px;
+      height: 125px;
+      border-radius: 100%;
+
+    }
+  }
+
+  .social {
+    padding: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+
+    img {
+      display: block;
+      width: 30px;
+      height: 30px;
+      padding: 5px;
+      opacity: 0.6;
+      filter: alpha(opacity=50);
+      border-radius: 100%;
+    }
+  }
+
+
+
+
+}
+
 /*# sourceMappingURL=style.css.map */
