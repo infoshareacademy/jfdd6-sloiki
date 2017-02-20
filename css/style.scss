@@ -359,10 +359,9 @@ input[type=checkbox] {
 
 
 .product {
-  padding-top: 7%;
   min-height: 100vh;
-
 }
+
 .product:before {
   display: block;
   content: " ";
@@ -373,42 +372,39 @@ input[type=checkbox] {
 
 .product h1 {
   text-align: center;
-  padding-bottom: 20px;
-
 }
 
-.product {
+.product-container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   width: 100%;
-
-
-
 }
 
 .box {
 
   flex: 1;
-  text-align: center;
-  padding-top: 10px;
-  margin: 10px;
+  width: 280px;
+  height: 380px;
+  display: flex;
+  justify-items: center;
+}
 
+.box-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 
 }
 
-
-
-.box img{
+.box img {
   height: 100px;
   width: 100px;
 }
-
-
-
-
-
 
 
 
