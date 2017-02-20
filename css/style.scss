@@ -16,17 +16,25 @@ input:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
 }
 
-
-@keyframes dothabottomcheck
-{
-  0% { height: 0; }
-  100% { height: 14px; }
+@keyframes dothabottomcheck {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 14px;
+  }
 }
 
-@keyframes dothatopcheck
-{  0% { height: 0; }
-  50% { height: 0; }
-  100% { height: 25px; }
+@keyframes dothatopcheck {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 0;
+  }
+  100% {
+    height: 25px;
+  }
 }
 
 body {
@@ -80,7 +88,7 @@ section {
 
 .header--menu {
   background-color: $white;
-  //position: fixed; <- temporary, remove before merging to develop
+  position: fixed;
   top: 0;
   width: 100%;
   box-shadow: $nav-shadow;
@@ -99,6 +107,7 @@ section {
 }
 
 .menu--content {
+  height: 74px; //max height after changes in nav RWD
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -293,13 +302,44 @@ section {
   min-height: 100vh;
   box-sizing: border-box;
 
+  @media screen and (max-width: 970px) and (min-width: 751px) {
+    transform: scale(0.9);
+  }
+
+  @media screen and (max-width: 750px) and (min-width: 321px) {
+    transform: scale(0.8);
+  }
+
+  @media screen and (max-width: 320px) {
+    transform: scale(0.7);
+  }
+
   h1,
   h3 {
     text-align: center;
   }
+
   form {
     width: 50%;
     font-size: $font-size;
+  }
+
+  @media screen and (max-width: 970px) and (min-width: 751px) {
+    form {
+      width: 60%;
+    }
+  }
+
+  @media screen and (max-width: 750px) and (min-width: 321px) {
+    form {
+      width: 80%;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    form {
+      width: 100%;
+    }
   }
 }
 
@@ -363,6 +403,12 @@ section {
   align-items: center;
   padding: 0.2rem;
 
+  @media screen and (max-width: 320px) {
+    flex-direction: column-reverse;
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+  }
+
   input#form-checkbox {
     display: none;
   }
@@ -420,9 +466,12 @@ section {
   }
 
   p.checkbox--label {
-    padding: 0 65px 0 0;
-  }
+    text-align: left;
 
+    @media screen and (max-width: 320px) {
+      text-align: center;
+    }
+  }
 }
 
 .agreement--tooltip-toggle {
