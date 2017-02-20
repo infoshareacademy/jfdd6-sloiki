@@ -118,10 +118,21 @@ section {
 
 @media screen and (max-width: 750px){
   .menu--nav {
+    position: absolute;
+    top: -300px;
+
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
     /*display: none;*/
-    transform: translateY(-100%);
-    transition: transform 0.2s ease-in-out;
-    -webkit-transition: transform 0.2s ease-in-out;
+    //transform: translateY(-100%);
+    //transition: transform 0.2s ease-in-out;
+    //-webkit-transition: transform 0.2s ease-in-out;
   }
 
   .menu_toggle {
@@ -130,12 +141,32 @@ section {
 
   .menu_toggle input[type=checkbox] {
     display: block;
+    //opacity: 0;
     width: 40px;
     height: 35px;
     position: absolute;
     top: 20px;
     right: 20px;
     cursor: pointer;
+
+    &:checked ~ .menu--nav {
+      display: block;
+      position: fixed;
+      top: 72px;
+      left: 0;
+      background: $white;
+      padding-left: 0;
+
+      box-shadow: $nav-shadow;
+      -webkit-box-shadow: $nav-shadow;
+
+      transform: translateY(0%);
+      transition: transform 2s ease-in-out;
+      -webkit-transition: transform 2s ease-in-out;
+
+      li, a {
+        width: 100vw;
+      }
   }
 
   .menu_toggle span {
@@ -158,16 +189,16 @@ section {
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
-      border-top: 5px solid $blue2;
+      //width: 100%;
+      //border-top: 5px solid $blue2;
       transform: translateY(10px);
       transition: transform 0.2s ease-in-out;
       -webkit-transition: transform 0.2s ease-in-out;
     }
 
-    &::after {
-      transform: translateY(25px);
-    }
+    //&::after {
+    //  transform: translateY(25px);
+    //}
 
     &::before {
       opacity: 1;
@@ -176,35 +207,16 @@ section {
     }
 
     &:focus {
-      transform: rotate(45deg) translateY(15px);
-      outline: none;
       transition: transform 0.2s ease-in-out;
       -webkit-transition: transform 0.2s ease-in-out;
 
-      ~ .menu--nav {
-        display: block;
-        position: fixed;
-        top: 72px;
-        left: 0;
-        background: $white;
-        padding-left: 0;
 
-        box-shadow: $nav-shadow;
-        -webkit-box-shadow: $nav-shadow;
-
-        transform: translateY(0%);
-        transition: transform 2s ease-in-out;
-        -webkit-transition: transform 2s ease-in-out;
-
-        li, a {
-          width: 100vw;
-        }
       }
     }
 
     &:focus::before {
       opacity: 0;
-      transform: rotate(-45deg) translateY(-5px); //scale(0.5, 0.5);
+      //transform: rotate(-45deg) translateY(-5px); //scale(0.5, 0.5);
       transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
       -webkit-transition: opacity 0.1s ease-in-out, transform 0.2s ease-in-out;
 
