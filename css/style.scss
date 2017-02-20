@@ -112,27 +112,44 @@ section {
   }
 }
 
-.hamb {
+.hamb, .menu_toggle input {
   display: none;
 }
 
 @media screen and (max-width: 750px){
   .menu--nav {
-    display: none;
+    /*display: none;*/
+    transform: translateY(-100%);
+    transition: transform 0.2s ease-in-out;
+    -webkit-transition: transform 0.2s ease-in-out;
   }
 
   .menu_toggle {
     margin-right: 1rem;
   }
 
-  .hamb {
-    display: inline-block;
-    height: 35px;
+  .menu_toggle input[type=checkbox] {
+    display: block;
     width: 40px;
-    background: transparent;
+    height: 35px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  .menu_toggle span {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 5px;
     position: relative;
-    border: 0;
-    border-top: 5px solid $blue2;
+    background-color: $blue2;
+  }
+
+  .hamb {
+    top: 20px;
+    right: 20px;
     transition: transform 0.2s ease-in-out;
     -webkit-transition: transform 0.2s ease-in-out;
 
@@ -164,13 +181,20 @@ section {
       transition: transform 0.2s ease-in-out;
       -webkit-transition: transform 0.2s ease-in-out;
 
-      ~ .menu--nav, .menu--nav:hover {
+      ~ .menu--nav {
         display: block;
         position: fixed;
         top: 72px;
         left: 0;
         background: $white;
         padding-left: 0;
+
+        box-shadow: $nav-shadow;
+        -webkit-box-shadow: $nav-shadow;
+
+        transform: translateY(0%);
+        transition: transform 2s ease-in-out;
+        -webkit-transition: transform 2s ease-in-out;
 
         li, a {
           width: 100vw;
