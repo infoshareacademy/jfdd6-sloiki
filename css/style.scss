@@ -217,7 +217,7 @@ section {
 
 .team h3 {
   text-align: center;
-  font-size: 15px;
+  font-size: 1rem;
 }
 
 .all-box {
@@ -440,37 +440,35 @@ input[type=checkbox] {
 }
 
 
-/*Team section - po zapoznaniu z kodem usunąć komentarz*/
-@media only screen and (max-width:568px)  {
+
+@media only screen and (max-width:750px)  {
 
   .team {
     width: 100%;
-
-  }
+      }
 
   .container-team {
-    max-width: 568px;
+    max-width: 750px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-
-
-
   }
 
   .team h1 {
     text-align: center;
     font-size: 1.5rem;
-  }
+     }
 
   .team h3 {
     text-align: center;
     font-size: 15px;
+    margin-bottom: 5px;
   }
 
   .all-box {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 30px;
     text-align: center;
 
 
@@ -478,17 +476,8 @@ input[type=checkbox] {
       width: 125px;
       height: 125px;
       border-radius: 100%;
-
-
-
-
     }
   }
-
-
-
-
-
   .social {
     padding: 5px;
     display: flex;
