@@ -124,14 +124,12 @@ section {
 @media screen and (max-width: 750px) {
   .menu--nav {
     position: absolute;
-    left: -1500%;
-
-    transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
-
+    transform: translateX(100%);
     @include rwd-nav-animation;
 
-    //transform: translateY(-100%);
+    a {
+      padding: 1.7rem 1.2rem;
+    }
   }
 
   .menu_toggle {
@@ -178,7 +176,7 @@ section {
       box-shadow: $nav-shadow;
       -webkit-box-shadow: $nav-shadow;
 
-      transform: translateY(0%);
+      transform: translateX(0%);
 
       @include rwd-nav-animation;
 
@@ -186,7 +184,9 @@ section {
         width: 100vw;
       }
     }
-  //  jeszcze :not(:checked)
+    &:not(:checked) ~ .menu--nav{
+    //czy coś tu jest potrzebne?
+    }
   }
 
   .menu_toggle span {
