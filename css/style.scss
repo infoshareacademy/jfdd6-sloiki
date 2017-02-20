@@ -405,19 +405,16 @@ section {
     }
   }
 
-  input#checkbox:checked + .checkbox--input,
-  .checkbox--input.checked {
+  input#checkbox:checked + .checkbox--input {
     border-color: $blue;
   }
 
-  input#checkbox:checked + .checkbox--input::before,
-  .checkbox--input.checked::before {
+  input#checkbox:checked + .checkbox--input::before {
     height: 25px;
     animation: dothatopcheck 0.4s ease 0s forwards;
   }
 
-  input#checkbox:checked + .checkbox--input::after,
-  .checkbox--input.checked::after {
+  input#checkbox:checked + .checkbox--input::after {
     height: 14px;
     animation: dothabottomcheck 0.2s ease 0s forwards;
   }
