@@ -450,8 +450,10 @@ input[type=checkbox] {
 
   .container-team {
     max-width: 568px;
-
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+
 
 
   }
@@ -467,16 +469,25 @@ input[type=checkbox] {
   }
 
   .all-box {
-    justify-content: center;
-    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
 
     img {
       width: 125px;
       height: 125px;
       border-radius: 100%;
 
+
+
+
     }
   }
+
+
+
+
 
   .social {
     padding: 5px;
