@@ -2,3 +2,4 @@
 *.iml
 *.css
 *.map
+!css/animate.css
