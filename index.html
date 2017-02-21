@@ -23,27 +23,32 @@
 <header class="header">
   <div class="header--menu">
     <div class="menu--content container">
-      <a class="scroll" href="#">
+      <a href="#">
         <img src="img/pozyczme-logo-vect.svg"
              alt="Logo PożyczME">
       </a>
 
-      <nav>
-        <ul class="menu--nav">
-          <li class="nav-product">
-            <a href="#product">Produkt</a>
-          </li><!--
+      <nav role="navigation">
+        <div class="menu_toggle">
+          <input type="checkbox"/>
+          <span></span>
+          <span></span>
+          <span></span>
 
-       -->
-          <li class="nav-team">
-            <a href="#team">Zespół</a>
-          </li><!--
+          <ul class="menu--nav">
+            <li>
+              <a href="#product">Produkt</a>
+            </li><!--
 
-       -->
-          <li class="nav-form">
-            <a href="#form">Bądź na bieżąco</a>
-          </li>
-        </ul>
+         --><li>
+              <a href="#team">Zespół</a>
+            </li><!--
+
+         --><li>
+              <a href="#form">Bądź na bieżąco</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
   </div>
@@ -94,9 +99,9 @@
 
             <h2>Dołącz do nas</h2>
 
-            <p>Chcesz byc częścią naszej świetnej społeczności? Rejestrując się możesz podawać swoje opinie o grach,
-              graczach oraz całej organizacji.</p>
-          </div>
+                  <p>Chcesz byc częścią naszej świetnej społeczności? Rejestrując się możesz podawać swoje opinie o grach,
+                    graczach oraz całej organizacji.</p>
+              </div>
 
           <div class="box">
             <img src="img/board-gaming-blue.svg"
@@ -317,6 +322,18 @@
     </footer>
   </div>
 </main>
+
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+<script>
+  $('body').click(function () { $('.menu_toggle input').prop('checked', false); });
+  $('.menu_toggle input').click(function (event) { event.stopPropagation(); })
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/scroll.js"></script>
 </body>
