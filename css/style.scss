@@ -1,7 +1,7 @@
-$white: #f8f8ff; //background color, complementary font color
-$blue: #0080e0; //hoover color, selection color
-$blue2: #002060; //default font color, complementary background color (footer background color, tooltip background color)
-$navy: #000020; //never used !! it should be deleted and name blue2 -> navy
+$white: #f8f8ff;
+$blue: #0080e0;
+$blue2: #002060;
+$navy: #000020;
 $nav-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.23);
 $form-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
 $font-size: 1.4rem;
@@ -13,7 +13,7 @@ input:-webkit-autofill:focus {
   font-size: 1.2rem;
   -webkit-text-fill-color: $white;
   -webkit-box-shadow: 0 0 0 1000px $blue inset;
-  transition: background-color 5000s eae-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 
@@ -80,7 +80,7 @@ section {
 
 .header--menu {
   background-color: $white;
-  //position: fixed; <- temporary, remove before merging to develop
+  position: fixed;
   top: 0;
   width: 100%;
   box-shadow: $nav-shadow;
@@ -316,7 +316,7 @@ section {
     width: 100%;
     box-sizing: border-box;
     padding: 10px 15px;
-    border-radius: 10px; //unify border radius on whole page - to do at the end
+    border-radius: 10px;
     color: $white;
     background-color: $white;
     position: relative;
