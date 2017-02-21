@@ -203,8 +203,9 @@ section {
   transition: all 0.15s ease-out;
   border: none;
   cursor: pointer;
-  display: inline-block;
+  display: block;
   outline: none;
+  //opacity: 0;
   z-index: 1000;
 
   &:checked {
@@ -217,6 +218,7 @@ section {
     content: '';
     display: block;
     position: relative;
+    opacity: 1;
     z-index: 100;
   }
 }
