@@ -12,7 +12,10 @@ $(document).ready(function () {
     $tr = $('<tr>');
 
     for(var x = 0; x < 4; x += 1) {
-      $td = $('<td>').addClass('game--card');
+      $td = $('<td>').addClass('game--card')
+        .on('click', function () {
+          $(this).addClass('game--card__flipped');
+        });
       $tr.append($td);
     }
     $table.append($tr);
