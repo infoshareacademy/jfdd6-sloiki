@@ -185,6 +185,7 @@ section {
       top: 19px;
       left: -3px;
       cursor: pointer;
+      z-index: 5;
 
       &:checked ~ span {
         opacity: 1;
