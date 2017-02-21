@@ -123,11 +123,24 @@ section {
 
 @media screen and (max-width: 750px) {
   .menu--nav {
-    position: absolute;
+    position: fixed;
+    top: 72px;
+    left: 0;
+    background: $white;
+    padding-left: 0;
+
+    box-shadow: $nav-shadow;
+    -webkit-box-shadow: $nav-shadow;
+
     transform: translateX(100%);
     @include rwd-nav-animation;
 
+    li {
+      width: 100vw;
+    }
+
     a {
+      width: 100vw;
       padding: 1.7rem 1.2rem;
     }
   }
@@ -190,21 +203,7 @@ section {
       }
 
       &:checked ~ .menu--nav {
-        position: fixed;
-        top: 72px;
-        left: 0;
-        background: $white;
-        padding-left: 0;
-
-        box-shadow: $nav-shadow;
-        -webkit-box-shadow: $nav-shadow;
-
         transform: translateX(0%);
-        //@include rwd-nav-animation;
-
-        li, a {
-          width: 100vw;
-        }
       }
     }
   }
