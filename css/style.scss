@@ -21,7 +21,7 @@ input:-webkit-autofill:focus {
   0% {
   width: 40px;
   height: 40px;
-  opacity: 0.35;
+  opacity: 0.6;
   position: relative;
 }
   100% {
@@ -195,44 +195,24 @@ section {
 }
 
 .background--button {
-  appearance: none;
   position: absolute;
   top: 0;
   width: 40px;
   height: 40px;
-  transition: all 0.15s ease-out 0;
-
-  background: #cbd1d8;
+  transition: all 0.15s ease-out;
   border: none;
-  color: #fff;
   cursor: pointer;
   display: inline-block;
   outline: none;
-  margin-right: 0.5rem;
   z-index: 1000;
 
-  &:hover {
-    background: #9faab7;
-  }
-
   &:checked {
-    background: #40e0d0;
-  }
-
-  &:checked::before {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    content: '\2716';
-    display: inline-block;
-    font-size: 26.66667px;
-    text-align: center;
-    line-height: 40px;
+    background: $white;
   }
 
   &:checked::after {
     animation: click-wave 0.65s;
-    background: #40e0d0;
+    background: $blue;
     content: '';
     display: block;
     position: relative;
@@ -241,7 +221,7 @@ section {
 }
 
 .main--wrapper {
-  background-color: ghostwhite;
+  background-color: $white;
   width: 100%;
   position: absolute;
   top: 100%;
