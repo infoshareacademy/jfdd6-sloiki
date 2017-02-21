@@ -40,11 +40,13 @@
               <a href="#product">Produkt</a>
             </li><!--
 
-         --><li>
+         -->
+            <li>
               <a href="#team">Zespół</a>
             </li><!--
 
-         --><li>
+         -->
+            <li>
               <a href="#form">Bądź na bieżąco</a>
             </li>
           </ul>
@@ -296,39 +298,62 @@
           <fieldset>
             <label>Imię</label>
 
-            <input type="text"
-                   placeholder="Wpisz swoje imię">
+        <div class="form--content container">
+          <h1>Bądź na bieżąco</h1>
 
-            <label>Nazwisko</label>
+          <h3>Powiadomimy Cię, kiedy pożyczME wystartuje.</h3>
 
-            <input type="text"
-                   placeholder="Wpisz swoje nazwisko">
+          <form>
+            <div class="form--field">
+              <input class="field--input"
+                     type="email"
+                     id="email"
+                     required>
 
-            <label>Adres e-mail</label>
+              <label class="field--label"
+                     for="email">
+                Adres e-mail
+              </label>
 
             <input type="email"
                    placeholder="Wpisz swój e-mail">
 
-            <div class="agreement">
-              <p>
+            </div>
+
+            <div class="form--agreement">
+              <input id="form-checkbox"
+                     type="checkbox">
+
+              <label class="checkbox--input"
+                     for="form-checkbox">
+              </label>
+
+              <p class="checkbox--label">
                 Akceptuję
-                <span class="tooltip-toggle"
+                <span class="agreement--tooltip-toggle"
                       id="terms"
                       tabindex="0">
-                warunki
-              </span>
-                korzystania z serwisu
+                        warunki
+                </span>
+                korzystania z serwisu.
               </p><!--element inline, rozbiłem na linię dla większej czytelności-->
 
               <input id=checkbox
                      type="checkbox">
             </div>
 
-            <div id="button">
-              <button type="submit">Dołącz!</button>
+            <div class="form--button"
+                 id="form--button">
+              <button class="button" type="button">
+                Wyślij
+              </button>
+
+
             </div>
-          </fieldset>
+          </form>
         </div>
+
+
       </section>
     </div>
 
@@ -345,11 +370,11 @@
             </svg>
           </a>
 
-          <p>Copyright&copy;2017 Coded with love by Słoiki Team</p>
+          <div class="footer--text">
+            <p>Copyright&copy;2017 Coded with love by Słoiki Team</p>
 
-          <img src="img/logo-sloiki-white.png"
-               width="30px"
-               height="30px">
+            <img src="img/logo-sloiki-white.png">
+          </div>
         </div>
       </div>
     </footer>
@@ -366,8 +391,12 @@
   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
   crossorigin="anonymous"></script>
 <script>
-  $('body').click(function () { $('.menu_toggle input').prop('checked', false); });
-  $('.menu_toggle input').click(function (event) { event.stopPropagation(); })
+  $('body').click(function () {
+    $('.menu_toggle input').prop('checked', false);
+  });
+  $('.menu_toggle input').click(function (event) {
+    event.stopPropagation();
+  })
 </script>
 </body>
 </html>
