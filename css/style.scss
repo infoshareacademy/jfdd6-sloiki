@@ -646,11 +646,26 @@ section {
 }
 
 //gra
-.game h1 {
-  text-align: center;
+.game {
+  text-align: center
 }
 
+.game--board  table {
+  margin: 0 auto;
+}
 
+.game--card {
+  width: 160px;
+  height: 160px;
+  background-color: $blue;
+  border: 1px solid $blue2;
+}
+
+.game--card__used {
+
+}
+
+.game--card__
 
 
 .footer--background {
