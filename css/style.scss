@@ -55,12 +55,11 @@ h1,
 h2,
 h3 {
   font-family: Montserrat, Arial, Helvetica, sans-serif;
-  font-weight: 500; //font is too heavy
+  font-weight: 700;
   color: $blue2;
 }
 
 h1 {
-  text-transform: uppercase; //added to make headers more visible
   font-size: 2.8rem;
 }
 
@@ -73,7 +72,7 @@ h3 {
 }
 
 p {
-  font-size: 1.4rem; //default font size
+  font-size: 1.4rem;
 }
 
 section {
@@ -111,10 +110,15 @@ section {
   width: 100%;
   top: 0;
   position: fixed;
+
+  h1,
+  h2,
+  h3 {
+    color: $white;
+  }
 }
 
 .menu--content {
-  height: 74px; //max height after changes in nav RWD
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -253,10 +257,6 @@ section {
   justify-content: center;
   align-items: flex-start;
   padding: 20px;
-
-  h2, h3 {
-    color: $white;
-  }
 }
 
 .background--text {
@@ -274,7 +274,7 @@ section {
 }
 
 .main--wrapper {
-  background-color: ghostwhite;
+  background-color: $white;
   width: 100%;
   position: absolute;
   top: 100%;
@@ -391,8 +391,6 @@ section {
   filter: alpha(opacity=100);
   box-shadow: 0 0 20px #ccc;
 }
-
-//form section start
 
 .form--content {
   display: flex;
@@ -645,8 +643,6 @@ section {
     }
   }
 }
-
-//form section end
 
 .footer--background {
   background-color: $blue2;
