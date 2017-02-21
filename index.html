@@ -28,22 +28,29 @@
              alt="Logo PożyczME">
       </a>
 
-      <nav>
-        <ul class="menu--nav">
-          <li>
-            <a href="#product">Produkt</a>
-          </li><!--
+      <nav role="navigation">
+        <div class="menu_toggle">
+          <input type="checkbox"/>
+          <span></span>
+          <span></span>
+          <span></span>
 
-       -->
-          <li>
-            <a href="#team">Zespół</a>
-          </li><!--
+          <ul class="menu--nav">
+            <li>
+              <a href="#product">Produkt</a>
+            </li><!--
 
-       -->
-          <li>
-            <a href="#form">Bądź na bieżąco</a>
-          </li>
-        </ul>
+         -->
+            <li>
+              <a href="#team">Zespół</a>
+            </li><!--
+
+         -->
+            <li>
+              <a href="#form">Bądź na bieżąco</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
   </div>
@@ -51,7 +58,7 @@
   <div class=header--background>
     <div class="background--content container">
       <div class="background--text">
-        <h2>Masz grę planszową, która się kurzy?<br>Pożycz mi!</h2>
+        <h1>Masz grę planszową, która się kurzy? Pożycz mi!</h1>
       </div>
 
       <div class="background--text">
@@ -336,5 +343,17 @@
   </div>
 </main>
 
+<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+<script>
+  $('body').click(function () {
+    $('.menu_toggle input').prop('checked', false);
+  });
+  $('.menu_toggle input').click(function (event) {
+    event.stopPropagation();
+  })
+</script>
 </body>
 </html>

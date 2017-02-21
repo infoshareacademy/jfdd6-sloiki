@@ -1,7 +1,9 @@
-$white: #f8f8ff; //background color, complementary font color
-$blue: #0080e0; //hoover color, selection color
-$blue2: #002060; //default font color, complementary background color (footer background color, tooltip background color)
-$navy: #000020; //never used !! it should be deleted and name blue2 -> navy
+@charset "UTF-8";
+
+$white: #f8f8ff;
+$blue: #0080e0;
+$blue2: #002060;
+$navy: #000020;
 $nav-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.23);
 $form-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
 $font-size: 1.4rem;
@@ -55,6 +57,11 @@ input:-webkit-autofill:focus {
   }
 }
 
+@mixin rwd-nav-animation {
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: transform 0.5s ease-in-out;
+}
+
 body {
   color: $blue2;
   background-color: $white;
@@ -66,12 +73,11 @@ h1,
 h2,
 h3 {
   font-family: Montserrat, Arial, Helvetica, sans-serif;
-  font-weight: 500; //font is too heavy
+  font-weight: 700;
   color: $blue2;
 }
 
 h1 {
-  text-transform: uppercase; //added to make headers more visible
   font-size: 2.8rem;
 }
 
@@ -84,11 +90,7 @@ h3 {
 }
 
 p {
-  font-size: 1.4rem; //default font size
-}
-
-a {
-  text-decoration: none; //remove from other places
+  font-size: 1.4rem;
 }
 
 section {
@@ -126,10 +128,15 @@ section {
   width: 100%;
   top: 0;
   position: fixed;
+
+  h1,
+  h2,
+  h3 {
+    color: $white;
+  }
 }
 
 .menu--content {
-  height: 74px; //max height after changes in nav RWD
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -150,7 +157,7 @@ section {
     display: inline-block;
 
     &:hover {
-      color: white;
+      color: $white;
       background-color: $blue;
       transition: background-color 0.5s;
       transition-timing-function: ease-in-out;
@@ -168,6 +175,99 @@ section {
   }
 }
 
+.menu_toggle input {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  .menu--nav {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    background: $white;
+    padding-left: 0;
+
+    box-shadow: $nav-shadow;
+    -webkit-box-shadow: $nav-shadow;
+
+    transform: translateX(100%);
+    @include rwd-nav-animation;
+
+    li {
+      width: 100vw;
+    }
+
+    a {
+      width: 100vw;
+      padding: 1.7rem 1.2rem;
+    }
+  }
+
+  .menu_toggle {
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    padding-top: 50%;
+
+    span {
+      display: block;
+      width: 33px;
+      height: 4px;
+      margin-bottom: 5px;
+      position: relative;
+      background-color: $blue2;
+      border-radius: 3px;
+
+      transform-origin: 4px 0;
+
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+      opacity 0.55s ease;
+
+      &:first-child {
+        transform-origin: 0 0;
+      }
+
+      &:nth-last-child(2) {
+        transform-origin: 0 100%;
+      }
+    }
+
+    input[type=checkbox] {
+      display: block;
+      opacity: 0;
+      width: 40px;
+      height: 35px;
+      position: absolute;
+      top: 19px;
+      left: -3px;
+      cursor: pointer;
+      z-index: 5;
+
+      &:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: $blue;
+
+        &:nth-last-child(3) {
+          opacity: 0;
+          transform: rotate(0deg) scale(0.2, 0.2);
+        }
+
+        &:nth-last-child(2) {
+          opacity: 1;
+          transform: rotate(-45deg) translate(0, -1px);
+        }
+      }
+
+      &:checked ~ .menu--nav {
+        transform: translateX(0%);
+      }
+    }
+  }
+}
+
 .background--content {
   height: 100vh;
   display: flex;
@@ -175,10 +275,6 @@ section {
   justify-content: center;
   align-items: flex-start;
   padding: 20px;
-
-  h2, h3 {
-    color: $white;
-  }
 }
 
 .background--text {
@@ -342,8 +438,6 @@ section {
   box-shadow: 0 0 20px #ccc;
 }
 
-//form section start
-
 .form--content {
   display: flex;
   flex-direction: column;
@@ -406,7 +500,7 @@ section {
     width: 100%;
     box-sizing: border-box;
     padding: 10px 15px;
-    border-radius: 10px; //unify border radius on whole page - to do at the end
+    border-radius: 10px;
     color: $white;
     background-color: $white;
     position: relative;
@@ -595,8 +689,6 @@ section {
     }
   }
 }
-
-//form section end
 
 .footer--background {
   background-color: $blue2;
