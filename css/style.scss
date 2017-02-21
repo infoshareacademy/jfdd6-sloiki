@@ -258,10 +258,6 @@ section {
   justify-content: center;
   align-items: flex-start;
   padding: 20px;
-
-  h1, h3 {
-    color: $white;
-  }
 }
 
 .background--text {
@@ -279,11 +275,12 @@ section {
 }
 
 .main--wrapper {
-  background-color: ghostwhite;
+  background-color: $white;
   width: 100%;
   position: absolute;
   top: 100%;
   z-index: 3;
+  overflow: hidden;
 }
 
 .product {
@@ -371,7 +368,7 @@ section {
 
 .team h3 {
   text-align: center;
-  font-size: 15px;
+  font-size: 1rem;
 }
 
 .all-box {
@@ -611,7 +608,6 @@ section {
     top: -7.5rem;
     left: -7.0rem;
     background-color: $blue2;
-    line-height: 1.1rem;
     border-radius: 5px;
     color: $white;
     content: "Twoje dane są u nas bezpieczne. Wyślemy Ci tylko jedną wiadomość z informacją o starcie pożyczME.";
@@ -631,14 +627,6 @@ section {
     content: " ";
     margin-left: -5px;
     width: 0;
-  }
-
-  &::before,
-  &::after {
-    font-size: 1rem;
-    opacity: 0;
-    pointer-events: none;
-    text-align: center;
   }
 
   &:focus::before,
@@ -903,4 +891,64 @@ section {
     }
   }
 }
+
+
+@media only screen and (max-width:750px)  {
+
+  .team {
+    width: 100%;
+      }
+
+  .container-team {
+    max-width: 750px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .team h1 {
+    text-align: center;
+    font-size: 1.5rem;
+     }
+
+  .team h3 {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  .all-box {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    text-align: center;
+
+
+    img {
+      width: 125px;
+      height: 125px;
+      border-radius: 100%;
+    }
+  }
+  .social {
+    padding: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+
+    img {
+      display: block;
+      width: 30px;
+      height: 30px;
+      padding: 5px;
+      opacity: 0.6;
+      filter: alpha(opacity=50);
+      border-radius: 100%;
+    }
+  }
+
+
+
+
+}
+
 /*# sourceMappingURL=style.css.map */
