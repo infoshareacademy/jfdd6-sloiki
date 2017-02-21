@@ -14,6 +14,10 @@
   <link rel="stylesheet"
         href="css/style.css">
 
+  <link rel="stylesheet"
+        href="css/animate.css">
+
+
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,400i,700&amp;subset=latin-ext"
         rel="stylesheet">
 </head>
@@ -40,13 +44,11 @@
               <a href="#product">Produkt</a>
             </li><!--
 
-         -->
-            <li>
+         --><li>
               <a href="#team">Zespół</a>
             </li><!--
 
-         -->
-            <li>
+         --><li>
               <a href="#form">Bądź na bieżąco</a>
             </li>
           </ul>
@@ -117,14 +119,14 @@
         </div>
       </section>
 
-      <section class="team"
-               id="team">
-        <h1>Nasz zespół</h1>
-        <section class="container-team">
-          <div class="all-box">
-            <div class="person">
-              <img src="img/Rafal.jpg"
-                   alt="Zdjęcie Rafała">
+          <section class="team"
+                   id="team">
+            <h1>Nasz zespół</h1>
+            <section class="container-team">
+              <div class="all-box">
+                <div class="person">
+                  <img src="img/Rafal.jpg" class="wow jello"
+                       alt="Zdjęcie Rafała">
 
               <h3>Rafał Szatrański</h3>
 
@@ -156,10 +158,10 @@
             </div>
           </div>
 
-          <div class="all-box">
-            <div class="person">
-              <img src="img/Marta.jpg"
-                   alt="Zdjęcie Marty">
+              <div class="all-box">
+                <div class="person">
+                  <img src="img/Marta.jpg" class="wow jello"
+                  alt="Zdjęcie Marty">
 
               <h3>Marta Rządkowska</h3>
               <div class="social">
@@ -190,10 +192,10 @@
             </div>
           </div>
 
-          <div class="all-box">
-            <div class="person">
-              <img src="img/Karol.jpg"
-                   alt="Zdjęcie Karola">
+              <div class="all-box">
+                <div class="person">
+                  <img src="img/Karol.jpg" class="wow jello"
+                       alt="Zdjęcie Karola">
 
               <h3>Karol Jakubcewicz</h3>
 
@@ -223,9 +225,10 @@
             </div>
           </div>
 
-          <div class="all-box">
-            <div class="person">
-              <img src="img/Natalia.jpg" alt="Zdjęcie Natali">
+              <div class="all-box">
+                <div class="person">
+                  <img src="img/Natalia.jpg" class="wow jello"
+                       alt="Zdjęcie Natali">
 
               <h3>Natalia Kulas</h3>
 
@@ -340,10 +343,30 @@
   </div>
 </main>
 
+
 <script
   src="https://code.jquery.com/jquery-3.1.1.js"
   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous">
+</script>
+<script src="js/wow.min.js"></script>
+<script>
+  var wow = new WOW(
+    {
+      boxClass:     'wow',      // animated element css class (default is wow)
+      animateClass: 'animated', // animation css class (default is animated)
+      offset:       0,          // distance to the element when triggering the animation (default is 0)
+      mobile:       false,       // trigger animations on mobile devices (default is true)
+      live:         true,       // act on asynchronously loaded content (default is true)
+      callback:     function(box) {
+        // the callback is fired every time an animation is started
+        // the argument that is passed in is the DOM node being animated
+      },
+      scrollContainer: null // optional scroll container selector, otherwise use window
+    }
+  );
+  wow.init();
+</script>
 <script>
   $('body').click(function () {
     $('.menu_toggle input').prop('checked', false);
