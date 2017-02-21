@@ -1,9 +1,44 @@
+@charset "UTF-8";
+
 $white: #f8f8ff;
 $blue: #0080e0;
 $blue2: #002060;
-$navy: #002040;
-$navy2: #000020;
+$navy: #000020;
 $nav-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.23);
+$form-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+$font-size: 1.4rem;
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  -webkit-text-fill-color: $white;
+  -webkit-box-shadow: 0 0 0 1000px $blue inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/*checkbox animations*/
+@keyframes dothabottomcheck {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 14px;
+  }
+}
+
+@keyframes dothatopcheck {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 0;
+  }
+  100% {
+    height: 25px;
+  }
+}
 
 @mixin rwd-nav-animation {
   transition: transform 0.5s ease-in-out;
@@ -51,7 +86,7 @@ section {
 }
 
 .container {
-  min-width: 320px;
+  min-width: 310px;
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
@@ -76,6 +111,12 @@ section {
   width: 100%;
   top: 0;
   position: fixed;
+
+  h1,
+  h2,
+  h3 {
+    color: $white;
+  }
 }
 
 .menu--content {
@@ -161,18 +202,18 @@ section {
       background-color: $blue2;
       border-radius: 3px;
 
-      transform-origin: 4px 0px;
+      transform-origin: 4px 0;
 
       transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
       background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
       opacity 0.55s ease;
 
       &:first-child {
-        transform-origin: 0% 0%;
+        transform-origin: 0 0;
       }
 
       &:nth-last-child(2) {
-        transform-origin: 0% 100%;
+        transform-origin: 0 100%;
       }
     }
 
@@ -217,10 +258,6 @@ section {
   justify-content: center;
   align-items: flex-start;
   padding: 20px;
-
-  h1, h3 {
-    color: $white;
-  }
 }
 
 .background--text {
@@ -238,11 +275,12 @@ section {
 }
 
 .main--wrapper {
-  background-color: ghostwhite;
+  background-color: $white;
   width: 100%;
   position: absolute;
   top: 100%;
   z-index: 3;
+  overflow: hidden;
 }
 
 .product {
@@ -355,105 +393,209 @@ section {
   box-shadow: 0 0 20px #ccc;
 }
 
-//form section start
-.modal-box {
+.form--content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 970px) and (min-width: 751px) {
+    transform: scale(0.9);
+  }
+
+  @media screen and (max-width: 750px) and (min-width: 321px) {
+    transform: scale(0.8);
+  }
+
+  @media screen and (max-width: 320px) {
+    transform: scale(0.7);
+  }
+
+  h1,
+  h3 {
+    text-align: center;
+  }
+
+  form {
+    width: 50%;
+    font-size: $font-size;
+  }
+
+  @media screen and (max-width: 970px) and (min-width: 751px) {
+    form {
+      width: 60%;
+    }
+  }
+
+  @media screen and (max-width: 750px) and (min-width: 321px) {
+    form {
+      width: 80%;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    form {
+      width: 100%;
+    }
+  }
 }
 
-.modal-field {
-  background-color: $white;
-  color: $navy2;
-  font-size: 1.6rem;
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
-  min-width: 25%;
-  min-height: 55%;
-  border: none;
-  border-radius: 5px;
+.form--field {
   display: flex;
-  margin: 90px 0 0 0;
-  padding: 0.5rem 1.5rem;
-  transition: opacity 500ms;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 0.2rem;
 
-  & label {
-    font-size: 1.2rem;
-    padding: 1.0rem 0.5rem;
+  input#email.field--input {
+    border: 1px solid $blue2;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: $white;
+    background-color: $white;
+    position: relative;
+    z-index: 1;
+    transition: $form-transition;
+
+    &:focus {
+      outline: none;
+      border-color: $blue;
+      background: $blue;
+      margin-top: 30px;
+    }
+
+    &:valid {
+      outline: none;
+      border-color: $blue;
+      background: $blue;
+      margin-top: 30px;
+    }
+
+    &:focus ~ label {
+      transform: translate(0, -35px);
+    }
+
+    &:valid ~ label {
+      transform: translate(5px, -35px) scale(0.9);
+    }
+  }
+
+  label.field--label {
+    color: $blue2;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    position: absolute;
+    z-index: 2;
+    pointer-events: none;
+    transition: $form-transition;
   }
 }
 
-.modal-field button {
-  background-color: $white;
-  padding: 1.0rem 1.5rem;
-  border: solid 3px $blue;
-  border-radius: 5px;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-}
-
-.modal-field button:hover {
-  background-color: $blue;
-}
-
-.modal-box-close {
-  color: $navy2;
-  text-align: right;
-  text-decoration: none;
-  font-size: 2.5rem;
-  padding: 0;
-  margin: 0;
-
-  &:hover {
-    color: $blue;
-  }
-}
-
-input {
-  padding: 1.0rem 0.5rem;
-  width: 97%;
-  border-radius: inherit;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  font-size: 80%;
-
-  &:active {
-    border: solid 2px $blue;
-  }
-}
-
-#button {
-  display: flex;
-  justify-content: center;
-  padding: 0.8rem;
-}
-
-.agreement {
+.form--agreement {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0.5rem 0;
+  padding: 0.2rem;
 
-  & p {
-    margin: 0;
-    font-size: 1.1rem;
-    padding: 1.0rem 0;
+  @media screen and (max-width: 320px) {
+    flex-direction: column-reverse;
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+  }
+
+  input#form-checkbox {
+    display: none;
+  }
+
+  label.checkbox--input {
+    height: 22px;
+    width: 22px;
+    background-color: $white;
+    border: 1px solid $blue2;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box;
+    transition: border-color ease 0.2s;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      box-sizing: border-box;
+      position: absolute;
+      height: 0;
+      width: 3px;
+      background-color: $blue;
+      display: inline-block;
+      content: ' ';
+      transition: opacity ease 0.5s;
+      -webkit-transition: opacity ease 0.5s;
+    }
+
+    &::before {
+      top: -5px;
+      left: 15px;
+      box-shadow: 0 0 0 2px $white;
+      transform: rotate(-135deg);
+    }
+
+    &::after {
+      top: 4px;
+      left: 3px;
+      transform: rotate(-45deg);
+    }
+  }
+
+  input#form-checkbox:checked + .checkbox--input {
+    border-color: $blue;
+  }
+
+  input#form-checkbox:checked + .checkbox--input::before {
+    height: 25px;
+    animation: dothatopcheck 0.4s ease 0s forwards;
+  }
+
+  input#form-checkbox:checked + .checkbox--input::after {
+    height: 14px;
+    animation: dothabottomcheck 0.2s ease 0s forwards;
+  }
+
+  p.checkbox--label {
+    text-align: left;
+
+    @media screen and (max-width: 320px) {
+      text-align: center;
+    }
   }
 }
 
-.tooltip-toggle {
+.agreement--tooltip-toggle {
   cursor: pointer;
   position: relative;
   text-decoration: underline;
 
+  &::before,
+  &::after {
+    font-size: 1.0rem;
+    line-height: 1.4rem;
+    opacity: 0;
+    pointer-events: none;
+    text-align: left;
+    z-index: 3;
+  }
+
   &::before {
     position: absolute;
-    top: -5.68rem;
-    left: -6rem;
+    top: -7.5rem;
+    left: -7.0rem;
     background-color: $blue2;
-    line-height: 1.1rem;
     border-radius: 5px;
     color: $white;
-    content: "Twoje dane są u nas bezpieczne. Wyślemy Ci wiadomość z informacją o starcie pożyczME.";
+    content: "Twoje dane są u nas bezpieczne. Wyślemy Ci tylko jedną wiadomość z informacją o starcie pożyczME.";
     padding: 1rem;
     text-transform: none;
     transition: all 0.5s;
@@ -462,7 +604,7 @@ input {
 
   &::after {
     position: absolute;
-    top: -0.5rem;
+    top: 0;
     left: 1.9rem;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
@@ -470,14 +612,6 @@ input {
     content: " ";
     margin-left: -5px;
     width: 0;
-  }
-
-  &::before,
-  &::after {
-    font-size: 1rem;
-    opacity: 0;
-    pointer-events: none;
-    text-align: center;
   }
 
   &:focus::before,
@@ -489,52 +623,138 @@ input {
   }
 }
 
-input[type=checkbox] {
-  padding: 1.5rem 0.5rem;
-  width: 25%;
-}
+.form--button {
+  text-align: center;
+  padding: 1.0rem;
 
-//form section end
+  button.button {
+    background-color: $blue2;
+    color: $white;
+    font-size: 1.4rem;
+    padding: 1.0rem 1.5rem;
+    border: solid 1px $blue2;
+    border-radius: 5px;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+
+    &:hover,
+    &:focus {
+      border-color: $blue;
+      background-color: $blue;
+      outline: none;
+    }
+  }
+}
 
 .footer--background {
   background-color: $blue2;
   color: $white;
   width: 100%;
   z-index: 3;
+  position: absolute;
+  bottom: 0;
 }
 
 .footer--content {
-  margin: 0 auto;
-  padding: 40px;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 
-  a {
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 20px;
-    z-index: 5;
-  }
+  .footer--nav {
+    a {
+      z-index: 5;
+    }
 
-  svg {
-    fill: $white;
+    svg {
+      fill: $white;
+      padding: 0.5rem 0.1rem 0.1rem;
 
-    &:hover {
-      fill: $blue;
-      transition: fill 0.3s;
-      transition-timing-function: ease-in-out;
-      -webkit-transition: fill 0.3s;
-      -webkit-transition-timing-function: ease-in-out;
+      &:hover {
+        fill: $blue;
+        transition: fill 0.3s;
+        transition-timing-function: ease-in-out;
+        -webkit-transition: fill 0.3s;
+        -webkit-transition-timing-function: ease-in-out;
+      }
     }
   }
 
-  p {
-    font-size: 1.2rem;
-    padding: 0 0.5rem 0 0;
+  .footer--text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      font-size: 1.1rem;
+      margin: 0;
+      padding: 0.1rem 0.1rem 0.5rem;
+    }
+
+    img {
+      padding: 0.1rem 0.1rem 0.3rem;;
+      width: 1.4rem;
+      height: 1.4rem;
+    }
+  }
+
+  @media screen and (max-width: 970px) and (min-width: 751px) {
+    .footer--nav {
+      svg {
+        width: 90%;
+        height: 90%;
+      }
+    }
+
+    .footer--text {
+      p {
+        font-size: 1.0rem;
+      }
+
+      img {
+        width: 1.3rem;
+        height: 1.3rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 750px) and (min-width: 321px) {
+    .footer--nav {
+      svg {
+        width: 70%;
+        height: 70%;
+      }
+    }
+
+    .footer--text {
+      p {
+        font-size: 0.9rem;
+      }
+
+      img {
+        width: 1.2rem;
+        height: 1.2rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    .footer--nav {
+      svg {
+        width: 50%;
+        height: 50%;
+      }
+    }
+
+    .footer--text {
+      p {
+        font-size: 0.8rem;
+      }
+
+      img {
+        display: none;
+      }
+    }
   }
 }
 
