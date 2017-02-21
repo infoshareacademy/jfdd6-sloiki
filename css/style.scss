@@ -16,17 +16,25 @@ input:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
 }
 
-
-@keyframes dothabottomcheck
-{
-  0% { height: 0; }
-  100% { height: 14px; }
+@keyframes dothabottomcheck {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 14px;
+  }
 }
 
-@keyframes dothatopcheck
-{  0% { height: 0; }
-  50% { height: 0; }
-  100% { height: 25px; }
+@keyframes dothatopcheck {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 0;
+  }
+  100% {
+    height: 25px;
+  }
 }
 
 body {
@@ -99,6 +107,7 @@ section {
 }
 
 .menu--content {
+  height: 74px; //max height after changes in nav RWD
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -293,13 +302,44 @@ section {
   min-height: 100vh;
   box-sizing: border-box;
 
+  @media screen and (max-width: 970px) and (min-width: 751px) {
+    transform: scale(0.9);
+  }
+
+  @media screen and (max-width: 750px) and (min-width: 321px) {
+    transform: scale(0.8);
+  }
+
+  @media screen and (max-width: 320px) {
+    transform: scale(0.7);
+  }
+
   h1,
   h3 {
     text-align: center;
   }
+
   form {
     width: 50%;
     font-size: $font-size;
+  }
+
+  @media screen and (max-width: 970px) and (min-width: 751px) {
+    form {
+      width: 60%;
+    }
+  }
+
+  @media screen and (max-width: 750px) and (min-width: 321px) {
+    form {
+      width: 80%;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    form {
+      width: 100%;
+    }
   }
 }
 
@@ -363,7 +403,13 @@ section {
   align-items: center;
   padding: 0.2rem;
 
-  input#checkbox {
+  @media screen and (max-width: 320px) {
+    flex-direction: column-reverse;
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+  }
+
+  input#form-checkbox {
     display: none;
   }
 
@@ -405,24 +451,27 @@ section {
     }
   }
 
-  input#checkbox:checked + .checkbox--input {
+  input#form-checkbox:checked + .checkbox--input {
     border-color: $blue;
   }
 
-  input#checkbox:checked + .checkbox--input::before {
+  input#form-checkbox:checked + .checkbox--input::before {
     height: 25px;
     animation: dothatopcheck 0.4s ease 0s forwards;
   }
 
-  input#checkbox:checked + .checkbox--input::after {
+  input#form-checkbox:checked + .checkbox--input::after {
     height: 14px;
     animation: dothabottomcheck 0.2s ease 0s forwards;
   }
 
   p.checkbox--label {
-    padding: 0 65px 0 0;
-  }
+    text-align: left;
 
+    @media screen and (max-width: 320px) {
+      text-align: center;
+    }
+  }
 }
 
 .agreement--tooltip-toggle {
