@@ -17,7 +17,7 @@ $(document).ready(function () {
     for(var x = 0; x < 4; x += 1) {
       $td = $('<td>').addClass('game--card')
         .on('click', function () {
-          $(this).addClass('game--card__flipped');
+          $(this).toggleClass('game--card__flipped');
         });
       $tr.append($td);
     }
