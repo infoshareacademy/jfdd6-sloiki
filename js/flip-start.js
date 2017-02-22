@@ -1,1 +1,1 @@
-$(".box").flip();
+$(".product--bin").flip();
