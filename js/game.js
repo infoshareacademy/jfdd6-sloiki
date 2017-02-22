@@ -44,6 +44,11 @@ $(document).ready(function () {
         console.log('Liczba odkrytych kart to:', howManyUncovered);
 
         if (howManyUncovered === 2) {
+
+          //jeżeli są takie same, daj klasę trzecią - correct (niewidoczna)
+
+          //zdjąć nasłuchiwanie na tę samą kartę, ale raczej display:none zapobiegnie temu
+
           $uncoveredCards.addClass('game--card__covered')
         }
 
