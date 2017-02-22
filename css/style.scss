@@ -292,6 +292,7 @@ section {
   min-width: 280px;
 
   h3 {
+    color: $blue2;
     margin: 0;
 
     @media screen and (max-width: 320px) {
@@ -306,7 +307,8 @@ section {
     border-radius: 5px;
     box-shadow: $button-shadow;
     cursor: pointer;
-    background: $blue;
+    color: $blue2;
+    background-color: $white;
     position: relative;
     box-sizing: border-box;
     text-align: left;
@@ -325,12 +327,12 @@ section {
       border-radius: 5px 0 0 5px;
       background: rgba(0, 0, 0, .1);
       font-family: fontawesome;
-      color: $white;
+      color: $blue2;
       content: "\f054";
     }
 
     &:hover {
-      transform: scale(0.95);
+
     }
   }
 }
@@ -700,20 +702,6 @@ section {
 .form--button {
   text-align: center;
   padding: 1.0rem;
-
-  //a.button {
-  //  display: inline-block;
-  //  min-width: 270px;
-  //  border-radius: 5px;
-  //  box-shadow: $button-shadow;
-  //  cursor: pointer;
-  //  background: $blue;
-  //  position: relative;
-  //  box-sizing: border-box;
-  //  text-align: left;
-  //  padding: 10px 15px 12px 40px;
-  //
-  //}
 
   button.button {
     display: inline-block;
