@@ -676,41 +676,41 @@ section {
   background-color: $blue;
   border: 1px solid $blue2;
 
-  .a {
+  &.a {
     background-color: red;
   }
 
-  .b {
+  &.b {
     background-color: orange;
   }
 
-  .c {
+  &.c {
     background-color: green;
   }
 
-  .d {
+  &.d {
     background-color: pink;
   }
 
-  .e {
+  &.e {
     background-color: purple;
   }
 
-  .f {
+  &.f {
     background-color: grey;
   }
 
-  .g {
+  &.g {
     background-color: brown;
   }
 
-  .h {
+  &.h {
     background-color: black;
   }
-}
 
-.game--card__flipped {
-  background-color: $white;
+  &.game--card__covered {
+    background-color: $blue;
+  }
 }
 
 .footer--background {
