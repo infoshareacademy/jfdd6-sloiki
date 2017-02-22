@@ -283,8 +283,6 @@ section {
   overflow: hidden;
 }
 
-
-
 .product {
   min-height: 100vh;
   h1 {
@@ -300,7 +298,7 @@ section {
   visibility: hidden;
 }
 
-.product-container {
+.product--content {
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -308,7 +306,7 @@ section {
   z-index: 3;
 }
 
-.box {
+.product--bin {
   flex: 1;
   width: 280px;
   height: 380px;
@@ -325,7 +323,7 @@ section {
   }
 }
 
-.box-container {
+.product--box {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -908,14 +906,14 @@ section {
     visibility: hidden;
   }
 
-  .product-container {
+  .product--content {
     min-height: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
   }
 
-  .box {
+  .product--bin {
     display: flex;
     flex-basis: calc(50% - 40px);
     justify-content: center;
@@ -931,7 +929,7 @@ section {
     }
   }
 
-  .box-container {
+  .product--box{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -946,4 +944,3 @@ section {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
