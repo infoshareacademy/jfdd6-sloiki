@@ -306,14 +306,16 @@ section {
   display: flex;
   width: 100%;
   z-index: 3;
+
 }
 
 .box {
   flex: 1;
-  width: 280px;
-  height: 380px;
   display: flex;
   justify-items: center;
+  border: deepskyblue solid 20px;
+  border-radius: 10%;
+  height: 330px;
   img {
     height: 100px;
     width: 100px;
@@ -332,10 +334,10 @@ section {
   align-items: center;
   height: 100%;
   width: 100%;
-  padding: 5%;
   p {
-    padding: 10%;
     text-align: center;
+
+
   }
 }
 
