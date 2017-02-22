@@ -292,7 +292,6 @@ section {
   min-width: 280px;
 
   h3 {
-    color: $blue2;
     margin: 0;
 
     @media screen and (max-width: 320px) {
@@ -307,8 +306,8 @@ section {
     border-radius: 5px;
     box-shadow: $button-shadow;
     cursor: pointer;
-    color: $blue2;
-    background-color: $white;
+    color: $white;
+    background-color: $blue;
     position: relative;
     box-sizing: border-box;
     text-align: left;
@@ -327,12 +326,12 @@ section {
       border-radius: 5px 0 0 5px;
       background: rgba(0, 0, 0, .1);
       font-family: fontawesome;
-      color: $blue2;
+      color: $white;
       content: "\f054";
     }
 
     &:hover {
-
+      background-color: $blue;
     }
   }
 }
