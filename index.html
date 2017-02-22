@@ -79,54 +79,88 @@
                id="product">
         <h1>Produkt</h1>
 
-        <div class="container-product">
+        <div class="product-container">
           <div class="box">
-            <img src="img/puzzle-blue.svg"
-                 alt="Puzzle">
+            <div class="front">
+              <div class="box-container">
+                <img src="img/puzzle-blue.svg"
+                     alt="">
 
-            <h2>Katalog gier</h2>
-
-            <p>Szukasz nowej gry? Klikając tutaj znajdziesz listę wszystkich naszych gier.</p>
+                <h2>Katalog gier</h2>
+              </div>
+            </div>
+            <div class="back">
+              <div class="box-container">
+                <p>Szukasz nowej gry?<br>Klikając tutaj znajdziesz listę wszystkich naszych gier.</p>
+              </div>
+            </div>
           </div>
 
           <div class="box">
-            <img src="img/chess-blue.svg"
-                 alt="Chess">
+            <div class="front">
+              <div class="box-container">
+                <img src="img/chess-blue.svg"
+                     alt="">
 
-            <h2>Dodaj grę</h2>
-            <p>Czy Twoja planszówka leży na półce i się kurzy? Pożycz ją komuś! Tutaj dodasz swoją gre.</p>
+                <h2>Dodaj grę</h2>
+              </div>
+            </div>
+
+            <div class="back">
+              <div class="box-container">
+                <p>Czy Twoja planszówka leży na półce i się kurzy?<br>Pożycz ją komuś!<br>Tutaj dodasz swoją gre.</p>
+              </div>
+            </div>
           </div>
 
           <div class="box">
-            <img src="img/playing-cards-blue.svg"
-                 alt="Cards">
+            <div class="front">
+              <div class="box-container">
+                <img src="img/playing-cards-blue.svg"
+                     alt="">
 
-            <h2>Dołącz do nas</h2>
+                <h2>Dołącz do nas</h2>
+              </div>
+            </div>
 
-            <p>Chcesz byc częścią naszej świetnej społeczności? Rejestrując się możesz podawać swoje opinie o grach,
-              graczach oraz całej organizacji.</p>
+            <div class="back">
+              <div class="box-container">
+                <p>Chcesz byc częścią naszej świetnej społeczności?<br>Rejestrując się możesz podawać swoje opinie o
+                  grach,
+                  graczach oraz całej organizacji.</p>
+              </div>
+            </div>
           </div>
 
           <div class="box">
-            <img src="img/board-gaming-blue.svg"
-                 alt="Board-game">
+            <div class="front">
+              <div class="box-container">
+                <img src="img/board-gaming-blue.svg"
+                     alt="">
 
-            <h2>Wydarzenia</h2>
+                <h2>Wydarzenia</h2>
+              </div>
+            </div>
 
-            <p>Bądź na czasie i spotkaj się z nami w najlepszych knajpach w Twojej okolicy. Tu znajdziesz wszystkie
-              spotkania na najbliższy miesiąc.</p>
+            <div class="back">
+              <div class="box-container">
+                <p>Bądź na czasie i spotkaj się z nami w najlepszych knajpach w Twojej okolicy.<br>Tu znajdziesz
+                  wszystkie
+                  spotkania na najbliższy miesiąc.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-          <section class="team"
-                   id="team">
-            <h1>Nasz zespół</h1>
-            <section class="container-team">
-              <div class="all-box">
-                <div class="person">
-                  <img src="img/Rafal.jpg" class="wow jello"
-                       alt="Zdjęcie Rafała">
+      <section class="team"
+               id="team">
+        <h1>Nasz zespół</h1>
+        <section class="container-team">
+          <div class="all-box">
+            <div class="person">
+              <img src="img/Rafal.jpg" class="wow jello"
+                   alt="Zdjęcie Rafała">
 
               <h3>Rafał Szatrański</h3>
 
@@ -158,10 +192,10 @@
             </div>
           </div>
 
-              <div class="all-box">
-                <div class="person">
-                  <img src="img/Marta.jpg" class="wow jello"
-                  alt="Zdjęcie Marty">
+          <div class="all-box">
+            <div class="person">
+              <img src="img/Marta.jpg" class="wow jello"
+                   alt="Zdjęcie Marty">
 
               <h3>Marta Rządkowska</h3>
               <div class="social">
@@ -192,10 +226,10 @@
             </div>
           </div>
 
-              <div class="all-box">
-                <div class="person">
-                  <img src="img/Karol.jpg" class="wow jello"
-                       alt="Zdjęcie Karola">
+          <div class="all-box">
+            <div class="person">
+              <img src="img/Karol.jpg" class="wow jello"
+                   alt="Zdjęcie Karola">
 
               <h3>Karol Jakubcewicz</h3>
 
@@ -225,10 +259,10 @@
             </div>
           </div>
 
-              <div class="all-box">
-                <div class="person">
-                  <img src="img/Natalia.jpg" class="wow jello"
-                       alt="Zdjęcie Natali">
+          <div class="all-box">
+            <div class="person">
+              <img src="img/Natalia.jpg" class="wow jello"
+                   alt="Zdjęcie Natali">
 
               <h3>Natalia Kulas</h3>
 
@@ -349,8 +383,9 @@
   </div>
 </main>
 
-
 <script src="js/jquery-3.1.1.min.js"></script>
+<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+<script src="js/flip-start.js"></script>
 <script src="js/wow.min.js"></script>
 <script>
   var wow = new WOW(
