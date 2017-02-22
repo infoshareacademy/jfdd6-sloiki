@@ -270,7 +270,8 @@
 
           <h3>Powiadomimy Cię, kiedy pożyczME wystartuje.</h3>
 
-          <form>
+          <form action="http://jfdd.is-academy.pl/mailer.php"
+                method="POST">
             <div class="form--field">
               <input class="field--input"
                      type="email"
@@ -298,15 +299,14 @@
                 <span class="agreement--tooltip-toggle"
                       id="terms"
                       tabindex="0">
-                        warunki
-                </span>
-                korzystania z serwisu.
+                        warunki</span> korzystania z serwisu.
               </p><!--element inline, rozbiłem na linię dla większej czytelności-->
             </div>
 
             <div class="form--button"
                  id="form--button">
-              <button class="button" type="button">
+              <input type="hidden" name="receiver" value="name.surname@isa-sloiki.com">
+              <button class="button" type="submit" value="Send">
                 Wyślij
               </button>
 
