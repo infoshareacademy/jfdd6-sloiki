@@ -673,43 +673,52 @@ section {
 .game--card {
   width: 160px;
   height: 160px;
-  background-color: $blue;
-  border: 1px solid $blue2;
 
   &.a {
-    background-color: red;
+    background: url("../img/game/cards/board-game.svg") no-repeat center;
+    background-size: 70%;
   }
 
   &.b {
-    background-color: orange;
+    background: url("../img/game/cards/cards.svg") no-repeat center;
+    background-size: 70%;
   }
 
   &.c {
-    background-color: green;
+    background: url("../img/game/cards/crown.svg") no-repeat center;
+    background-size: 70%;
   }
 
   &.d {
-    background-color: pink;
+    background: url("../img/game/cards/dice.svg") no-repeat center;
+    background-size: 70%;
   }
 
   &.e {
-    background-color: purple;
+    background: url("../img/game/cards/medal.svg") no-repeat center;
+    background-size: 70%;
   }
 
   &.f {
-    background-color: grey;
+    background: url("../img/game/cards/money.svg") no-repeat center;
+    background-size: 70%;
   }
 
   &.g {
-    background-color: brown;
+    background: url("../img/game/cards/puzzle.svg") no-repeat center;
+    background-size: 70%;
   }
 
   &.h {
-    background-color: black;
+    background: url("../img/game/cards/treasure.svg") no-repeat center;
+    background-size: 70%;
   }
 
   &.game--card__covered {
-    background-color: $blue;
+    background: url("../img/game/cards/back-card.png") no-repeat center;
+    background-size: cover;
+    border: 1px solid $blue;
+    border-radius: 5px;
   }
 }
 
