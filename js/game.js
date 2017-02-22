@@ -38,6 +38,15 @@ $(document).ready(function () {
       .addClass('game--card__covered')
       .addClass(cardName)
       .on('click', function () {
+        var $uncoveredCards = $('td:not(.game--card__covered)', $table);
+        var howManyUncovered = $uncoveredCards.length;
+
+        console.log('Liczba odkrytych kart to:', howManyUncovered);
+
+        if (howManyUncovered === 2) {
+          $uncoveredCards.addClass('game--card__covered')
+        }
+
         $(this).removeClass('game--card__covered');
       });
   }
