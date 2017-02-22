@@ -5,8 +5,7 @@ $(document).ready(function () {
   var $tr;
   var $td;
 
-  var deckA = [1, 2, 3, 4, 5, 6, 7, 8];
-  var deckB = [1, 2, 3, 4, 5, 6, 7, 8];
+  var cards = ["a", "b", "c", "d", "e", "f", "g", "h"];
 
   $container.append($table).addClass('game--board');
 

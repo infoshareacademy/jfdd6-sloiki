@@ -675,44 +675,43 @@ section {
   height: 160px;
   background-color: $blue;
   border: 1px solid $blue2;
+
+  .a {
+    background-color: red;
+  }
+
+  .b {
+    background-color: orange;
+  }
+
+  .c {
+    background-color: green;
+  }
+
+  .d {
+    background-color: pink;
+  }
+
+  .e {
+    background-color: purple;
+  }
+
+  .f {
+    background-color: grey;
+  }
+
+  .g {
+    background-color: brown;
+  }
+
+  .h {
+    background-color: black;
+  }
 }
 
 .game--card__flipped {
   background-color: $white;
 }
-
-.card-a1, .card-b1 {
-
-}
-
-.card-a2, .card-b2 {
-
-}
-
-.card-a3, .card-b3 {
-
-}
-
-.card-a4, .card-b4 {
-
-}
-
-.card-a5, .card-b5 {
-
-}
-
-.card-a6, .card-b6 {
-
-}
-
-.card-a7, .card-b7 {
-
-}
-
-.card-a8, .card-b8 {
-
-}
-
 
 .footer--background {
   background-color: $blue2;
