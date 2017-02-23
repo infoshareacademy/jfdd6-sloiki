@@ -37,6 +37,7 @@ $(document).ready(function () {
       .addClass('game--card')
       .addClass('game--card__covered')
       .addClass(cardName)
+      .attr('data-card', cardName)
       .on('click', function () {
         var $uncoveredCards = $('td:not(.game--card__covered)', $table);
         var howManyUncovered = $uncoveredCards.length;
@@ -44,6 +45,19 @@ $(document).ready(function () {
         console.log('Liczba odkrytych kart to:', howManyUncovered);
 
         if (howManyUncovered === 2) {
+          if ($uncoveredCards.first().attr('data-card') == $uncoveredCards.last().attr('data-card')) {
+            $uncoveredCards.addClass('correct')
+          }
+
+          else {
+            $uncoveredCards.addClass('game--card__covered')
+          }
+
+          console.log($uncoveredCards);
+
+
+
+
 
           //jeżeli są takie same, daj klasę trzecią - correct (niewidoczna)
 
