@@ -313,9 +313,7 @@ section {
   flex: 1;
   display: flex;
   justify-items: center;
-  border: deepskyblue solid 20px;
-  border-radius: 10%;
-  height: 330px;
+
   img {
     height: 100px;
     width: 100px;
@@ -325,6 +323,21 @@ section {
     transition: 0.3s transform linear;
     cursor: pointer;
   }
+}
+.front {
+  border: $blue2 solid 20px;
+  border-radius: 10%;
+  height: 400px;
+  width: 50px;
+  background-color: cornflowerblue;
+
+}
+.back {
+  border: $blue2 solid 20px;
+  border-radius: 10%;
+  height: 400px;
+  width: 50px;
+  background-color: cornflowerblue;
 }
 
 .box-container {
