@@ -4,6 +4,7 @@ $(document).ready(function () {
   var $table = $('<table>');
   var $tr;
   var $td;
+  var points = 0; //TODO dodać miejsce, w którym wyświetlany będzie licznik puntków
 
   var cards = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
 
@@ -39,6 +40,7 @@ $(document).ready(function () {
       .addClass(cardName)
       .attr('data-card', cardName)
       .on('click', function () {
+        points += 1;
         var $uncoveredCards = $('td:not(.game--card__covered)', $table);
         var howManyUncovered = $uncoveredCards.length;
 
@@ -48,20 +50,9 @@ $(document).ready(function () {
           if ($uncoveredCards.first().attr('data-card') == $uncoveredCards.last().attr('data-card')) {
             $uncoveredCards.addClass('correct')
           }
-
           else {
             $uncoveredCards.addClass('game--card__covered')
           }
-
-          console.log($uncoveredCards);
-
-
-
-
-
-          //jeżeli są takie same, daj klasę trzecią - correct (niewidoczna)
-
-          //zdjąć nasłuchiwanie na tę samą kartę, ale raczej display:none zapobiegnie temu
 
           $uncoveredCards.addClass('game--card__covered')
         }
@@ -71,6 +62,14 @@ $(document).ready(function () {
   }
 
 
+  //funkcja end game - resetuje zmienne, wyczyści karty, listenery
+
+  // przycisk podpięty pod funkcję
+
+
+  //licznik kliknięć w td?
+
+//button nowa gra / restart
 
 
 });

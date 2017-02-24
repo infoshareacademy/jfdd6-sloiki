@@ -724,8 +724,13 @@ section {
 }
 
 .correct {
-  display: none;
+  opacity: 0;
 }
+
+.game--button {
+  //
+}
+
 
 .footer--background {
   background-color: $blue2;
