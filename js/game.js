@@ -1,10 +1,20 @@
 $(document).ready(function () {
+  var $gameContent = $('#game');
+  $gameContent.hide();
+
+  if (!window.location.search.includes('mailerResult')) {
+    return;
+  }
+
+  window.location.hash = '#game';
+  $('#form').hide();
+  $gameContent.show();
 
   var $container = $('.game--board');
   var $table = $('<table>');
   var $tr;
   var $td;
-  var points = 0; //TODO dodać miejsce, w którym wyświetlany będzie licznik puntków
+  var points = 0;
 
   var cards = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
 
@@ -25,7 +35,7 @@ $(document).ready(function () {
   }
 
 
-  //TODO: licznik kliknięć dodany do DOM
+  //TODO: licznik kliknięć dodany do DOM (pobranie wartości z points)
   //TODO: przycisk podpięty pod funkcję restartGame - dodany na tym etapie do DOM
 
   // function newGame() {
