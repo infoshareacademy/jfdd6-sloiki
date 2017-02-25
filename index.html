@@ -27,8 +27,8 @@
 <header class="header">
   <div class="header--menu">
     <div class="menu--content container">
-      <a href="#">
-        <img src="img/pozyczme-logo-vect.svg"
+      <a scroll href="#">
+        <img src="img/pozyczme-logo-blue2.svg"
              alt="Logo PożyczME">
       </a>
 
@@ -41,17 +41,15 @@
 
           <ul class="menu--nav">
             <li>
-              <a href="#product">Produkt</a>
+              <a scroll href="#product">Produkt</a>
             </li><!--
 
-         -->
-            <li>
-              <a href="#team">Zespół</a>
+         --><li>
+              <a scroll href="#team">Zespół</a>
             </li><!--
 
-         -->
-            <li>
-              <a href="#form">Bądź na bieżąco</a>
+         --><li>
+              <a scroll href="#form">Bądź na bieżąco</a>
             </li>
           </ul>
         </div>
@@ -348,14 +346,29 @@
           </form>
         </div>
       </section>
+
+      <section id="game" class="game">
+        <div class="game--content container">
+          <h1>Zagraj w memory</h1>
+
+          <div class="game--board">
+
+          </div>
+        </div>
+      </section>
     </div>
 
     <footer class="footer">
       <div class="footer--background">
         <div class="footer--content container">
-          <a href="#"
+          <a scroll href="#"
              class="footer--nav">
-            <i class="fa fa-chevron-up" aria-hidden="true"></i>
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="24"
+                 height="24"
+                 viewBox="0 0 24 24">
+              <path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z"/>
+            </svg>
           </a>
 
           <div class="footer--text">
@@ -369,26 +382,20 @@
   </div>
 </main>
 
-
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="js/jquery-3.1.1.min.js"></script>
 <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 <script src="js/flip-start.js"></script>
-
-<script
-  src="https://code.jquery.com/jquery-3.1.1.js"
-  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
-  crossorigin="anonymous">
-</script>
 <script src="js/wow.min.js"></script>
+<script src="js/smooth-scroll.js"></script>
 <script>
   var wow = new WOW(
     {
-      boxClass: 'wow',      // animated element css class (default is wow)
+      boxClass:     'wow',      // animated element css class (default is wow)
       animateClass: 'animated', // animation css class (default is animated)
-      offset: 0,          // distance to the element when triggering the animation (default is 0)
-      mobile: false,       // trigger animations on mobile devices (default is true)
-      live: true,       // act on asynchronously loaded content (default is true)
-      callback: function (box) {
+      offset:       0,          // distance to the element when triggering the animation (default is 0)
+      mobile:       false,       // trigger animations on mobile devices (default is true)
+      live:         true,       // act on asynchronously loaded content (default is true)
+      callback:     function(box) {
         // the callback is fired every time an animation is started
         // the argument that is passed in is the DOM node being animated
       },
@@ -405,5 +412,16 @@
     event.stopPropagation();
   })
 </script>
+<script>
+    smoothScroll.init({
+    selector: '[scroll]', // Selector for links (must be a class, ID, data attribute, or element tag)
+    speed: 1000, // Integer. How fast to complete the scroll in milliseconds
+    easing: 'easeOutQuad', // Easing pattern to use
+    offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
+    callback: function ( anchor, toggle ) {} // Function to run after scrolling
+  });
+</script>
+
+<script src="js/game.js"></script>
 </body>
 </html>
