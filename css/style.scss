@@ -754,7 +754,8 @@ section {
 
 //gra
 .game {
-  text-align: center
+  text-align: center;
+  padding-bottom: 10vw;
 }
 
 .game--board  table {
@@ -810,6 +811,13 @@ section {
     background-size: cover;
     border: 1px solid $blue;
     border-radius: 5px;
+  }
+}
+
+@media screen and(max-width: 750px) {
+  .game--card {
+    width: 20vw;
+    height: 20vw;
   }
 }
 
