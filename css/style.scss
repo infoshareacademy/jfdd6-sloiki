@@ -339,7 +339,8 @@ section {
   overflow: hidden;
 }
 
-.product, .team {
+.product,
+.team {
   text-align: center;
 
   h3 {
@@ -356,17 +357,17 @@ section {
 }
 
 .product-container {
+  display: flex;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
   z-index: 3;
 }
 
 .box {
+  display: flex;
   flex: 1;
   width: 280px;
   height: 380px;
-  display: flex;
 
   img {
     height: 100px;
@@ -395,9 +396,9 @@ section {
 }
 
 .container-team {
+  display: flex;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   width: 60%;
@@ -416,8 +417,8 @@ section {
 }
 
 .social {
-  padding: 5px;
   display: flex;
+  padding: 5px;
   flex-wrap: wrap;
 
   img {
@@ -427,7 +428,6 @@ section {
     padding: 5px;
     opacity: 0.6;
     filter: alpha(opacity=50);
-    border-radius: 100%;
   }
 }
 
@@ -497,25 +497,23 @@ section {
   align-items: flex-start;
   padding: 0.2rem;
 
+  input#email.field--input,
+  label.field--label {
+    box-sizing: border-box;
+    padding: 10px 15px;
+    transition: $form-transition;
+  }
+
   input#email.field--input {
     border: 1px solid $blue2;
     width: 100%;
-    box-sizing: border-box;
-    padding: 10px 15px;
     border-radius: 5px;
     color: $white;
     background-color: $white;
     position: relative;
     z-index: 1;
-    transition: $form-transition;
 
-    &:focus {
-      outline: none;
-      border-color: $blue;
-      background: $blue;
-      margin-top: 30px;
-    }
-
+    &:focus,
     &:valid {
       outline: none;
       border-color: $blue;
@@ -534,12 +532,9 @@ section {
 
   label.field--label {
     color: $blue2;
-    box-sizing: border-box;
-    padding: 10px 15px;
     position: absolute;
     z-index: 2;
     pointer-events: none;
-    transition: $form-transition;
   }
 }
 
@@ -599,16 +594,16 @@ section {
 
   input#form-checkbox:checked + .checkbox--input {
     border-color: $blue;
-  }
 
-  input#form-checkbox:checked + .checkbox--input::before {
-    height: 25px;
-    animation: dothatopcheck 0.4s ease 0s forwards;
-  }
+    &::before {
+      height: 25px;
+      animation: dothatopcheck 0.4s ease 0s forwards;
+    }
 
-  input#form-checkbox:checked + .checkbox--input::after {
-    height: 14px;
-    animation: dothabottomcheck 0.2s ease 0s forwards;
+    &::after {
+      height: 14px;
+      animation: dothabottomcheck 0.2s ease 0s forwards;
+    }
   }
 
   p.checkbox--label {
@@ -793,9 +788,9 @@ section {
 
       &:hover {
         color: $blue;
-        transition: fill 0.3s;
+        transition: color 0.3s;
         transition-timing-function: ease-in-out;
-        -webkit-transition: fill 0.3s;
+        -webkit-transition: color 0.3s;
         -webkit-transition-timing-function: ease-in-out;
       }
     }
