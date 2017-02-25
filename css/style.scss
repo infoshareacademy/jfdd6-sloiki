@@ -339,11 +339,11 @@ section {
   overflow: hidden;
 }
 
-.product {
-  min-height: 100vh;
+.product, .team {
+  text-align: center;
 
-  h1 {
-    text-align: center;
+  h3 {
+    font-size: 1rem;
   }
 
   &::before {
@@ -359,7 +359,6 @@ section {
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  width: 100%;
   z-index: 3;
 }
 
@@ -368,7 +367,6 @@ section {
   width: 280px;
   height: 380px;
   display: flex;
-  justify-items: center;
 
   img {
     height: 100px;
@@ -393,40 +391,16 @@ section {
 
   p {
     padding: 10%;
-    text-align: center;
-  }
-}
-
-.team {
-  width: 100%;
-  min-height: 100vh;
-
-  &:before {
-    display: block;
-    content: " ";
-    margin-top: -75px;
-    height: 75px;
-    visibility: hidden;
   }
 }
 
 .container-team {
-  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   width: 60%;
-}
-
-.team h1 {
-  text-align: center;
-}
-
-.team h3 {
-  text-align: center;
-  font-size: 1rem;
 }
 
 .all-box {
