@@ -22,7 +22,7 @@ $(document).ready(function () {
   // We create board
   $container.append($table).addClass('game--board');
 
-  // We create empty fields
+    // We create empty fields
   for (var y = 0; y < 4; y += 1) {
     $tr = $('<tr>');
 
@@ -33,9 +33,10 @@ $(document).ready(function () {
     $table.append($tr);
   }
 
-
-  //TODO: licznik kliknięć dodany do DOM (pobranie wartości z points)
-  //TODO: przycisk podpięty pod funkcję restartGame - dodany na tym etapie do DOM
+    $container.append('<div class="game--scores" >');
+    //button add here
+    $('.game--scores').append('<h3>');
+    $('.game--scores h3').text('Twój wynik to: ' + points);
 
     // We put cards on fields
     cards.forEach(function(cardName) {
@@ -56,10 +57,13 @@ $(document).ready(function () {
         .attr('data-card', cardName)
         .on('click', function () {
           points += 1;
+          $('.game--scores h3').text('Twój wynik to: ' + points);
+          console.log('Twój wynik to: ' + points)
+
           var $uncoveredCards = $('td:not(.game--card__covered)', $table);
           var howManyUncovered = $uncoveredCards.length;
 
-          console.log('Liczba odkrytych kart to:', howManyUncovered);
+          // console.log('Liczba odkrytych kart to:', howManyUncovered);
 
           if (howManyUncovered === 2) {
             if ($uncoveredCards.first().attr('data-card') == $uncoveredCards.last().attr('data-card')) {
@@ -69,11 +73,12 @@ $(document).ready(function () {
               if (howManyCorrect === 16) {
                 console.log('Gratulacje! Udało Ci się odkryć wszystkie karty w ' + points + ' ruchach.');
 
-                $container.append('<div class="congratulations">');
-                $('.congratulations').append('<h2>').hide().fadeIn(1000);
-                $('.congratulations h2').text('Gratulacje! Udało Ci się odkryć wszystkie karty w ' + points + ' ruchach.');
+                  $container.append('<div class="congratulations">');
+                  $('.congratulations').append('<h2>').hide().fadeIn(1000);
+                  $('.congratulations h2').text('Gratulacje! Udało Ci się odkryć wszystkie karty w ' + points + ' ruchach.');
               }
             }
+
             else {
               $uncoveredCards.addClass('game--card__covered')
             }
