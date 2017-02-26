@@ -403,7 +403,7 @@ section {
   }
 
   .box:hover {
-      transform: scale(1.2);
+    transform: scale(1.2);
   }
 }
 
@@ -510,46 +510,40 @@ section {
   min-height: 100vh;
   box-sizing: border-box;
 
-  @media screen and (max-width: 970px) and (min-width: 751px) {
-    transform: scale(0.9);
-  }
-
-  @media screen and (max-width: 750px) and (min-width: 321px) {
-    transform: scale(0.8);
-  }
-
-  @media screen and (max-width: 320px) {
-    transform: scale(0.7);
-  }
-
   h1,
   h2 {
     text-align: center;
   }
 
-  form {
-    width: 50%;
-    font-size: $font-size;
-  }
-
-  @media screen and (max-width: 970px) and (min-width: 751px) {
-    form {
-      width: 60%;
-    }
-  }
-
-  @media screen and (max-width: 750px) and (min-width: 321px) {
-    form {
-      width: 80%;
+  @media screen and (max-width: 320px) {
+    h1 {
+      font-size: 1.8rem;
     }
   }
 
   @media screen and (max-width: 320px) {
-    form {
-      width: 100%;
+    h2 {
+      font-size: 1.4rem;
     }
   }
 }
+
+  form {
+    width: 50%;
+    font-size: $font-size;
+
+    @media screen and (max-width: 970px) and (min-width: 751px) {
+      width: 60%;
+    }
+
+    @media screen and (max-width: 750px) and (min-width: 321px) {
+      width: 80%;
+    }
+
+    @media screen and (max-width: 320px) {
+      width: 90%;
+    }
+  }
 
 .form--field {
   display: flex;
@@ -661,13 +655,11 @@ section {
 
     &::before {
       opacity: 1;
-      //height: 25px;
       animation: dothatopcheck 0.4s ease 0s forwards;
     }
 
     &::after {
       opacity: 1;
-      //height: 14px;
       animation: dothabottomcheck 0.2s ease 0s forwards;
     }
   }
@@ -747,11 +739,16 @@ section {
     border: solid 2px $blue2;
     border-radius: 5px;
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+
+    @media screen and (max-width: 320px) {
+      min-width: 200px;
+    }
 
     &:hover {
       border-color: $blue;
       background-color: $blue;
-      outline: none;
+      outline: inherit;
     }
   }
 }
@@ -762,7 +759,7 @@ section {
   padding-bottom: 10vw;
 }
 
-.game--board  table {
+.game--board table {
   margin: 0 auto;
 }
 
@@ -832,7 +829,6 @@ section {
 .game--button {
   //
 }
-
 
 .footer--background {
   background-color: $blue2;
@@ -921,7 +917,6 @@ section {
     .footer--text {
       p {
         font-size: 0.8rem;
-        //padding-bottom: 21px;
       }
 
       img {
