@@ -15,6 +15,7 @@ $(document).ready(function () {
   var $tr;
   var $td;
   var points = 0;
+  var howManyCorrect = 0;
 
   var cards = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
 
@@ -64,7 +65,12 @@ $(document).ready(function () {
 
           if (howManyUncovered === 2) {
             if ($uncoveredCards.first().attr('data-card') == $uncoveredCards.last().attr('data-card')) {
-              $uncoveredCards.addClass('correct')
+              $uncoveredCards.addClass('correct');
+              howManyCorrect += 2;
+
+              if (howManyCorrect === 16) {
+                console.log('Gratulacje! Udało Ci się odkryć wszystkie karty w ' + points + ' ruchach.')
+              }
             }
             else {
               $uncoveredCards.addClass('game--card__covered')
