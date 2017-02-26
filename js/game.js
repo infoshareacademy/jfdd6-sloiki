@@ -38,9 +38,6 @@ $(document).ready(function () {
     $('.game--scores').append('<h3>');
     $('.game--scores h3').text('Twój wynik to: ' + points);
 
-
-  //TODO: przycisk podpięty pod funkcję restartGame - dodany na tym etapie do DOM
-
     // We put cards on fields
     cards.forEach(function(cardName) {
       putCard(cardName, $table);
