@@ -34,11 +34,17 @@ $(document).ready(function () {
   }
 
     $container.append('<div class="game--scores" >');
-    //button add here
     $('.game--scores').append('<h3>');
     $('.game--scores h3').text('Twój wynik to: ' + points);
 
-    // We put cards on fields
+    $('.game--scores').append('<button id="newGame">Nowa gra</button>');
+
+    $('#newGame').click(function() {
+      location.reload();
+    });
+
+
+  // We put cards on fields
     cards.forEach(function(cardName) {
       putCard(cardName, $table);
       putCard(cardName, $table);

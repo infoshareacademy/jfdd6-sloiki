@@ -811,12 +811,30 @@ section {
   margin: 0 auto;
   max-width: 666px;
   display:flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .game--scores button {
-  //
+  display: inline-block;
+  min-width: 270px;
+  box-shadow: $button-shadow;
+  cursor: pointer;
+  background-color: $blue2;
+  color: $white;
+  font-size: 27px;
+  padding: 10px 1.5rem;
+  border: solid 2px $blue2;
+  border-radius: 5px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+
+  &:hover {
+    border-color: $blue;
+    background-color: $blue;
+    outline: inherit;
+  }
 }
 
 .game--scores h3 {
