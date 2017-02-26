@@ -38,7 +38,7 @@ $(document).ready(function () {
     $('.game--scores h3').text('Twój wynik to: ' + points);
 
     $container.append('<button id="newGame">Nowa gra</button>');
-    $(":button").addClass( "game--restart" );
+    $(":'buttn').addClass( "game--restart" );
 
     $('#newGame').click(function() {
       location.reload();
