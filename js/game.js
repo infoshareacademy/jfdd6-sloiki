@@ -69,7 +69,11 @@ $(document).ready(function () {
               howManyCorrect += 2;
 
               if (howManyCorrect === 16) {
-                console.log('Gratulacje! Udało Ci się odkryć wszystkie karty w ' + points + ' ruchach.')
+                console.log('Gratulacje! Udało Ci się odkryć wszystkie karty w ' + points + ' ruchach.');
+
+                $container.append('<div class="congratulations">');
+                $('.congratulations').append('<h2>').hide().fadeIn(1000);
+                $('.congratulations h2').text('Gratulacje! Udało Ci się odkryć wszystkie karty w ' + points + ' ruchach.');
               }
             }
             else {
