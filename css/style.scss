@@ -827,9 +827,24 @@ section {
   opacity: 0;
 }
 
-.game--button {
+.game--scores {
+  margin: 0 auto;
+  max-width: 666px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game--scores button {
   //
 }
+
+.game--scores h3 {
+  padding: 10px;
+  margin: 0 auto;
+
+}
+
 
 .congratulations {
   margin: 0 auto;

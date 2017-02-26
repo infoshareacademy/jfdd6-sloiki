@@ -22,7 +22,7 @@ $(document).ready(function () {
   // We create board
   $container.append($table).addClass('game--board');
 
-  // We create empty fields
+    // We create empty fields
   for (var y = 0; y < 4; y += 1) {
     $tr = $('<tr>');
 
@@ -33,8 +33,12 @@ $(document).ready(function () {
     $table.append($tr);
   }
 
+    $container.append('<div class="game--scores" >');
+    //button add here
+    $('.game--scores').append('<h3>');
+    $('.game--scores h3').text('Twój wynik to: ' + points);
 
-  //TODO: licznik kliknięć dodany do DOM (pobranie wartości z points)
+
   //TODO: przycisk podpięty pod funkcję restartGame - dodany na tym etapie do DOM
 
     // We put cards on fields
@@ -69,9 +73,9 @@ $(document).ready(function () {
               if (howManyCorrect === 16) {
                 console.log('Gratulacje! Udało Ci się odkryć wszystkie karty w ' + points + ' ruchach.');
 
-                $container.append('<div class="congratulations">');
-                $('.congratulations').append('<h2>').hide().fadeIn(1000);
-                $('.congratulations h2').text('Gratulacje! Udało Ci się odkryć wszystkie karty w ' + points + ' ruchach.');
+                  $container.append('<div class="congratulations">');
+                  $('.congratulations').append('<h2>').hide().fadeIn(1000);
+                  $('.congratulations h2').text('Gratulacje! Udało Ci się odkryć wszystkie karty w ' + points + ' ruchach.');
               }
             }
             else {
