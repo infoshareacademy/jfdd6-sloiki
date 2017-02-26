@@ -403,7 +403,7 @@ section {
   }
 
   .box:hover {
-    transform: scale(1.2);
+      transform: scale(1.2);
   }
 }
 
@@ -753,13 +753,14 @@ section {
   }
 }
 
-//gra
+//game
 .game {
   text-align: center;
   padding-bottom: 10vw;
 }
 
-.game--board table {
+.game--board  table {
+  position: relative;
   margin: 0 auto;
 }
 
@@ -829,6 +830,16 @@ section {
 .game--button {
   //
 }
+
+.congratulations {
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+//game end
 
 .footer--background {
   background-color: $blue2;
