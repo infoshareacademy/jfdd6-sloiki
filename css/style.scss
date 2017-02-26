@@ -3,10 +3,8 @@
 $white: #f8f8ff;
 $blue: #0080e0;
 $blue2: #002060;
-$navy: #000020;
 $nav-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.23);
 $form-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
-$font-size: 1.4rem;
 $button-shadow: inset 0 -1px 0 1px rgba(0, 0, 0, .2), inset 0 -10px 20px rgba(0, 0, 0, .2);
 
 /* Change Autocomplete styles in Chrome*/
@@ -40,6 +38,8 @@ h3 {
 
 h1 {
   font-size: 2.8rem;
+  text-transform: uppercase;
+  padding: 20px;
 }
 
 h2 {
@@ -322,7 +322,7 @@ section {
   text-align: center;
 
   h3 {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 
   &::before {
@@ -420,7 +420,7 @@ section {
   img {
     width: 150px;
     height: 150px;
-    border-radius: 100%;
+    border-radius: 5px;
   }
 }
 
@@ -455,7 +455,7 @@ section {
   }
 
   .team h3 {
-    font-size: 15px;
+    //font-size: 1.2rem;
     margin-bottom: 5px;
   }
 
@@ -508,7 +508,7 @@ section {
 
   form {
     width: 50%;
-    font-size: $font-size;
+    font-size: 1.4rem;
 
     @media screen and (max-width: 970px) and (min-width: 751px) {
       width: 60%;
