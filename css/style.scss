@@ -824,7 +824,9 @@ section {
 }
 
 .correct {
-  opacity: 0;
+opacity: 0;
+  position: relative;
+  z-index: -9999;
 }
 
 .game--scores {
