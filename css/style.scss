@@ -233,14 +233,6 @@ section {
   h3 {
     color: $white;
   }
-
-  @media screen and (max-width: 750px) and (min-width: 321px) {
-    transform: scale(0.95);
-  }
-
-  @media screen and (max-width: 320px) {
-    transform: scale(0.85);
-  }
 }
 
 .teaser--text {
