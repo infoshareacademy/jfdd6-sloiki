@@ -58,10 +58,12 @@ $(document).ready(function () {
         .on('click', function () {
           points += 1;
           $('.game--scores h3').text('Twój wynik to: ' + points);
+          console.log('Twój wynik to: ' + points)
+
           var $uncoveredCards = $('td:not(.game--card__covered)', $table);
           var howManyUncovered = $uncoveredCards.length;
 
-          console.log('Liczba odkrytych kart to:', howManyUncovered);
+          // console.log('Liczba odkrytych kart to:', howManyUncovered);
 
           if (howManyUncovered === 2) {
             if ($uncoveredCards.first().attr('data-card') == $uncoveredCards.last().attr('data-card')) {
@@ -76,6 +78,7 @@ $(document).ready(function () {
                   $('.congratulations h2').text('Gratulacje! Udało Ci się odkryć wszystkie karty w ' + points + ' ruchach.');
               }
             }
+
             else {
               $uncoveredCards.addClass('game--card__covered')
             }
