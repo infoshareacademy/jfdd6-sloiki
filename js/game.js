@@ -1,6 +1,7 @@
 $(document).ready(function () {
   var $gameContent = $('#game');
   $gameContent.hide();
+  $('.menu--nav a[href="#game"]').hide();
 
   if (!window.location.search.includes('mailerResult')) {
     return;
@@ -8,7 +9,9 @@ $(document).ready(function () {
 
   window.location.hash = '#game';
   $('#form').hide();
+  $('.menu--nav a[href="#form"]').hide();
   $gameContent.show();
+  $('.menu--nav a[href="#game"]').show();
 
   var $container = $('.game--board');
   var $table = $('<table>');
@@ -64,12 +67,12 @@ $(document).ready(function () {
         .on('click', function () {
           points += 1;
           $('.game--scores h3').text('Twój wynik to: ' + points);
-          console.log('Twój wynik to: ' + points)
+          console.log('Twój wynik to: ' + points);
 
           var $uncoveredCards = $('td:not(.game--card__covered)', $table);
           var howManyUncovered = $uncoveredCards.length;
 
-          // console.log('Liczba odkrytych kart to:', howManyUncovered);
+          console.log('Liczba odkrytych kart to:', howManyUncovered);
 
           if (howManyUncovered === 2) {
             if ($uncoveredCards.first().attr('data-card') == $uncoveredCards.last().attr('data-card')) {
