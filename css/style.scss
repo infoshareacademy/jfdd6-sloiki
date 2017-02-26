@@ -3,10 +3,7 @@
 $white: #f8f8ff;
 $blue: #0080e0;
 $blue2: #002060;
-$navy: #000020;
 $nav-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.23);
-$form-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
-$font-size: 1.4rem;
 $button-shadow: inset 0 -1px 0 1px rgba(0, 0, 0, .2), inset 0 -10px 20px rgba(0, 0, 0, .2);
 
 /* Change Autocomplete styles in Chrome*/
@@ -17,28 +14,6 @@ input:-webkit-autofill:focus {
   -webkit-text-fill-color: $white;
   -webkit-box-shadow: 0 0 0 1000px $blue inset;
   transition: background-color 5000s ease-in-out 0s;
-}
-
-/*checkbox animations*/
-@keyframes dothabottomcheck {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 10px;
-  }
-}
-
-@keyframes dothatopcheck {
-  0% {
-    height: 0;
-  }
-  50% {
-    height: 0;
-  }
-  100% {
-    height: 21px;
-  }
 }
 
 @mixin rwd-slide-in-nav-animation {
@@ -62,6 +37,8 @@ h3 {
 
 h1 {
   font-size: 2.8rem;
+  text-transform: uppercase;
+  padding: 20px;
 }
 
 h2 {
@@ -344,7 +321,7 @@ section {
   text-align: center;
 
   h3 {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 
   &::before {
@@ -442,7 +419,7 @@ section {
   img {
     width: 150px;
     height: 150px;
-    border-radius: 100%;
+    border-radius: 5px;
   }
 }
 
@@ -477,7 +454,7 @@ section {
   }
 
   .team h3 {
-    font-size: 15px;
+    //font-size: 1.2rem;
     margin-bottom: 5px;
   }
 
@@ -530,7 +507,7 @@ section {
 
   form {
     width: 50%;
-    font-size: $font-size;
+    font-size: 1.4rem;
 
     @media screen and (max-width: 970px) and (min-width: 751px) {
       width: 60%;
@@ -557,7 +534,7 @@ section {
   label.field--label {
     box-sizing: border-box;
     padding: 10px 15px;
-    transition: $form-transition;
+    transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);;
   }
 
   input#email.field--input {
@@ -816,27 +793,6 @@ section {
   }
 }
 
-.gamerestart {
-  display: inline-block;
-  min-width: 270px;
-  box-shadow: $button-shadow;
-  cursor: pointer;
-  background-color: $blue2;
-  color: $white;
-  font-size: 27px;
-  padding: 10px 1.5rem;
-  border: solid 2px $blue2;
-  border-radius: 5px;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  box-sizing: border-box;
-
-  &:hover {
-    border-color: $blue;
-    background-color: $blue;
-    outline: inherit;
-  }
-}
-
 @media screen and(max-width: 750px) {
   .game--card {
     width: 20vw;
@@ -855,8 +811,30 @@ section {
   margin: 0 auto;
   max-width: 666px;
   display:flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.game--scores button {
+  display: inline-block;
+  min-width: 270px;
+  box-shadow: $button-shadow;
+  cursor: pointer;
+  background-color: $blue2;
+  color: $white;
+  font-size: 27px;
+  padding: 10px 1.5rem;
+  border: solid 2px $blue2;
+  border-radius: 5px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+
+  &:hover {
+    border-color: $blue;
+    background-color: $blue;
+    outline: inherit;
+  }
 }
 
 .game--scores h3 {
