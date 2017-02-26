@@ -19,8 +19,6 @@ $(document).ready(function () {
 
   var cards = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
 
-  //TODO: funkcja wykrywająca kliknięcie na przycisk "Wyślij" -> pokazanie (stworzenie planszy do gry)
-
   // We create board
   $container.append($table).addClass('game--board');
 
