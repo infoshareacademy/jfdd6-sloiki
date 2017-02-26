@@ -57,6 +57,7 @@ $(document).ready(function () {
         .attr('data-card', cardName)
         .on('click', function () {
           points += 1;
+          $('.game--scores h3').text('Twój wynik to: ' + points);
           var $uncoveredCards = $('td:not(.game--card__covered)', $table);
           var howManyUncovered = $uncoveredCards.length;
 
