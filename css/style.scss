@@ -19,28 +19,6 @@ input:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
 }
 
-/*checkbox animations*/
-@keyframes dothabottomcheck {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 10px;
-  }
-}
-
-@keyframes dothatopcheck {
-  0% {
-    height: 0;
-  }
-  50% {
-    height: 0;
-  }
-  100% {
-    height: 21px;
-  }
-}
-
 @mixin rwd-slide-in-nav-animation {
   transition: transform 0.5s ease-in-out;
   -webkit-transition: transform 0.5s ease-in-out;
