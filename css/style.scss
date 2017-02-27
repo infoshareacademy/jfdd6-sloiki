@@ -351,6 +351,10 @@ section {
   }
 }
 
+.product p {
+  padding: 0 20px;
+}
+
 .product-container {
   display: flex;
   margin-left: auto;
@@ -522,6 +526,7 @@ section {
   @media screen and (max-width: 320px) {
     h2 {
       font-size: 1.4rem;
+      padding: 0 20px;
     }
   }
   &::before {
