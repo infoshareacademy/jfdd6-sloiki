@@ -313,7 +313,6 @@ section {
   flex: 1;
   display: flex;
   justify-items: center;
-
   img {
     height: 100px;
     width: 100px;
@@ -324,31 +323,21 @@ section {
     cursor: pointer;
   }
 }
-.front {
-  border: $blue2 solid 20px;
-  border-radius: 10%;
-  height: 400px;
-  width: 50px;
-  background-color: cornflowerblue;
-
-}
-.back {
-  border: $blue2 solid 20px;
-  border-radius: 10%;
-  height: 400px;
-  width: 50px;
-  background-color: cornflowerblue;
-}
 
 .box-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 100%;
+  height: 320px;
+  width: 280px;
+  box-shadow: 3px 3px 5px 6px $blue2;
+  border-radius: 10%;
+
+
   p {
     text-align: center;
+    padding: 3px;
 
 
   }
