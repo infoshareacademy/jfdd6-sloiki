@@ -133,7 +133,6 @@ section {
     top: 72px;
     left: 100vw;
     background: $white;
-    padding-left: 100vw;
 
     box-shadow: $nav-shadow;
     -webkit-box-shadow: $nav-shadow;
@@ -231,6 +230,7 @@ section {
   justify-content: center;
   align-items: flex-start;
 
+  h1,
   h2,
   h3 {
     color: $white;
@@ -244,6 +244,29 @@ section {
   padding: 20px;
   margin-top: 2.0rem;
   margin-bottom: 2.0rem;
+
+  h1 {
+    padding: 0;
+    line-height: 3rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .teaser--text {
+    h1 {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+
+    h2 {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
 }
 
 .teaser--button {
@@ -325,6 +348,10 @@ section {
     height: 75px;
     visibility: hidden;
   }
+}
+
+.product p {
+  padding: 0 20px;
 }
 
 .product-container {
@@ -501,6 +528,7 @@ section {
   @media screen and (max-width: 320px) {
     h2 {
       font-size: 1.4rem;
+      padding: 0 20px;
     }
   }
   &::before {
@@ -762,8 +790,8 @@ section {
 }
 
 .game--card {
-  width: 150px;
-  height: 150px;
+  width: 90px;
+  height: 90px;
 
   &.a {
     background: url("../img/game/cards/board-game.svg") no-repeat center;

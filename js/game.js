@@ -10,6 +10,7 @@ $(document).ready(function () {
   window.location.hash = '#game';
   $('#form').hide();
   $('.menu--nav a[href="#form"]').hide();
+  $('.teaser--button').hide();
   $gameContent.show();
   $('.menu--nav a[href="#game"]').show();
 
