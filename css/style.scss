@@ -618,14 +618,14 @@ section {
     }
 
     &::before {
-      top: 15px;
-      left: 8px;
-      box-shadow: 0 0 0 2px $white;
+      top: 14px;
+      left: 9px;
+      box-shadow: 0 0 0 1px $white;
       transform: rotate(-135deg);
     }
 
     &::after {
-      top: 8px;
+      top: 7px;
       left: 1px;
       transform: rotate(-45deg);
     }
