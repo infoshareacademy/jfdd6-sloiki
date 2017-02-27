@@ -408,6 +408,7 @@ section {
   justify-content: center;
   width: 50%;
 
+
   img {
     width: 150px;
     height: 150px;
@@ -419,6 +420,7 @@ section {
   display: flex;
   padding: 5px;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 
   img {
     display: block;
@@ -453,7 +455,7 @@ section {
   .all-box {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    margin-top: 10px;
     text-align: center;
 
     img {
@@ -463,6 +465,7 @@ section {
   }
   .social {
     flex-wrap: nowrap;
+    margin-bottom: 5px;
 
     img {
       width: 30px;
@@ -476,8 +479,8 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   box-sizing: border-box;
+  margin-top: 0;
 
   h1,
   h2 {
@@ -494,6 +497,13 @@ section {
     h2 {
       font-size: 1.4rem;
     }
+  }
+  &::before {
+    display: block;
+    content: " ";
+    margin-top: 0;
+    height: 75px;
+    visibility: hidden;
   }
 }
 
@@ -725,7 +735,20 @@ section {
 //game
 .game {
   text-align: center;
-  padding-bottom: 10vw;
+  padding-bottom: 5vw;
+
+  &::before {
+    display: block;
+    content: " ";
+    margin-top: -75px;
+    height: 75px;
+    visibility: hidden;
+  }
+}
+
+.game h1{
+  padding: 4vh;
+  margin: 0;
 }
 
 .game--board  table {
@@ -734,8 +757,8 @@ section {
 }
 
 .game--card {
-  width: 160px;
-  height: 160px;
+  width: 150px;
+  height: 150px;
 
   &.a {
     background: url("../img/game/cards/board-game.svg") no-repeat center;
@@ -800,7 +823,7 @@ section {
 }
 
 .game--scores {
-  margin: 0 auto;
+  margin: 0 auto 70px;
   max-width: 666px;
   display:flex;
   flex-direction: column;
@@ -835,6 +858,10 @@ section {
 
 }
 
+.game--scores h2{
+
+  margin-top: -45px;
+}
 
 .congratulations {
   margin: 0 auto;
