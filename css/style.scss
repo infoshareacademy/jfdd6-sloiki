@@ -249,11 +249,24 @@ section {
   h1 {
     padding: 0;
     line-height: 3rem;
-    word-wrap: break-word;
   }
 
   h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .teaser--text {
+    h1 {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+
+    h2 {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
   }
 }
 
