@@ -231,6 +231,7 @@ section {
   justify-content: center;
   align-items: flex-start;
 
+  h1,
   h2,
   h3 {
     color: $white;
@@ -244,6 +245,16 @@ section {
   padding: 20px;
   margin-top: 2.0rem;
   margin-bottom: 2.0rem;
+
+  h1 {
+    padding: 0;
+    line-height: 3rem;
+    word-wrap: break-word;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
 }
 
 .teaser--button {
